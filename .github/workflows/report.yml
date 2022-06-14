@@ -31,7 +31,7 @@ jobs:
       - id: dashlord-report
         uses: SocialGouv/dashlord-actions/report@main
         with:
-          base-path: /dashlord
+          base-path: /dashlord-mgdis
 
       # to save the generated report.json as artifact
       - uses: actions/upload-artifact@v2
