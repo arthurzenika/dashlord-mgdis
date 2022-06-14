@@ -1,6 +1,6 @@
-title: DashLord example
+title: DashLord MGDIS
 description: Bonnes pratiques techniques
-entity: Ministères sociaux
+entity: MGDIS
 footer: Powered by SocialGouv
 marianne: false
 tools:
@@ -20,9 +20,13 @@ tools:
   stats: false
   declaration-a11y: true
 urls:
-  - url: https://www.fabrique.social.gouv.fr
-    repositories:
-      - socialgouv/www
-    docker:
-      - ghcr.io/socialgouv/fabrique/frontend
-  - url: https://beta.gouv.fr
+  - url: https://les-aides.paysdelaloire.fr/
+  - url: https://aideseco.mgcloud.fr/
+  - url: https://ma-carqueiranne.mgcloud.fr/
+  - url: https://subventions.fipd.interieur.gouv.fr/
+  - url: https://aides.cud.fr/
+  - url: https://portaildesaides.mairie-saintpaul.fr/
+  - url: https://aidesdepartementales.lot.fr/aides
+  - url: https://subventions.ha-py.fr/
+  - url: https://monespace-aides.normandie.fr/
+  - url: https://fondscommerce.anct.gouv.fr/
