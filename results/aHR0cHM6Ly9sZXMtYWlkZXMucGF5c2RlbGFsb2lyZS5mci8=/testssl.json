@@ -1,0 +1,1103 @@
+[
+         {
+              "id"           : "service",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered + downgraded to weaker protocol"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_NULL",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_aNULL",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_EXPORT",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_LOW",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_3DES_IDEA",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-310",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_AVERAGE",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-310",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_GOOD",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_STRONG",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "protocol_negotiated",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Default protocol TLS1.2"
+          }
+,         {
+              "id"           : "cipher_negotiated",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256, 256 bit ECDH (P-256)"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "prime256v1"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'extended master secret/#23'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no -- no lifetime advertised"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "yes"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "cert_compression",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "N/A"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "RSA 2048 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature, Key Encipherment"
+          }
+,         {
+              "id"           : "cert_extKeyUsage",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0451DF1D645F8E23E4152CB3F676C750D9FF"
+          }
+,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "D95C7821D72751197FDD9E682ED4DE6FE0B97C6B"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "7C46A20686CC2BC7D22DD3CB1BF1F8E80EBBB625925A373175AF0E5F80F7522E"
+          }
+,         {
+              "id"           : "cert",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFOjCCBCKgAwIBAgISBFHfHWRfjiPkFSyz9nbHUNn/MA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMjgwMDMwNDhaFw0yMjA2MjYwMDMwNDdaMCUxIzAhBgNVBAMT Gmxlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOC AQ8AMIIBCgKCAQEAr8EDcJU6kXsUS0k5bnLFvrhJddVemFae/B/iQ0JDbx22gqV3 hHPR38wAposnZShI4AHKMMx2FgIMHBBP7QD9YbPJTBJEDUd/B2NapO6D1Y5yyHBe HIZfazu12ur+faGZDyxnYArpBPWwi16ZLGEPCdOlDiDJSAUxzq7kQjYyYSaR00Er d0Ply6rDH0sEsJWINroCcUqSQz5uhObF1u7pAn74sjyHv268GJvlmG7ca2wsQhIP GhwcveX+jYL2dt2qUq5ICPeVlb6GQd6lKMqbe+G2TEB3/bLOygMUKLUQEvMJiuS3 dTosko1+CH4wunWUSDxSjUXI7p53y+fqtkm0LwIDAQABo4ICVTCCAlEwDgYDVR0P AQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMB Af8EAjAAMB0GA1UdDgQWBBRvkc5ZVgIW05e21pduuKLOzqhi2zAfBgNVHSMEGDAW gBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUH MAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3Iz LmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghpsZXMtYWlkZXMucGF5c2RlbGFsb2ly ZS5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsG AQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkC BAIEgfUEgfIA8AB2AN+lXqtogk8fbK3uuF9OPlrqzaISpGpejjsSwCBEXCpzAAAB f84lp+cAAAQDAEcwRQIhAK5jETY+QghwWhCd5+fyfhtYpKSR/Wz1bxFKnJWEXYyR AiBXrAzZw9/0VC2W2L804/N+QrBWr+btNM3g1JeCQE75tAB2ACl5vvCeOTkh8FZz n2Old+W+V32cYAr4+U1dJlwlXceEAAABf84lp9sAAAQDAEcwRQIhAN6bDuj/GXRE 7HtZX14DZ8EZTYNrgOqbuOf+BuCj6wn8AiAKg0UYIZBY1vPSawaP5EQ0Goquj++0 V5Fpk2Yz6O6sTDANBgkqhkiG9w0BAQsFAAOCAQEASKaZeKnquAJGY3kJyaLn1Z3N RDi6FFjsp61/oxodnbkqE8s+qCfktq8q5zcl0qavofqCk1BIxr2VQKMFbOozZxU4 kzZ/A2q5gksOzmIDuK+cRtYqmIzDu7nZhozRwtvo79Jv2N0KAr/CIt6zJfASGg2Z YHYg7CED114+T3asi7mJaLNPxeW7hxJ8R1d9A3ueb0D4E0fN9Qs1wImq2Q5J8+yC V9cU31YXD5At2Pnu9Ol7dLrxA4g9aVi53Zv5LHnW+dqSanJIl3qRbTuifD2vTGNi aTW5JF5c7HGDrNX+WhvuMAguvi0QjGLDI15MPR2T/GYlIrwi/fL9889Uj6wCbA== -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "les-aides.paysdelaloire.fr"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "*.mgcloud.fr"
+          }
+,         {
+              "id"           : "cert_subjectAltName",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "les-aides.paysdelaloire.fr"
+          }
+,         {
+              "id"           : "cert_trust",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (SNI mandatory)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "expires < 15 days (11)"
+          }
+,         {
+              "id"           : "cert_notBefore",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2022-03-28 00:30"
+          }
+,         {
+              "id"           : "cert_notAfter",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "2022-06-26 00:30"
+          }
+,         {
+              "id"           : "cert_extlifeSpan",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "certificate has no extended life time according to browser forum"
+          }
+,         {
+              "id"           : "cert_eTLS",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "cert_ocspURL",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://r3.o.lencr.org"
+          }
+,         {
+              "id"           : "OCSP_stapling",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "3"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "R3 (Let's Encrypt from US)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2020-09-04 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2025-09-15 16:00"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "R3 <-- ISRG Root X1"
+          }
+,         {
+              "id"           : "intermediate_cert <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2021-01-20 19:14"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2024-09-30 18:14"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2>",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ISRG Root X1 <-- DST Root CA X3"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "HTTP_status_code",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "302 Found ('/')"
+          }
+,         {
+              "id"           : "HTTP_clock_skew",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Got no HTTP time, maybe try different URL?"
+          }
+,         {
+              "id"           : "HSTS",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "HPKP",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No support for HTTP Public Key Pinning"
+          }
+,         {
+              "id"           : "banner_server",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No Server banner line in header, interesting!"
+          }
+,         {
+              "id"           : "banner_application",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No application banner found"
+          }
+,         {
+              "id"           : "cookie_count",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
+          }
+,         {
+              "id"           : "Cache-Control",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no-cache"
+          }
+,         {
+              "id"           : "banner_reverseproxy",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-200",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "heartbleed",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0160",
+              "cwe"          : "CWE-119",
+              "finding"      : "not vulnerable, no heartbeat extension"
+          }
+,         {
+              "id"           : "CCS",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0224",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "ticketbleed",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-9244",
+              "cwe"          : "CWE-200",
+              "finding"      : "no session ticket extension"
+          }
+,         {
+              "id"           : "ROBOT",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+              "cwe"          : "CWE-203",
+              "finding"      : "not vulnerable, no RSA key transport cipher"
+          }
+,         {
+              "id"           : "secure_renego",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-310",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "secure_client_renego",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2011-1473",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "CRIME_TLS",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2012-4929",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "BREACH",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-3587",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+          }
+,         {
+              "id"           : "POODLE_SSL",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-3566",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no SSLv3"
+          }
+,         {
+              "id"           : "fallback_SCSV",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "no protocol below TLS 1.2 offered"
+          }
+,         {
+              "id"           : "SWEET32",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-2183 CVE-2016-6329",
+              "cwe"          : "CWE-327",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "FREAK",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-0204",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "DROWN",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable on this host and port"
+          }
+,         {
+              "id"           : "DROWN_hint",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7C46A20686CC2BC7D22DD3CB1BF1F8E80EBBB625925A373175AF0E5F80F7522E"
+          }
+,         {
+              "id"           : "LOGJAM-common_primes",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "HAProxy"
+          }
+,         {
+              "id"           : "LOGJAM",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no DH EXPORT ciphers,"
+          }
+,         {
+              "id"           : "BEAST",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2011-3389",
+              "cwe"          : "CWE-20",
+              "finding"      : "not vulnerable, no SSL3 or TLS1"
+          }
+,         {
+              "id"           : "LUCKY13",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-0169",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "winshock",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-6321",
+              "cwe"          : "CWE-94",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "RC4",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-2566 CVE-2015-2808",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "clientsimulation-android_60",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_70",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_81",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_90",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_X",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_11",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_12",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_79_win10",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_101_win10",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_66_win81",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_100_win10",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_6_xp",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_win7",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_xp",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win7",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win81",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_winphone81",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win10",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_15_win10",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_101_win10_21h2",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_121_ios_122",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_130_osx_10146",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_154_osx_1231",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java_7u25",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-java_8u161",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java1102",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java1703",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-go_1178",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-libressl_283",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_102e",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_110l",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_111d",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_303",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-apple_mail_16_0",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_91_9",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "rating_spec",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+          }
+,         {
+              "id"           : "rating_doc",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+          }
+,         {
+              "id"           : "protocol_support_score",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "100"
+          }
+,         {
+              "id"           : "protocol_support_score_weighted",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "30"
+          }
+,         {
+              "id"           : "key_exchange_score",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "90"
+          }
+,         {
+              "id"           : "key_exchange_score_weighted",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "27"
+          }
+,         {
+              "id"           : "cipher_strength_score",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "60"
+          }
+,         {
+              "id"           : "cipher_strength_score_weighted",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "24"
+          }
+,         {
+              "id"           : "final_score",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "81"
+          }
+,         {
+              "id"           : "overall_grade",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "A"
+          }
+,         {
+              "id"           : "grade_cap_reason_1",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to A. HSTS is not offered"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "135"
+          }
+]
