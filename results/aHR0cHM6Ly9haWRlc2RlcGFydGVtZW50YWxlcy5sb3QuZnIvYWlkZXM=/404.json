@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "aidesdepartementales.lot.fr",
+        "port": null,
+        "hostname": "aidesdepartementales.lot.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/aides",
+        "path": "/aides",
+        "href": "https://aidesdepartementales.lot.fr/aides"
+      },
+      "link": "https://aidesdepartementales.lot.fr/aides",
+      "line": "--2022-06-14 13:41:28--  https://aidesdepartementales.lot.fr/aides",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
