@@ -33,19 +33,19 @@
       }
     },
     {
-      "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/g9jXH0OtfQet-V0Aewq23c7K/recaptcha__en.js",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
       "type": "jsdelivr",
       "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
       "details": {
         "id": "jsdelivr",
         "message": "Host files locally"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://www.gstatic.com/recaptcha/releases/g9jXH0OtfQet-V0Aewq23c7K/recaptcha__en.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
       }
     }
   ],
@@ -55,7 +55,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Tue, 14 Jun 2022 13:58:45 GMT",
+    "date": "Wed, 15 Jun 2022 09:11:36 GMT",
     "etag": "W/\"12c3-181238f39f0\"",
     "last-modified": "Thu, 02 Jun 2022 08:36:38 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -66,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "3878ccc5-52c3-41da-b5e0-df6d6608367b",
+    "x-request-id": "4fc5d3c8-8602-4bbc-bb16-5398788dd42c",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -128,12 +128,12 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.89.20",
+      "ip": "104.16.87.20",
       "geoip": null
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.68.4",
+      "ip": "142.251.6.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -187,7 +187,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.217.131",
+      "ip": "172.253.114.94",
       "geoip": {
         "continent": {
           "code": "NA",
