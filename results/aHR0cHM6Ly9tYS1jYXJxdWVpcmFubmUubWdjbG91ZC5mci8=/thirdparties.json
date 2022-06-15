@@ -1,6 +1,22 @@
 {
   "trackers": [
     {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api.js?render=explicit",
       "details": {
@@ -9,11 +25,27 @@
       }
     },
     {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-8cb61c3f.system.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/g9jXH0OtfQet-V0Aewq23c7K/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
       }
     }
   ],
@@ -23,9 +55,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Tue, 14 Jun 2022 13:25:59 GMT",
-    "etag": "W/\"11be-180f65f37c8\"",
-    "last-modified": "Tue, 24 May 2022 14:01:17 GMT",
+    "date": "Wed, 15 Jun 2022 08:40:03 GMT",
+    "etag": "W/\"12c3-181238f39f0\"",
+    "last-modified": "Thu, 02 Jun 2022 08:36:38 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -34,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "79bba7e6-a476-4a70-b70b-520f76d1c52d",
+    "x-request-id": "8b448652-664c-4015-a2aa-e4a0579020f0",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -95,8 +127,13 @@
       }
     },
     {
+      "hostname": "cdn.jsdelivr.net",
+      "ip": "104.16.85.20",
+      "geoip": null
+    },
+    {
       "hostname": "www.google.com",
-      "ip": "172.253.63.147",
+      "ip": "142.250.189.4",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -150,7 +187,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "142.251.40.35",
       "geoip": {
         "continent": {
           "code": "NA",

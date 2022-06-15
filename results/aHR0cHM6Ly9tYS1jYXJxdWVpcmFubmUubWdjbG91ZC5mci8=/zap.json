@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Tue, 14 Jun 2022 13:24:58",
+	"@generated": "Wed, 15 Jun 2022 08:38:52",
 	"site":[ 
 		{
 			"@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -23,27 +23,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<form class=\\\"row\\\" name=\\\"recapitulatifForm\\\" id=\\\"tcCguAcceptation\\\" novalidate validation-form>"
 						},
 						{
@@ -52,6 +31,27 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
@@ -184,21 +184,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
+							"evidence": "<form class=\\\"form-horizontal row\\\">"
 						}
 					],
 					"count": "26",
@@ -257,7 +257,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
@@ -267,7 +295,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "6",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -288,9 +316,23 @@
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/",
 							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/",
+							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
 							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
@@ -300,7 +342,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -691,14 +733,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
@@ -827,7 +869,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
