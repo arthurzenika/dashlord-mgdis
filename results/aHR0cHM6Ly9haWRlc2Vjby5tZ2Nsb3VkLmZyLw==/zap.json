@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Tue, 14 Jun 2022 13:24:58",
+	"@generated": "Wed, 15 Jun 2022 08:38:46",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -23,27 +23,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<form class=\\\"row\\\" name=\\\"recapitulatifForm\\\" id=\\\"tcCguAcceptation\\\" novalidate validation-form>"
 						},
 						{
@@ -52,6 +31,27 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -184,21 +184,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
+							"evidence": "<form class=\\\"form-horizontal row\\\">"
 						}
 					],
 					"count": "26",
@@ -257,7 +257,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
@@ -267,7 +295,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "6",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -288,9 +316,23 @@
 						{
 							"uri": "https://aideseco.mgcloud.fr/",
 							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
 							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
@@ -300,7 +342,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -324,16 +366,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "trustAsHtml"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "trustAsHtml"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
@@ -413,16 +448,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -521,16 +549,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "depot/simple/pageInformationsGenerales2/depot-simple-pageInformationsGenerales2"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "org/officeDocument/2006/relationships/image"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p><?xml version=\"1.0\" ?></p><p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\"></p><p>  <linearGradient id=\"grad-ucgg-generated\" gradientUnits=\"userSpaceOnUse\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\"></p><p>    <stop offset=\"0%\" stop-color=\"#ff0000\" stop-opacity=\"1\"/></p><p>    <stop offset=\"16%\" stop-color=\"#ffff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"33%\" stop-color=\"#00ff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"50%\" stop-color=\"#00ffff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"67%\" stop-color=\"#0000ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"84%\" stop-color=\"#ff00ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"100%\" stop-color=\"#ff0004\" stop-opacity=\"1\"/></p><p>  </linearGradient></p><p>  <rect x=\"0\" y=\"0\" width=\"1\" height=\"1\" fill=\"url(#grad-ucgg-generated)\" /></p><p></svg></p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -684,14 +705,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -713,16 +734,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<a href ng-click=\\\"select($event)\\\" class=\\\"nav-link\\\" uib-tab-heading-transclude>{{heading}}</a>"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a id='\"+y+\"'></a>"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -754,7 +768,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -820,7 +834,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
