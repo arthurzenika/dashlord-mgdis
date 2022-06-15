@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Tue Jun 14 13:50:53 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.ha-py.fr
+# Nmap 7.92 scan initiated Wed Jun 15 09:04:54 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.ha-py.fr
 Host: 141.94.67.131 (cd65prod.mgcloud.fr)	Status: Up
 Host: 141.94.67.131 (cd65prod.mgcloud.fr)	Ports: 80/open/tcp//http-proxy//HAProxy http proxy 1.3.1 or later/, 443/open/tcp//ssl|http-proxy//HAProxy http proxy 1.3.1 or later/	Ignored State: filtered (998)
-# Nmap done at Tue Jun 14 13:51:24 2022 -- 1 IP address (1 host up) scanned in 30.73 seconds
+# Nmap done at Wed Jun 15 09:05:25 2022 -- 1 IP address (1 host up) scanned in 30.66 seconds

@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Tue Jun 14 13:50:53 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.ha-py.fr
+# Nmap 7.92 scan initiated Wed Jun 15 09:04:54 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.ha-py.fr
 Nmap scan report for subventions.ha-py.fr (141.94.67.131)
-Host is up (0.088s latency).
+Host is up (0.087s latency).
 rDNS record for 141.94.67.131: cd65prod.mgcloud.fr
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
@@ -9,4 +9,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Jun 14 13:51:24 2022 -- 1 IP address (1 host up) scanned in 30.73 seconds
+# Nmap done at Wed Jun 15 09:05:25 2022 -- 1 IP address (1 host up) scanned in 30.66 seconds
