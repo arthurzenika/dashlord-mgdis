@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Tue Jun 14 13:37:21 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.fipd.interieur.gouv.fr
+# Nmap 7.92 scan initiated Wed Jun 15 08:52:54 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln subventions.fipd.interieur.gouv.fr
 Host: 149.202.161.196 (subventia.mgcloud.fr)	Status: Up
 Host: 149.202.161.196 (subventia.mgcloud.fr)	Ports: 80/open/tcp//http-proxy//HAProxy http proxy 1.3.1 or later/, 443/open/tcp//ssl|http-proxy//HAProxy http proxy 1.3.1 or later/	Ignored State: filtered (998)
-# Nmap done at Tue Jun 14 13:37:51 2022 -- 1 IP address (1 host up) scanned in 30.41 seconds
+# Nmap done at Wed Jun 15 08:53:32 2022 -- 1 IP address (1 host up) scanned in 38.13 seconds

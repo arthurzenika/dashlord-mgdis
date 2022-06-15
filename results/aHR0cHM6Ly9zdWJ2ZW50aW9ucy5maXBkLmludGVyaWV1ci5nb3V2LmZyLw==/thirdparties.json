@@ -10,7 +10,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/g9jXH0OtfQet-V0Aewq23c7K/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -23,7 +23,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Tue, 14 Jun 2022 13:35:32 GMT",
+    "date": "Wed, 15 Jun 2022 08:50:27 GMT",
     "etag": "W/\"11be-1800847e0d0\"",
     "last-modified": "Fri, 08 Apr 2022 08:26:10 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -34,7 +34,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "afbddea6-9895-4dd2-84cd-128cc3391e39",
+    "x-request-id": "2fd8e7b6-eea8-4bbb-b7c3-e9471551d9ab",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -96,7 +96,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.63.106",
+      "ip": "142.250.68.4",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -150,7 +150,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.188.35",
+      "ip": "142.251.40.35",
       "geoip": {
         "continent": {
           "code": "NA",
