@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Tue Jun 14 13:40:59 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aides.cud.fr
+# Nmap 7.92 scan initiated Wed Jun 15 08:55:27 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aides.cud.fr
 Nmap scan report for aides.cud.fr (149.202.177.167)
-Host is up (0.087s latency).
+Host is up (0.15s latency).
 rDNS record for 149.202.177.167: cud.mgcloud.fr
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
@@ -9,4 +9,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Jun 14 13:41:30 2022 -- 1 IP address (1 host up) scanned in 31.05 seconds
+# Nmap done at Wed Jun 15 08:56:06 2022 -- 1 IP address (1 host up) scanned in 38.53 seconds
