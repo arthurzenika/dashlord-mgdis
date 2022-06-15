@@ -47,7 +47,7 @@
 "cert_trust","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","Ok via SAN and CN (SNI mandatory)","",""
 "cert_chain_of_trust","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","passed.","",""
 "cert_certificatePolicies_EV","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","INFO","no","",""
-"cert_expirationStatus","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","367 >= 60 days","",""
+"cert_expirationStatus","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","366 >= 60 days","",""
 "cert_notBefore","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","INFO","2022-06-08 00:00","",""
 "cert_notAfter","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","2023-06-16 23:59","",""
 "cert_extlifeSpan","portaildesaides.mairie-saintpaul.fr/51.210.190.57","443","OK","certificate has no extended life time according to browser forum","",""

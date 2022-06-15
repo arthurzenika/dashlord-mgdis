@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Tue, 14 Jun 2022 13:37:54",
+	"@generated": "Wed, 15 Jun 2022 08:50:33",
 	"site":[ 
 		{
 			"@name": "https://portaildesaides.mairie-saintpaul.fr",
@@ -23,27 +23,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
-						},
-						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<form class=\\\"row\\\" name=\\\"recapitulatifForm\\\" id=\\\"tcCguAcceptation\\\" novalidate validation-form>"
 						},
 						{
@@ -52,6 +31,27 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
@@ -184,21 +184,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
+							"evidence": "<form class=\\\"form-horizontal row\\\">"
 						}
 					],
 					"count": "26",
@@ -257,7 +257,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
@@ -267,7 +295,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "6",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -288,9 +316,23 @@
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/",
 							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/",
+							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
 							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
@@ -300,7 +342,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -441,13 +483,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "50298609"
-						},
-						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -483,13 +518,6 @@
 							"evidence": "80000000"
 						},
 						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/resources/styles/images/apple-touch-icon-120x120.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "79919028"
-						},
-						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -497,13 +525,13 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "8",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>50298609, which evaluates to: 1971-08-06 03:50:09</p>",
+					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "60"
 				},
 				{
 					"pluginid": "10094",
@@ -698,14 +726,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/scripts/app-templates.js",
@@ -834,7 +862,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",

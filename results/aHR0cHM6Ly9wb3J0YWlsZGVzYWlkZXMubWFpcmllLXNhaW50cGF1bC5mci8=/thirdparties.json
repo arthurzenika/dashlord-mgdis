@@ -1,11 +1,43 @@
 {
   "trackers": [
     {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api.js?render=explicit",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-8cb61c3f.system.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
+      "details": {
+        "id": "jsdelivr",
+        "message": "Host files locally"
       }
     },
     {
@@ -23,9 +55,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Tue, 14 Jun 2022 13:39:31 GMT",
-    "etag": "W/\"11be-180f65f37c8\"",
-    "last-modified": "Tue, 24 May 2022 14:01:17 GMT",
+    "date": "Wed, 15 Jun 2022 08:51:45 GMT",
+    "etag": "W/\"12c3-181238f39f0\"",
+    "last-modified": "Thu, 02 Jun 2022 08:36:38 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -34,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "adfca203-b5b5-4064-b15a-fe005ea26183",
+    "x-request-id": "713abfb0-cc62-433f-823d-f5bf2da34a28",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -95,8 +127,13 @@
       }
     },
     {
+      "hostname": "cdn.jsdelivr.net",
+      "ip": "104.16.87.20",
+      "geoip": null
+    },
+    {
       "hostname": "www.google.com",
-      "ip": "172.217.5.100",
+      "ip": "216.58.193.132",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -150,7 +187,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.32.35",
+      "ip": "142.251.46.131",
       "geoip": {
         "continent": {
           "code": "NA",
