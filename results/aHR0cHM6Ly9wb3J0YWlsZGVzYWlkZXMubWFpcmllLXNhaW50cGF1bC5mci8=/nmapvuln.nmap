@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Wed Jun 15 08:54:19 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln portaildesaides.mairie-saintpaul.fr
+# Nmap 7.92 scan initiated Sun Jun 19 02:28:34 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln portaildesaides.mairie-saintpaul.fr
 Nmap scan report for portaildesaides.mairie-saintpaul.fr (51.210.190.57)
-Host is up (0.15s latency).
+Host is up (0.087s latency).
 rDNS record for 51.210.190.57: ma-st-paul.mgcloud.fr
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
@@ -9,4 +9,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Jun 15 08:54:57 2022 -- 1 IP address (1 host up) scanned in 37.90 seconds
+# Nmap done at Sun Jun 19 02:29:05 2022 -- 1 IP address (1 host up) scanned in 30.89 seconds
