@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Wed, 15 Jun 2022 08:50:27",
+	"@generated": "Sun, 19 Jun 2022 02:23:42",
 	"site":[ 
 		{
 			"@name": "https://aides.cud.fr",
@@ -518,6 +518,13 @@
 							"evidence": "80000000"
 						},
 						{
+							"uri": "https://aides.cud.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "12614882"
+						},
+						{
 							"uri": "https://aides.cud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -525,7 +532,7 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
