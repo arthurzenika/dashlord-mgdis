@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Wed, 15 Jun 2022 09:10:50",
+	"@generated": "Sun, 19 Jun 2022 02:42:03",
 	"site":[ 
 		{
 			"@name": "https://fondscommerce.anct.gouv.fr",
@@ -483,13 +483,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://fondscommerce.anct.gouv.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "58697402"
-						},
-						{
 							"uri": "https://fondscommerce.anct.gouv.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -525,6 +518,13 @@
 							"evidence": "80000000"
 						},
 						{
+							"uri": "https://fondscommerce.anct.gouv.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "79143299"
+						},
+						{
 							"uri": "https://fondscommerce.anct.gouv.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -534,11 +534,11 @@
 					],
 					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>58697402, which evaluates to: 1971-11-11 08:50:02</p>",
+					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "12"
+					"sourceid": "62"
 				},
 				{
 					"pluginid": "10094",
@@ -810,7 +810,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -876,7 +876,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
