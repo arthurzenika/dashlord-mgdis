@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Wed, 15 Jun 2022 09:03:06",
+	"@generated": "Sun, 19 Jun 2022 02:35:42",
 	"site":[ 
 		{
 			"@name": "https://monespace-aides.normandie.fr",
@@ -207,7 +207,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "66"
+					"sourceid": "65"
 				},
 				{
 					"pluginid": "10038",
@@ -339,7 +339,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "68"
+					"sourceid": "67"
 				},
 				{
 					"pluginid": "10063",
@@ -544,6 +544,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://monespace-aides.normandie.fr/aides/resources/styles/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "36142030"
+						},
+						{
 							"uri": "https://monespace-aides.normandie.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -586,13 +593,13 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
+					"otherinfo": "<p>36142030, which evaluates to: 1971-02-23 07:27:10</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "55"
 				},
 				{
 					"pluginid": "10094",
@@ -762,16 +769,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "user"
-						},
-						{
-							"uri": "https://monespace-aides.normandie.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "xxx"
 						}
 					],
-					"count": "17",
+					"count": "16",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script src=\"scripts/user-templates.js\"></script>\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",

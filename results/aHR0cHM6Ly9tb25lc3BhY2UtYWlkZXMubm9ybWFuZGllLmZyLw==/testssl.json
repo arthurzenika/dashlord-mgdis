@@ -346,7 +346,7 @@
               "ip"           : "monespace-aides.normandie.fr/194.214.7.135",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "153 >= 60 days"
+              "finding"      : "149 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -584,14 +584,14 @@
               "ip"           : "monespace-aides.normandie.fr/194.214.7.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-2 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "monespace-aides.normandie.fr/194.214.7.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1655283900"
+              "finding"      : "1655606286"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1175,6 +1175,6 @@
               "ip"           : "monespace-aides.normandie.fr/194.214.7.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "103"
+              "finding"      : "142"
           }
 ]
