@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Wed, 15 Jun 2022 09:01:54",
+	"@generated": "Sun, 19 Jun 2022 02:34:24",
 	"site":[ 
 		{
 			"@name": "https://subventions.ha-py.fr",
@@ -476,13 +476,6 @@
 							"evidence": "80000000"
 						},
 						{
-							"uri": "https://subventions.ha-py.fr/aides/resources/styles/images/apple-touch-icon-180x180.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "49269604"
-						},
-						{
 							"uri": "https://subventions.ha-py.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -490,7 +483,7 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
