@@ -49,7 +49,7 @@
 "cert_trust","aides.cud.fr/149.202.177.167","443","OK","Ok via SAN (SNI mandatory)","",""
 "cert_chain_of_trust","aides.cud.fr/149.202.177.167","443","CRITICAL","Some certificate trust checks failed -> Java (self signed CA in chain)  , OK -> Mozilla Microsoft Linux Apple","",""
 "cert_certificatePolicies_EV","aides.cud.fr/149.202.177.167","443","INFO","no","",""
-"cert_expirationStatus","aides.cud.fr/149.202.177.167","443","OK","79 >= 60 days","",""
+"cert_expirationStatus","aides.cud.fr/149.202.177.167","443","OK","72 >= 60 days","",""
 "cert_notBefore","aides.cud.fr/149.202.177.167","443","INFO","2020-06-22 13:15","",""
 "cert_notAfter","aides.cud.fr/149.202.177.167","443","OK","2022-09-06 08:39","",""
 "cert_extlifeSpan","aides.cud.fr/149.202.177.167","443","INFO","805 =< 398 days","",""

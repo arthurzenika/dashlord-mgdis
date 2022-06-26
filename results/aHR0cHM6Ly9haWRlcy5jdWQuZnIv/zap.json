@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 02:23:42",
+	"@generated": "Sun, 26 Jun 2022 02:32:57",
 	"site":[ 
 		{
 			"@name": "https://aides.cud.fr",
@@ -518,11 +518,11 @@
 							"evidence": "80000000"
 						},
 						{
-							"uri": "https://aides.cud.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
+							"uri": "https://aides.cud.fr/aides/resources/styles/images/favicon-96x96.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "12614882"
+							"evidence": "01484124"
 						},
 						{
 							"uri": "https://aides.cud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
@@ -803,7 +803,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -869,7 +869,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
