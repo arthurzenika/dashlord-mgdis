@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 02:25:15",
+	"@generated": "Sun, 26 Jun 2022 02:33:05",
 	"site":[ 
 		{
 			"@name": "https://portaildesaides.mairie-saintpaul.fr",
@@ -518,13 +518,6 @@
 							"evidence": "80000000"
 						},
 						{
-							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/resources/styles/images/apple-touch-icon-152x152.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "43157122"
-						},
-						{
 							"uri": "https://portaildesaides.mairie-saintpaul.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -532,7 +525,7 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -803,7 +796,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -869,7 +862,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
