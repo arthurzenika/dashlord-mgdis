@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 02:31:21",
+	"@generated": "Sun, 26 Jun 2022 02:40:25",
 	"site":[ 
 		{
 			"@name": "https://aidesdepartementales.lot.fr",
@@ -473,7 +473,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "76617554"
+							"evidence": "10501907"
 						},
 						{
 							"uri": "https://aidesdepartementales.lot.fr/aides/resources/styles/css/vendor.css",
@@ -520,7 +520,7 @@
 					],
 					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>76617554, which evaluates to: 1972-06-05 18:39:14</p>",
+					"otherinfo": "<p>10501907, which evaluates to: 1970-05-02 13:11:47</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",

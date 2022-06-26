@@ -23,7 +23,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 19 Jun 2022 02:32:25 GMT",
+    "date": "Sun, 26 Jun 2022 02:41:58 GMT",
     "etag": "W/\"11be-18009be1998\"",
     "last-modified": "Fri, 08 Apr 2022 15:14:55 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -34,7 +34,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "30cfbb55-2d37-411c-9384-b220b55a9ff9",
+    "x-request-id": "227e647a-bd62-4314-9aaa-91bca96b86a3",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -96,7 +96,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.65.68",
+      "ip": "142.251.32.132",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -150,7 +150,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.251.45.67",
       "geoip": {
         "continent": {
           "code": "NA",
