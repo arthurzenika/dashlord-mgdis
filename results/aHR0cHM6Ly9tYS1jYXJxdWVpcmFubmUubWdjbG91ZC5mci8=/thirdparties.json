@@ -55,9 +55,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 26 Jun 2022 02:22:52 GMT",
-    "etag": "W/\"12c3-1816caeb188\"",
-    "last-modified": "Thu, 16 Jun 2022 13:23:17 GMT",
+    "date": "Sun, 10 Jul 2022 02:25:50 GMT",
+    "etag": "W/\"12c3-181b43a2370\"",
+    "last-modified": "Thu, 30 Jun 2022 10:48:38 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -66,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "25678db7-d268-47fe-9d87-9254e46b8ade",
+    "x-request-id": "73a63ec8-0f54-4d0a-aecd-6b3d2df9935c",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -133,7 +133,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "64.233.191.99",
+      "ip": "172.253.122.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -187,7 +187,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "173.194.194.94",
+      "ip": "172.217.1.195",
       "geoip": {
         "continent": {
           "code": "NA",
