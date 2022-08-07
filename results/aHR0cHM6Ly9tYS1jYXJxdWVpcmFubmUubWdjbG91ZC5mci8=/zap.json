@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Jul 2022 02:24:47",
+	"@generated": "Sun, 7 Aug 2022 02:18:31",
 	"site":[ 
 		{
 			"@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -483,6 +483,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "37769455"
+						},
+						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -518,6 +525,13 @@
 							"evidence": "80000000"
 						},
 						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-120x120.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "96848036"
+						},
+						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -525,13 +539,13 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "8",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
+					"otherinfo": "<p>37769455, which evaluates to: 1971-03-14 03:30:55</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "55"
 				},
 				{
 					"pluginid": "10094",
@@ -803,7 +817,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -869,7 +883,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
