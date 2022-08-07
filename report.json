@@ -2,7 +2,205 @@
   {
     "404": [],
     "url": "https://les-aides.paysdelaloire.fr/",
-    "http": null,
+    "http": {
+      "url": "https://les-aides.paysdelaloire.fr/",
+      "algorithm_version": 2,
+      "end_time": "Sun, 31 Jul 2022 02:30:49 GMT",
+      "grade": "B",
+      "hidden": false,
+      "likelihood_indicator": "MEDIUM",
+      "response_headers": {
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 31 Jul 2022 02:30:46 GMT",
+        "Etag": "W/\"11be-181951e6898\"",
+        "Last-Modified": "Fri, 24 Jun 2022 09:50:07 GMT",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Strict-Transport-Security": "max-age=63072000;",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Dns-Prefetch-Control": "off",
+        "X-Download-Options": "noopen",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Request-Id": "02a16c7f-397f-4b56-8e9a-600ef768417d",
+        "X-XSS-Protection": "1;mode=block"
+      },
+      "scan_id": 28308184,
+      "score": 70,
+      "start_time": "Sun, 31 Jul 2022 02:30:44 GMT",
+      "state": "FINISHED",
+      "status_code": 200,
+      "tests_failed": 2,
+      "tests_passed": 10,
+      "tests_quantity": 12,
+      "details": {
+        "content-security-policy": {
+          "expectation": "csp-implemented-with-no-unsafe",
+          "name": "content-security-policy",
+          "output": {
+            "data": null,
+            "http": false,
+            "meta": false,
+            "policy": null
+          },
+          "pass": false,
+          "result": "csp-not-implemented",
+          "score_description": "Content Security Policy (CSP) header not implemented",
+          "score_modifier": -25
+        },
+        "contribute": {
+          "expectation": "contribute-json-only-required-on-mozilla-properties",
+          "name": "contribute",
+          "output": {
+            "data": null
+          },
+          "pass": true,
+          "result": "contribute-json-only-required-on-mozilla-properties",
+          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
+          "score_modifier": 0
+        },
+        "cookies": {
+          "expectation": "cookies-secure-with-httponly-sessions",
+          "name": "cookies",
+          "output": {
+            "data": null,
+            "sameSite": null
+          },
+          "pass": true,
+          "result": "cookies-not-found",
+          "score_description": "No cookies detected",
+          "score_modifier": 0
+        },
+        "cross-origin-resource-sharing": {
+          "expectation": "cross-origin-resource-sharing-not-implemented",
+          "name": "cross-origin-resource-sharing",
+          "output": {
+            "data": {
+              "acao": null,
+              "clientaccesspolicy": null,
+              "crossdomain": null
+            }
+          },
+          "pass": true,
+          "result": "cross-origin-resource-sharing-not-implemented",
+          "score_description": "Content is not visible via cross-origin resource sharing (CORS) files or headers",
+          "score_modifier": 0
+        },
+        "public-key-pinning": {
+          "expectation": "hpkp-not-implemented",
+          "name": "public-key-pinning",
+          "output": {
+            "data": null,
+            "includeSubDomains": false,
+            "max-age": null,
+            "numPins": null,
+            "preloaded": false
+          },
+          "pass": true,
+          "result": "hpkp-not-implemented",
+          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
+          "score_modifier": 0
+        },
+        "redirection": {
+          "expectation": "redirection-to-https",
+          "name": "redirection",
+          "output": {
+            "destination": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+            "redirects": true,
+            "route": [
+              "http://les-aides.paysdelaloire.fr/",
+              "https://les-aides.paysdelaloire.fr/",
+              "https://les-aides.paysdelaloire.fr/aides/#/prod/"
+            ],
+            "status_code": 200
+          },
+          "pass": true,
+          "result": "redirection-to-https",
+          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
+          "score_modifier": 0
+        },
+        "referrer-policy": {
+          "expectation": "referrer-policy-private",
+          "name": "referrer-policy",
+          "output": {
+            "data": "no-referrer-when-downgrade",
+            "http": true,
+            "meta": false
+          },
+          "pass": true,
+          "result": "referrer-policy-no-referrer-when-downgrade",
+          "score_description": "Referrer-Policy header set to \"no-referrer-when-downgrade\"",
+          "score_modifier": 0
+        },
+        "strict-transport-security": {
+          "expectation": "hsts-implemented-max-age-at-least-six-months",
+          "name": "strict-transport-security",
+          "output": {
+            "data": "max-age=63072000;",
+            "includeSubDomains": false,
+            "max-age": 63072000,
+            "preload": false,
+            "preloaded": false
+          },
+          "pass": true,
+          "result": "hsts-implemented-max-age-at-least-six-months",
+          "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
+          "score_modifier": 0
+        },
+        "subresource-integrity": {
+          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+          "name": "subresource-integrity",
+          "output": {
+            "data": {
+              "https://www.google.com/recaptcha/api.js?render=explicit": {
+                "crossorigin": null,
+                "integrity": null
+              }
+            }
+          },
+          "pass": false,
+          "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+          "score_description": "Subresource Integrity (SRI) not implemented, but all external scripts are loaded over HTTPS",
+          "score_modifier": -5
+        },
+        "x-content-type-options": {
+          "expectation": "x-content-type-options-nosniff",
+          "name": "x-content-type-options",
+          "output": {
+            "data": "nosniff"
+          },
+          "pass": true,
+          "result": "x-content-type-options-nosniff",
+          "score_description": "X-Content-Type-Options header set to \"nosniff\"",
+          "score_modifier": 0
+        },
+        "x-frame-options": {
+          "expectation": "x-frame-options-sameorigin-or-deny",
+          "name": "x-frame-options",
+          "output": {
+            "data": "SAMEORIGIN"
+          },
+          "pass": true,
+          "result": "x-frame-options-sameorigin-or-deny",
+          "score_description": "X-Frame-Options (XFO) header set to SAMEORIGIN or DENY",
+          "score_modifier": 0
+        },
+        "x-xss-protection": {
+          "expectation": "x-xss-protection-1-mode-block",
+          "name": "x-xss-protection",
+          "output": {
+            "data": "1;mode=block"
+          },
+          "pass": true,
+          "result": "x-xss-protection-enabled-mode-block",
+          "score_description": "X-XSS-Protection header set to \"1; mode=block\"",
+          "score_modifier": 0
+        }
+      }
+    },
     "updownio": null,
     "nmap": {
       "host": "les-aides.paysdelaloire.fr",
@@ -379,8 +577,8 @@
         "id": "cert_expirationStatus",
         "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
         "port": "443",
-        "severity": "OK",
-        "finding": "38 >= 30 days"
+        "severity": "MEDIUM",
+        "finding": "expires < 30 days (24)"
       },
       {
         "id": "cert_notBefore",
@@ -393,7 +591,7 @@
         "id": "cert_notAfter",
         "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "finding": "2022-08-25 00:32"
       },
       {
@@ -1147,7 +1345,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/5JGZgxkKwe0uOXDdUvSaNtk_/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -1159,15 +1357,15 @@
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=919296&h=2&m=22&s=26&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=fc7b508d48674387&_idts=1658024546&_idvc=1&_idn=0&_refts=0&_viewts=1658024546&send_image=1&cookie=1&res=800x600&gt_ms=89&pv_id=nXX6ev"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=041688&h=2&m=31&s=28&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=a148c70882e41c25&_idts=1659234689&_idvc=1&_idn=0&_refts=0&_viewts=1659234689&send_image=1&cookie=1&res=800x600&gt_ms=91&pv_id=EChgnN"
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=245631&h=2&m=22&s=27&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F%3FredirectTo%3Dapp.connected.tiers-selection%26redirectParams%3D%257B%2522%2523%2522%3Anull%2C%2522tenantId%2522%3A%2522prod%2522%257D&_id=fc7b508d48674387&_idts=1658024546&_idvc=1&_idn=0&_refts=0&_viewts=1658024546&send_image=1&cookie=1&res=800x600&gt_ms=89&pv_id=AELdPw"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=877933&h=2&m=31&s=29&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F%3FredirectTo%3Dapp.connected.tiers-selection%26redirectParams%3D%257B%2522%2523%2522%3Anull%2C%2522tenantId%2522%3A%2522prod%2522%257D&_id=a148c70882e41c25&_idts=1659234689&_idvc=1&_idn=0&_refts=0&_viewts=1659234689&send_image=1&cookie=1&res=800x600&gt_ms=91&pv_id=pgTu54"
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=557750&h=2&m=22&s=26&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=fc7b508d48674387&_idts=1658024546&_idvc=1&_idn=0&_refts=0&_viewts=1658024546&send_image=1&cookie=1&res=800x600&gt_ms=89&pv_id=GN533K"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=823884&h=2&m=31&s=29&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=a148c70882e41c25&_idts=1659234689&_idvc=1&_idn=0&_refts=0&_viewts=1659234689&send_image=1&cookie=1&res=800x600&gt_ms=91&pv_id=sezdYt"
         },
         {
           "type": "unknown",
@@ -1175,11 +1373,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://ekr.zendesk.com/compose/df3f4610-24ed-425c-96d6-d56b48e796f6"
+          "url": "https://ekr.zdassets.com/compose/df3f4610-24ed-425c-96d6-d56b48e796f6"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/web-widget-framework-e651106d52c621064518.js"
+          "url": "https://static.zdassets.com/web_widget/latest/web-widget-framework-8e45177b7f7d8eb5e2ba.js"
         },
         {
           "type": "unknown",
@@ -1187,36 +1385,40 @@
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-classic-7c2ace3.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-classic-5cfa662.js"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-747-7c2ace3.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-9252-5cfa662.js"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-8961-7c2ace3.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-7339-5cfa662.js"
         },
         {
           "type": "unknown",
-          "url": "https://crcrpl.zendesk.com/embeddable_blip?type=settings&data=eyJzZXR0aW5ncyI6eyJ3ZWJXaWRnZXQiOnsiY29sb3IiOnsidGhlbWUiOiIjQUJDQzIxIn0sImxhdW5jaGVyIjp7ImxhYmVsIjp7IioiOiJBc3Npc3RhbmNlIn19LCJvZmZzZXQiOnsibW9iaWxlIjp7Imhvcml6b250YWwiOiIxMHB4In19fX0sImJ1aWQiOiI0ZDdhNWQ4YTU5NzI0M2VlOWMwMWU5OWRhYzllYmU1OCIsInN1aWQiOiJkY2RmNTAwMDBkMzA0OWUzOTBjY2U4OTgxNzVhNjhmYiIsInZlcnNpb24iOiI3YzJhY2UzIiwidGltZXN0YW1wIjoiMjAyMi0wNy0xN1QwMjoyMjoyOS40NjFaIiwidXJsIjoiaHR0cHM6Ly9sZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mci96ZW5kZXNrL3Byb2QvY2hhdCJ9"
+          "url": "https://crcrpl.zendesk.com/embeddable_blip?type=settings&data=eyJzZXR0aW5ncyI6eyJ3ZWJXaWRnZXQiOnsiY29sb3IiOnsidGhlbWUiOiIjQUJDQzIxIn0sImxhdW5jaGVyIjp7ImxhYmVsIjp7IioiOiJBc3Npc3RhbmNlIn19LCJvZmZzZXQiOnsibW9iaWxlIjp7Imhvcml6b250YWwiOiIxMHB4In19fX0sImJ1aWQiOiJhMWI1NTAyZTRiMjU0NGJlYjQ2YTZmMjBjOGM5NDdjZiIsInN1aWQiOiIwNGE5MjVmZDYwYWM0NWU5YTc2NjRmYzdlZWVjYTE5MSIsInZlcnNpb24iOiI1Y2ZhNjYyIiwidGltZXN0YW1wIjoiMjAyMi0wNy0zMVQwMjozMTozMi43MjlaIiwidXJsIjoiaHR0cHM6Ly9sZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mci96ZW5kZXNrL3Byb2QvY2hhdCJ9"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-locales/classic/en-us-json-7c2ace3.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-locales/classic/en-us-json-5cfa662.js"
         },
         {
           "type": "unknown",
-          "url": "https://crcrpl.zendesk.com/embeddable_blip?type=pageView&data=eyJjaGFubmVsIjoid2ViX3dpZGdldCIsInBhZ2VWaWV3Ijp7InRpbWUiOjcyLCJsb2FkVGltZSI6NDQuOTAwMDAwMDAwMDIzMjgsIm5hdmlnYXRvckxhbmd1YWdlIjoiZW4tVVMiLCJwYWdlVGl0bGUiOiIiLCJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIEhlYWRsZXNzQ2hyb21lLzEwMy4wLjUwNTguMCBTYWZhcmkvNTM3LjM2IiwiaXNNb2JpbGUiOmZhbHNlLCJpc1Jlc3BvbnNpdmUiOmZhbHNlLCJ2aWV3cG9ydE1ldGEiOiIiLCJoZWxwQ2VudGVyRGVkdXAiOmZhbHNlLCJyZWZlcnJlciI6Imh0dHBzOi8vbGVzLWFpZGVzLnBheXNkZWxhbG9pcmUuZnIvYWNjb3VudC1tYW5hZ2VtZW50L3Byb2QtZGVtYW5kZXVycy91eC8ifSwiYnVpZCI6IjRkN2E1ZDhhNTk3MjQzZWU5YzAxZTk5ZGFjOWViZTU4Iiwic3VpZCI6ImRjZGY1MDAwMGQzMDQ5ZTM5MGNjZTg5ODE3NWE2OGZiIiwidmVyc2lvbiI6IjdjMmFjZTMiLCJ0aW1lc3RhbXAiOiIyMDIyLTA3LTE3VDAyOjIyOjI5LjUyMloiLCJ1cmwiOiJodHRwczovL2xlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyL3plbmRlc2svcHJvZC9jaGF0In0="
+          "url": "https://crcrpl.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088"
+        },
+        {
+          "type": "unknown",
+          "url": "https://crcrpl.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088"
         }
       ],
       "cookies": [
         {
           "name": "_pk_id.7.1dd5",
-          "value": "fc7b508d48674387.1658024546.1.1658024547.1658024546.",
+          "value": "a148c70882e41c25.1659234689.1.1659234690.1659234689.",
           "domain": "les-aides.paysdelaloire.fr",
           "path": "/",
-          "expires": 1691720546,
+          "expires": 1692930689,
           "size": 65,
           "httpOnly": false,
           "secure": false,
@@ -1231,7 +1433,7 @@
           "value": "1",
           "domain": "les-aides.paysdelaloire.fr",
           "path": "/",
-          "expires": 1658026347,
+          "expires": 1659236489,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1248,7 +1450,7 @@
         "cache-control": "no-cache",
         "content-length": "984",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 17 Jul 2022 02:22:27 GMT",
+        "date": "Sun, 31 Jul 2022 02:31:29 GMT",
         "etag": "W/\"3d8-180fa810890\"",
         "last-modified": "Wed, 25 May 2022 09:16:42 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
@@ -1295,7 +1497,7 @@
               }
             },
             "location": {
-              "accuracy_radius": 500,
+              "accuracy_radius": 200,
               "latitude": 48.8582,
               "longitude": 2.3387,
               "time_zone": "Europe/Paris"
@@ -1319,7 +1521,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.217.2.100",
+          "ip": "142.250.31.104",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1373,7 +1575,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.217.0.35",
+          "ip": "142.251.45.3",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1522,12 +1724,12 @@
         },
         {
           "hostname": "static.zdassets.com",
-          "ip": "104.18.70.113",
+          "ip": "104.18.72.113",
           "geoip": null
         },
         {
-          "hostname": "ekr.zendesk.com",
-          "ip": "162.159.138.6",
+          "hostname": "ekr.zdassets.com",
+          "ip": "104.18.70.113",
           "geoip": null
         },
         {
@@ -1547,6 +1749,7 @@
         {
           "slug": "node-js",
           "name": "Node.js",
+          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
           "confidence": 100,
           "version": null,
           "icon": "node.js.png",
@@ -1563,6 +1766,7 @@
         {
           "slug": "kendo-ui",
           "name": "Kendo UI",
+          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
           "confidence": 100,
           "version": "2019.2.514",
           "icon": "Kendo UI.png",
@@ -1579,6 +1783,7 @@
         {
           "slug": "bootstrap",
           "name": "Bootstrap",
+          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
           "confidence": 100,
           "version": "3.4.1",
           "icon": "Bootstrap.svg",
@@ -1611,6 +1816,7 @@
         {
           "slug": "handlebars",
           "name": "Handlebars",
+          "description": "Handlebars is a JavaScript library used to create reusable webpage templates.",
           "confidence": 100,
           "version": "4.7.7",
           "icon": "Handlebars.png",
@@ -1627,6 +1833,7 @@
         {
           "slug": "angularjs",
           "name": "AngularJS",
+          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
           "confidence": 100,
           "version": "1.6.10",
           "icon": "AngularJS.svg",
@@ -1643,6 +1850,7 @@
         {
           "slug": "font-awesome",
           "name": "Font Awesome",
+          "description": "Font Awesome is a font and icon toolkit based on CSS and Less.",
           "confidence": 100,
           "version": null,
           "icon": "font-awesome.svg",
@@ -1659,6 +1867,7 @@
         {
           "slug": "recaptcha",
           "name": "reCAPTCHA",
+          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
           "confidence": 100,
           "version": null,
           "icon": "reCAPTCHA.svg",
@@ -1675,6 +1884,7 @@
         {
           "slug": "moment-js",
           "name": "Moment.js",
+          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
           "confidence": 100,
           "version": "2.29.3",
           "icon": "Moment.js.svg",
@@ -1691,6 +1901,7 @@
         {
           "slug": "lodash",
           "name": "Lodash",
+          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
           "confidence": 100,
           "version": "4.0.1",
           "icon": "Lo-dash.png",
@@ -1707,6 +1918,7 @@
         {
           "slug": "jquery",
           "name": "jQuery",
+          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
           "confidence": 100,
           "version": "2.1.4",
           "icon": "jQuery.svg",
@@ -1723,6 +1935,7 @@
         {
           "slug": "core-js",
           "name": "core-js",
+          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
           "confidence": 100,
           "version": "3.6.5",
           "icon": "core-js.png",
@@ -1740,7 +1953,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 17 Jul 2022 02:21:17",
+      "@generated": "Sun, 31 Jul 2022 02:30:13",
       "site": [
         {
           "@name": "https://les-aides.paysdelaloire.fr",
@@ -1852,42 +2065,6 @@
     },
     "nuclei": [
       {
-        "template": "dns/cname-fingerprint.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
-        "template-id": "cname-fingerprint",
-        "info": {
-          "name": "CNAME Fingerprint",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "cname"
-          ],
-          "description": "A CNAME DNS record was discovered.",
-          "reference": [
-            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-          ],
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/",
-        "extracted-results": [
-          "crpl-prod-sddc.mgcloud.fr."
-        ],
-        "timestamp": "2022-07-17T02:26:03.225831696Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
         "template": "technologies/tech-detect.yaml",
         "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
         "template-id": "tech-detect",
@@ -1907,7 +2084,7 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:04.127852493Z",
+        "timestamp": "2022-07-31T02:35:10.314986659Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
@@ -1932,7 +2109,7 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:04.127981895Z",
+        "timestamp": "2022-07-31T02:35:10.320638427Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
@@ -1957,41 +2134,34 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:04.128018795Z",
+        "timestamp": "2022-07-31T02:35:10.324648559Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
       },
       {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
         "info": {
-          "name": "HTTP Missing Security Headers",
+          "name": "TLS Version",
           "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
+            "pdteam"
           ],
           "tags": [
-            "misconfig",
-            "generic"
+            "ssl"
           ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
           "reference": null,
           "severity": "info"
         },
-        "matcher-name": "content-security-policy",
-        "type": "http",
+        "type": "ssl",
         "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/",
+        "extracted-results": [
+          "TLS12"
+        ],
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.236375147Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "timestamp": "2022-07-31T02:35:55.574887553Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -2023,238 +2193,7 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.236500749Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.236549049Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-expose-headers",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237522161Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-max-age",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237580661Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-methods",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237619662Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-headers",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237656962Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237690963Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237727463Z",
+        "timestamp": "2022-07-31T02:35:56.666502862Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
@@ -2287,40 +2226,7 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237765164Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.237801964Z",
+        "timestamp": "2022-07-31T02:35:56.666635373Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
@@ -2353,7 +2259,7 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.241520608Z",
+        "timestamp": "2022-07-31T02:35:56.666684677Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
         "matcher-status": true,
         "matched-line": null
@@ -2386,8 +2292,341 @@
         "host": "https://les-aides.paysdelaloire.fr/",
         "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:05.244407043Z",
+        "timestamp": "2022-07-31T02:35:56.672996191Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.673315317Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-max-age",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.673893964Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.674272295Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.674602822Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.674943149Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.675266876Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.675594202Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-methods",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.675924729Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-headers",
+        "type": "http",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/aides/#/prod/",
+        "ip": "5.196.220.2",
+        "timestamp": "2022-07-31T02:35:56.676252156Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://les-aides.paysdelaloire.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://les-aides.paysdelaloire.fr/aides/#/prod/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "dns/cname-fingerprint.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
+        "template-id": "cname-fingerprint",
+        "info": {
+          "name": "CNAME Fingerprint",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "cname"
+          ],
+          "description": "A CNAME DNS record was discovered.",
+          "reference": [
+            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+          ],
+          "severity": "info",
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "https://les-aides.paysdelaloire.fr/",
+        "matched-at": "https://les-aides.paysdelaloire.fr/",
+        "extracted-results": [
+          "crpl-prod-sddc.mgcloud.fr."
+        ],
+        "timestamp": "2022-07-31T02:35:58.342146438Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -2413,33 +2652,7 @@
           "les-aides.paysdelaloire.fr"
         ],
         "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:26:15.937188939Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
-        "info": {
-          "name": "TLS Version",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "type": "ssl",
-        "host": "https://les-aides.paysdelaloire.fr/",
-        "matched-at": "https://les-aides.paysdelaloire.fr/",
-        "extracted-results": [
-          "TLS12"
-        ],
-        "ip": "5.196.220.2",
-        "timestamp": "2022-07-17T02:27:16.221841628Z",
+        "timestamp": "2022-07-31T02:36:28.000539086Z",
         "matcher-status": true,
         "matched-line": null
       }
@@ -2448,7 +2661,7 @@
       {
         "requestedUrl": "https://les-aides.paysdelaloire.fr/",
         "finalUrl": "https://les-aides.paysdelaloire.fr/account-management/prod-demandeurs/ux/",
-        "fetchTime": "2022-07-17T02:21:26.071Z",
+        "fetchTime": "2022-07-31T02:30:22.379Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://les-aides.paysdelaloire.fr/) was redirected to https://les-aides.paysdelaloire.fr/account-management/prod-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -2492,49 +2705,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 33189,
+            "numericValue": 32150,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 14347,
-                  "firstMeaningfulPaint": 19588,
-                  "largestContentfulPaint": 28890,
-                  "firstCPUIdle": 29084,
-                  "interactive": 33189,
-                  "speedIndex": 19480,
-                  "estimatedInputLatency": 2042,
-                  "totalBlockingTime": 4993,
-                  "maxPotentialFID": 3037,
-                  "cumulativeLayoutShift": 0,
-                  "cumulativeLayoutShiftAllFrames": 0.023014235496521,
+                  "firstContentfulPaint": 14319,
+                  "firstMeaningfulPaint": 19040,
+                  "largestContentfulPaint": 28316,
+                  "firstCPUIdle": 27805,
+                  "interactive": 32150,
+                  "speedIndex": 19089,
+                  "estimatedInputLatency": 2074,
+                  "totalBlockingTime": 4934,
+                  "maxPotentialFID": 3076,
+                  "cumulativeLayoutShift": 0.00030588785807291667,
+                  "cumulativeLayoutShiftAllFrames": 0.02329919974009196,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 279796313,
+                  "observedTimeOriginTs": 527988190,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 279796313,
-                  "observedFirstPaint": 625,
-                  "observedFirstPaintTs": 280421162,
-                  "observedFirstContentfulPaint": 625,
-                  "observedFirstContentfulPaintTs": 280421162,
-                  "observedFirstMeaningfulPaint": 2029,
-                  "observedFirstMeaningfulPaintTs": 281825587,
-                  "observedLargestContentfulPaint": 1896,
-                  "observedLargestContentfulPaintTs": 281692275,
-                  "observedTraceEnd": 3792,
-                  "observedTraceEndTs": 283588656,
-                  "observedLoad": 1378,
-                  "observedLoadTs": 281174758,
-                  "observedDomContentLoaded": 1378,
-                  "observedDomContentLoadedTs": 281174543,
-                  "observedCumulativeLayoutShift": 0,
-                  "observedCumulativeLayoutShiftAllFrames": 0.023014235496521,
-                  "observedFirstVisualChange": 9,
-                  "observedFirstVisualChangeTs": 279805313,
-                  "observedLastVisualChange": 3792,
-                  "observedLastVisualChangeTs": 283588313,
-                  "observedSpeedIndex": 1611,
-                  "observedSpeedIndexTs": 281407410
+                  "observedNavigationStartTs": 527988190,
+                  "observedFirstPaint": 632,
+                  "observedFirstPaintTs": 528619739,
+                  "observedFirstContentfulPaint": 632,
+                  "observedFirstContentfulPaintTs": 528619739,
+                  "observedFirstMeaningfulPaint": 2053,
+                  "observedFirstMeaningfulPaintTs": 530041128,
+                  "observedLargestContentfulPaint": 2008,
+                  "observedLargestContentfulPaintTs": 529996323,
+                  "observedTraceEnd": 3790,
+                  "observedTraceEndTs": 531777773,
+                  "observedLoad": 1397,
+                  "observedLoadTs": 529384710,
+                  "observedDomContentLoaded": 1396,
+                  "observedDomContentLoadedTs": 529384616,
+                  "observedCumulativeLayoutShift": 0.00030588785807291667,
+                  "observedCumulativeLayoutShiftAllFrames": 0.02329919974009196,
+                  "observedFirstVisualChange": 7,
+                  "observedFirstVisualChangeTs": 527995190,
+                  "observedLastVisualChange": 3357,
+                  "observedLastVisualChangeTs": 531345190,
+                  "observedSpeedIndex": 1643,
+                  "observedSpeedIndexTs": 529631147
                 },
                 {
                   "lcpInvalidated": false
@@ -2556,18 +2769,18 @@
                   "numScripts": 19,
                   "numStylesheets": 8,
                   "numFonts": 7,
-                  "numTasks": 1736,
-                  "numTasksOver10ms": 27,
-                  "numTasksOver25ms": 14,
-                  "numTasksOver50ms": 9,
-                  "numTasksOver100ms": 4,
+                  "numTasks": 1694,
+                  "numTasksOver10ms": 32,
+                  "numTasksOver25ms": 15,
+                  "numTasksOver50ms": 11,
+                  "numTasksOver100ms": 6,
                   "numTasksOver500ms": 1,
-                  "rtt": 1.5010000000000001,
-                  "throughput": 9129391.454823252,
-                  "maxRtt": 84.40800000000002,
-                  "maxServerLatency": 294.30199999999996,
-                  "totalByteWeight": 4430503,
-                  "totalTaskTime": 2582.4000000000005,
+                  "rtt": 1.5780000000000003,
+                  "throughput": 8774387.216024809,
+                  "maxRtt": 84.133,
+                  "maxServerLatency": 137.044,
+                  "totalByteWeight": 4211495,
+                  "totalTaskTime": 2984.0559999999955,
                   "mainDocumentTransferSize": 1966
                 }
               ]
@@ -2581,21 +2794,24 @@
     "github_repository": null,
     "budget_page": null,
     "trivy": null,
-    "declaration-a11y": {},
+    "declaration-a11y": {
+      "mention": null
+    },
     "declaration-rgpd": null,
     "betagouv": null,
     "summary": {
       "404": "A+",
+      "httpGrade": "B",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-08-25T00:32:00.000Z",
       "testsslGrade": "A",
       "cookiesGrade": "B",
       "cookiesCount": 2,
       "trackersGrade": "F",
-      "trackersCount": 16,
+      "trackersCount": 17,
       "lighthouse_performance": 0,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.98,
@@ -2605,7 +2821,8 @@
       "lighthouse_seo": 0.9,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.33,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "declaration-a11y": "F"
     }
   },
   {
@@ -4865,7 +5082,7 @@
     "http": {
       "url": "https://ma-carqueiranne.mgcloud.fr/",
       "algorithm_version": 2,
-      "end_time": "Sun, 10 Jul 2022 02:25:17 GMT",
+      "end_time": "Sun, 07 Aug 2022 02:19:01 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -4874,9 +5091,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 10 Jul 2022 02:25:15 GMT",
-        "Etag": "W/\"12c3-181b43a2370\"",
-        "Last-Modified": "Thu, 30 Jun 2022 10:48:38 GMT",
+        "Date": "Sun, 07 Aug 2022 02:18:59 GMT",
+        "Etag": "W/\"12c3-181ce4def58\"",
+        "Last-Modified": "Tue, 05 Jul 2022 12:20:23 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -4885,12 +5102,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "2910c68a-047d-4289-8ed3-ed8ce2344f3b",
+        "X-Request-Id": "fe819c5a-c233-4724-8764-5aeccc8acbf2",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 27693359,
+      "scan_id": 28548702,
       "score": 70,
-      "start_time": "Sun, 10 Jul 2022 02:25:12 GMT",
+      "start_time": "Sun, 07 Aug 2022 02:18:56 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -5442,7 +5659,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "250 >= 60 days"
+        "finding": "222 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6194,7 +6411,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "117"
+        "finding": "105"
       }
     ],
     "thirdparties": {
@@ -6241,7 +6458,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/gWN_U6xTIPevg0vuq7g1hct0/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6254,9 +6471,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 10 Jul 2022 02:25:50 GMT",
-        "etag": "W/\"12c3-181b43a2370\"",
-        "last-modified": "Thu, 30 Jun 2022 10:48:38 GMT",
+        "date": "Sun, 07 Aug 2022 02:19:34 GMT",
+        "etag": "W/\"12c3-181ce4def58\"",
+        "last-modified": "Tue, 05 Jul 2022 12:20:23 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -6265,7 +6482,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "73a63ec8-0f54-4d0a-aecd-6b3d2df9935c",
+        "x-request-id": "e5b146d0-8e62-4e7d-86fa-86640aa20d82",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -6327,12 +6544,12 @@
         },
         {
           "hostname": "cdn.jsdelivr.net",
-          "ip": "104.16.86.20",
+          "ip": "104.16.88.20",
           "geoip": null
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.122.106",
+          "ip": "172.253.122.104",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6386,7 +6603,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.217.1.195",
+          "ip": "142.251.16.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6450,6 +6667,7 @@
         {
           "slug": "node-js",
           "name": "Node.js",
+          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
           "confidence": 100,
           "version": null,
           "icon": "node.js.png",
@@ -6466,6 +6684,7 @@
         {
           "slug": "kendo-ui",
           "name": "Kendo UI",
+          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
           "confidence": 100,
           "version": "2019.2.514",
           "icon": "Kendo UI.png",
@@ -6482,6 +6701,7 @@
         {
           "slug": "bootstrap",
           "name": "Bootstrap",
+          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
           "confidence": 100,
           "version": "3.4.1",
           "icon": "Bootstrap.svg",
@@ -6514,6 +6734,7 @@
         {
           "slug": "handlebars",
           "name": "Handlebars",
+          "description": "Handlebars is a JavaScript library used to create reusable webpage templates.",
           "confidence": 100,
           "version": "4.7.7",
           "icon": "Handlebars.png",
@@ -6530,8 +6751,9 @@
         {
           "slug": "angularjs",
           "name": "AngularJS",
+          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
           "confidence": 100,
-          "version": "1.6.10",
+          "version": "1.8.3",
           "icon": "AngularJS.svg",
           "website": "https://angularjs.org",
           "cpe": null,
@@ -6546,6 +6768,7 @@
         {
           "slug": "font-awesome",
           "name": "Font Awesome",
+          "description": "Font Awesome is a font and icon toolkit based on CSS and Less.",
           "confidence": 100,
           "version": null,
           "icon": "font-awesome.svg",
@@ -6562,6 +6785,7 @@
         {
           "slug": "recaptcha",
           "name": "reCAPTCHA",
+          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
           "confidence": 100,
           "version": null,
           "icon": "reCAPTCHA.svg",
@@ -6578,6 +6802,7 @@
         {
           "slug": "moment-js",
           "name": "Moment.js",
+          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
           "confidence": 100,
           "version": "2.29.3",
           "icon": "Moment.js.svg",
@@ -6594,6 +6819,7 @@
         {
           "slug": "lodash",
           "name": "Lodash",
+          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
           "confidence": 100,
           "version": "4.0.1",
           "icon": "Lo-dash.png",
@@ -6610,6 +6836,7 @@
         {
           "slug": "jquery",
           "name": "jQuery",
+          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
           "confidence": 100,
           "version": "2.1.4",
           "icon": "jQuery.svg",
@@ -6626,6 +6853,7 @@
         {
           "slug": "core-js",
           "name": "core-js",
+          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
           "confidence": 100,
           "version": "3.6.5",
           "icon": "core-js.png",
@@ -6642,6 +6870,7 @@
         {
           "slug": "jsdelivr",
           "name": "jsDelivr",
+          "description": "JSDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration.",
           "confidence": 100,
           "version": null,
           "icon": "jsdelivr-icon.svg",
@@ -6659,7 +6888,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 10 Jul 2022 02:24:47",
+      "@generated": "Sun, 7 Aug 2022 02:18:31",
       "site": [
         {
           "@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -6790,7 +7019,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:37.723288955Z",
+        "timestamp": "2022-08-07T02:23:02.848174519Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -6815,7 +7044,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:37.723704352Z",
+        "timestamp": "2022-08-07T02:23:02.848593025Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -6840,7 +7069,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:37.723754052Z",
+        "timestamp": "2022-08-07T02:23:02.848634826Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -6865,132 +7094,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:37.723796452Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
-        "info": {
-          "name": "TLS Version",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "type": "ssl",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "extracted-results": [
-          "TLS12"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:38.549488681Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.26040567Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.26052467Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.26056577Z",
+        "timestamp": "2022-08-07T02:23:02.848681326Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7023,40 +7127,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260602069Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-expose-headers",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260635769Z",
+        "timestamp": "2022-08-07T02:23:11.722921916Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7089,7 +7160,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260669169Z",
+        "timestamp": "2022-08-07T02:23:11.723032317Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7122,7 +7193,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260704769Z",
+        "timestamp": "2022-08-07T02:23:11.723073218Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7155,7 +7226,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260737669Z",
+        "timestamp": "2022-08-07T02:23:11.723110118Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7183,12 +7254,12 @@
           "reference": null,
           "severity": "info"
         },
-        "matcher-name": "access-control-max-age",
+        "matcher-name": "clear-site-data",
         "type": "http",
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260769969Z",
+        "timestamp": "2022-08-07T02:23:11.723145019Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7216,45 +7287,12 @@
           "reference": null,
           "severity": "info"
         },
-        "matcher-name": "access-control-allow-methods",
+        "matcher-name": "cross-origin-embedder-policy",
         "type": "http",
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.260802069Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-headers",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.264537855Z",
+        "timestamp": "2022-08-07T02:23:11.723180019Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7287,7 +7325,40 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.266673647Z",
+        "timestamp": "2022-08-07T02:23:11.72321522Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:23:11.72325012Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7320,7 +7391,139 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:29:51.266749747Z",
+        "timestamp": "2022-08-07T02:23:11.723288721Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:23:11.723323921Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-max-age",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:23:11.725673052Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-methods",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:23:11.725847755Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-headers",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:23:11.726012857Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7348,7 +7551,33 @@
           "mgcloud.fr"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2022-07-10T02:30:40.107217174Z",
+        "timestamp": "2022-08-07T02:23:29.911319204Z",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
+        "info": {
+          "name": "TLS Version",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+        "extracted-results": [
+          "TLS12"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2022-08-07T02:24:15.3513782Z",
         "matcher-status": true,
         "matched-line": null
       }
@@ -7357,7 +7586,7 @@
       {
         "requestedUrl": "https://ma-carqueiranne.mgcloud.fr/",
         "finalUrl": "https://ma-carqueiranne.mgcloud.fr/account-management/carqueiranne-demandeurs/ux/",
-        "fetchTime": "2022-07-10T02:24:55.392Z",
+        "fetchTime": "2022-08-07T02:18:39.763Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://ma-carqueiranne.mgcloud.fr/) was redirected to https://ma-carqueiranne.mgcloud.fr/account-management/carqueiranne-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -7365,7 +7594,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0
+            "score": 0.0312286376953125
           },
           "accessibility": {
             "title": "Accessibility",
@@ -7401,49 +7630,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 26994,
+            "numericValue": 25791,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 18913,
-                  "firstMeaningfulPaint": 19109,
-                  "largestContentfulPaint": 27059,
-                  "firstCPUIdle": 24232,
-                  "interactive": 26994,
-                  "speedIndex": 18913,
-                  "estimatedInputLatency": 188,
-                  "totalBlockingTime": 998,
-                  "maxPotentialFID": 685,
+                  "firstContentfulPaint": 18770,
+                  "firstMeaningfulPaint": 20560,
+                  "largestContentfulPaint": 25730,
+                  "firstCPUIdle": 23039,
+                  "interactive": 25791,
+                  "speedIndex": 18770,
+                  "estimatedInputLatency": 152,
+                  "totalBlockingTime": 929,
+                  "maxPotentialFID": 631,
                   "cumulativeLayoutShift": 0,
-                  "cumulativeLayoutShiftAllFrames": 0.018372480922275124,
+                  "cumulativeLayoutShiftAllFrames": 0.017901126755608454,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 333265911,
+                  "observedTimeOriginTs": 190867733,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 333265911,
-                  "observedFirstPaint": 674,
-                  "observedFirstPaintTs": 333939802,
-                  "observedFirstContentfulPaint": 1840,
-                  "observedFirstContentfulPaintTs": 335106115,
-                  "observedFirstMeaningfulPaint": 2024,
-                  "observedFirstMeaningfulPaintTs": 335290240,
-                  "observedLargestContentfulPaint": 1927,
-                  "observedLargestContentfulPaintTs": 335193124,
-                  "observedTraceEnd": 3243,
-                  "observedTraceEndTs": 336509085,
-                  "observedLoad": 1437,
-                  "observedLoadTs": 334703252,
-                  "observedDomContentLoaded": 1437,
-                  "observedDomContentLoadedTs": 334702992,
+                  "observedNavigationStartTs": 190867733,
+                  "observedFirstPaint": 613,
+                  "observedFirstPaintTs": 191480891,
+                  "observedFirstContentfulPaint": 1704,
+                  "observedFirstContentfulPaintTs": 192571677,
+                  "observedFirstMeaningfulPaint": 1985,
+                  "observedFirstMeaningfulPaintTs": 192852537,
+                  "observedLargestContentfulPaint": 1794,
+                  "observedLargestContentfulPaintTs": 192661492,
+                  "observedTraceEnd": 3068,
+                  "observedTraceEndTs": 193935789,
+                  "observedLoad": 1293,
+                  "observedLoadTs": 192161088,
+                  "observedDomContentLoaded": 1293,
+                  "observedDomContentLoadedTs": 192160865,
                   "observedCumulativeLayoutShift": 0,
-                  "observedCumulativeLayoutShiftAllFrames": 0.018372480922275124,
-                  "observedFirstVisualChange": 4,
-                  "observedFirstVisualChangeTs": 333269911,
-                  "observedLastVisualChange": 2853,
-                  "observedLastVisualChangeTs": 336118911,
-                  "observedSpeedIndex": 1362,
-                  "observedSpeedIndexTs": 334627448
+                  "observedCumulativeLayoutShiftAllFrames": 0.017901126755608454,
+                  "observedFirstVisualChange": 7,
+                  "observedFirstVisualChangeTs": 190874733,
+                  "observedLastVisualChange": 2707,
+                  "observedLastVisualChangeTs": 193574733,
+                  "observedSpeedIndex": 1279,
+                  "observedSpeedIndexTs": 192146481
                 },
                 {
                   "lcpInvalidated": false
@@ -7465,18 +7694,18 @@
                   "numScripts": 15,
                   "numStylesheets": 9,
                   "numFonts": 6,
-                  "numTasks": 1535,
+                  "numTasks": 1544,
                   "numTasksOver10ms": 22,
-                  "numTasksOver25ms": 11,
-                  "numTasksOver50ms": 8,
+                  "numTasksOver25ms": 13,
+                  "numTasksOver50ms": 7,
                   "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.375,
-                  "throughput": 8165789.259480009,
-                  "maxRtt": 85.56700000000001,
-                  "maxServerLatency": 15.723000000000003,
-                  "totalByteWeight": 3714279,
-                  "totalTaskTime": 1574.7439999999986,
+                  "rtt": 1.7850000000000001,
+                  "throughput": 8499491.347756963,
+                  "maxRtt": 82.426,
+                  "maxServerLatency": 14.988,
+                  "totalByteWeight": 3506288,
+                  "totalTaskTime": 1570.7739999999985,
                   "mainDocumentTransferSize": 2037
                 }
               ]
@@ -7508,7 +7737,7 @@
       "cookiesCount": 0,
       "trackersGrade": "C",
       "trackersCount": 6,
-      "lighthouse_performance": 0,
+      "lighthouse_performance": 0.0312286376953125,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
