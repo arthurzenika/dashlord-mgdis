@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 24 Jul 2022 02:22:58",
+	"@generated": "Sun, 14 Aug 2022 02:24:19",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -366,16 +366,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "trustAsHtml"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "trustAsHtml"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
@@ -455,16 +448,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -518,6 +504,13 @@
 							"evidence": "80000000"
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-72x72.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "90737410"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -525,7 +518,7 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -563,16 +556,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "depot/simple/pageInformationsGenerales2/depot-simple-pageInformationsGenerales2"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "org/officeDocument/2006/relationships/image"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p><?xml version=\"1.0\" ?></p><p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\"></p><p>  <linearGradient id=\"grad-ucgg-generated\" gradientUnits=\"userSpaceOnUse\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\"></p><p>    <stop offset=\"0%\" stop-color=\"#ff0000\" stop-opacity=\"1\"/></p><p>    <stop offset=\"16%\" stop-color=\"#ffff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"33%\" stop-color=\"#00ff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"50%\" stop-color=\"#00ffff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"67%\" stop-color=\"#0000ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"84%\" stop-color=\"#ff00ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"100%\" stop-color=\"#ff0004\" stop-opacity=\"1\"/></p><p>  </linearGradient></p><p>  <rect x=\"0\" y=\"0\" width=\"1\" height=\"1\" fill=\"url(#grad-ucgg-generated)\" /></p><p></svg></p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -755,16 +741,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<a href ng-click=\\\"select($event)\\\" class=\\\"nav-link\\\" uib-tab-heading-transclude>{{heading}}</a>"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a id='\"+y+\"'></a>"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -862,7 +841,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
