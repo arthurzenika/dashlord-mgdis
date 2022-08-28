@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 21 Aug 2022 02:14:58",
+	"@generated": "Sun, 28 Aug 2022 02:37:39",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -483,6 +483,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "87162014"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -518,6 +525,13 @@
 							"evidence": "80000000"
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/favicon-96x96.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "42283298"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -525,13 +539,13 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "8",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
+					"otherinfo": "<p>87162014, which evaluates to: 1972-10-05 19:40:14</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10094",
@@ -862,7 +876,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
