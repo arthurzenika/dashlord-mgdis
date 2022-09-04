@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 31 Jul 2022 02:30:13",
+	"@generated": "Sun, 4 Sep 2022 02:30:28",
 	"site":[ 
 		{
 			"@name": "https://les-aides.paysdelaloire.fr",
@@ -441,6 +441,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/portal-depot-demande-aide.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "25734446"
+						},
+						{
 							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
 							"method": "GET",
 							"param": "",
@@ -483,13 +490,13 @@
 							"evidence": "20010904"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>428571429, which evaluates to: 1983-08-01 07:37:09</p>",
+					"otherinfo": "<p>25734446, which evaluates to: 1970-10-25 20:27:26</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "57"
 				},
 				{
 					"pluginid": "10094",
