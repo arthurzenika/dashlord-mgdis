@@ -5292,7 +5292,7 @@
     "http": {
       "url": "https://ma-carqueiranne.mgcloud.fr/",
       "algorithm_version": 2,
-      "end_time": "Sun, 07 Aug 2022 02:19:01 GMT",
+      "end_time": "Sun, 18 Sep 2022 02:55:15 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -5301,9 +5301,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 07 Aug 2022 02:18:59 GMT",
-        "Etag": "W/\"12c3-181ce4def58\"",
-        "Last-Modified": "Tue, 05 Jul 2022 12:20:23 GMT",
+        "Date": "Sun, 18 Sep 2022 02:55:13 GMT",
+        "Etag": "W/\"12c3-182e9727a50\"",
+        "Last-Modified": "Mon, 29 Aug 2022 11:52:50 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -5312,12 +5312,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "fe819c5a-c233-4724-8764-5aeccc8acbf2",
+        "X-Request-Id": "3669f198-fee7-4774-b03d-194841b83bd6",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 28548702,
+      "scan_id": 29478149,
       "score": 70,
-      "start_time": "Sun, 07 Aug 2022 02:18:56 GMT",
+      "start_time": "Sun, 18 Sep 2022 02:55:10 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -5869,7 +5869,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "222 >= 60 days"
+        "finding": "180 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6621,7 +6621,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "105"
+        "finding": "151"
       }
     ],
     "thirdparties": {
@@ -6668,7 +6668,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/gWN_U6xTIPevg0vuq7g1hct0/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/zmiYzsHi8INTJBWt2QZC9aM5/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6681,9 +6681,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 07 Aug 2022 02:19:34 GMT",
-        "etag": "W/\"12c3-181ce4def58\"",
-        "last-modified": "Tue, 05 Jul 2022 12:20:23 GMT",
+        "date": "Sun, 18 Sep 2022 02:55:52 GMT",
+        "etag": "W/\"12c3-182e9727a50\"",
+        "last-modified": "Mon, 29 Aug 2022 11:52:50 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -6692,7 +6692,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "e5b146d0-8e62-4e7d-86fa-86640aa20d82",
+        "x-request-id": "0bb7aeb3-c1d3-45b0-b37c-3f029ca2fbe7",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -6754,12 +6754,12 @@
         },
         {
           "hostname": "cdn.jsdelivr.net",
-          "ip": "104.16.88.20",
+          "ip": "104.16.87.20",
           "geoip": null
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.122.104",
+          "ip": "142.251.32.132",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6813,7 +6813,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "142.251.16.94",
+          "ip": "172.217.14.163",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6870,235 +6870,15 @@
     "wappalyzer": {
       "urls": {
         "https://ma-carqueiranne.mgcloud.fr/": {
-          "status": 302
+          "status": 302,
+          "error": "Navigation timeout of 10000 ms exceeded (https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/)"
         }
       },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:/a:nodejs:node.js",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "kendo-ui",
-          "name": "Kendo UI",
-          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
-          "confidence": 100,
-          "version": "2019.2.514",
-          "icon": "Kendo UI.png",
-          "website": "https://www.telerik.com/kendo-ui",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "bootstrap",
-          "name": "Bootstrap",
-          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
-          "confidence": 100,
-          "version": "3.4.1",
-          "icon": "Bootstrap.svg",
-          "website": "https://getbootstrap.com",
-          "cpe": "cpe:/a:getbootstrap:bootstrap",
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "socket-io",
-          "name": "Socket.io",
-          "confidence": 100,
-          "version": null,
-          "icon": "Socket.IO.svg",
-          "website": "https://socket.io",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "handlebars",
-          "name": "Handlebars",
-          "description": "Handlebars is a JavaScript library used to create reusable webpage templates.",
-          "confidence": 100,
-          "version": "4.7.7",
-          "icon": "Handlebars.png",
-          "website": "http://handlebarsjs.com",
-          "cpe": "cpe:/a:handlebars.js_project:handlebars.js",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "angularjs",
-          "name": "AngularJS",
-          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
-          "confidence": 100,
-          "version": "1.8.3",
-          "icon": "AngularJS.svg",
-          "website": "https://angularjs.org",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "font-awesome",
-          "name": "Font Awesome",
-          "description": "Font Awesome is a font and icon toolkit based on CSS and Less.",
-          "confidence": 100,
-          "version": null,
-          "icon": "font-awesome.svg",
-          "website": "https://fontawesome.com/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 17,
-              "slug": "font-scripts",
-              "name": "Font scripts"
-            }
-          ]
-        },
-        {
-          "slug": "recaptcha",
-          "name": "reCAPTCHA",
-          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
-          "confidence": 100,
-          "version": null,
-          "icon": "reCAPTCHA.svg",
-          "website": "https://www.google.com/recaptcha/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "moment-js",
-          "name": "Moment.js",
-          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
-          "confidence": 100,
-          "version": "2.29.3",
-          "icon": "Moment.js.svg",
-          "website": "https://momentjs.com",
-          "cpe": "cpe:/a:momentjs:moment",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.0.1",
-          "icon": "Lo-dash.png",
-          "website": "http://www.lodash.com",
-          "cpe": "cpe:/a:lodash:lodash",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "2.1.4",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:/a:jquery:jquery",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "core-js",
-          "name": "core-js",
-          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
-          "confidence": 100,
-          "version": "3.6.5",
-          "icon": "core-js.png",
-          "website": "https://github.com/zloirock/core-js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jsdelivr",
-          "name": "jsDelivr",
-          "description": "JSDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration.",
-          "confidence": 100,
-          "version": null,
-          "icon": "jsdelivr-icon.svg",
-          "website": "https://www.jsdelivr.com/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 31,
-              "slug": "cdn",
-              "name": "CDN"
-            }
-          ]
-        }
-      ]
+      "technologies": []
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 7 Aug 2022 02:18:31",
+      "@generated": "Sun, 18 Sep 2022 02:54:39",
       "site": [
         {
           "@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -7121,46 +6901,11 @@
               "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
             },
             {
-              "name": "Sub Resource Integrity Attribute Missing",
-              "riskcode": "2",
-              "confidence": "3",
-              "riskdesc": "Medium (High)",
-              "desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>"
-            },
-            {
               "name": "Cross-Domain JavaScript Source File Inclusion",
               "riskcode": "1",
               "confidence": "2",
               "riskdesc": "Low (Medium)",
               "desc": "<p>The page includes one or more script files from a third-party domain.</p>"
-            },
-            {
-              "name": "Dangerous JS Functions",
-              "riskcode": "1",
-              "confidence": "1",
-              "riskdesc": "Low (Low)",
-              "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
-            },
-            {
-              "name": "Permissions Policy Header Not Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
-            },
-            {
-              "name": "Timestamp Disclosure - Unix",
-              "riskcode": "1",
-              "confidence": "1",
-              "riskdesc": "Low (Low)",
-              "desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>"
-            },
-            {
-              "name": "Base64 Disclosure",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>"
             },
             {
               "name": "Information Disclosure - Suspicious Comments",
@@ -7170,39 +6915,11 @@
               "desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>"
             },
             {
-              "name": "Modern Web Application",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
-            },
-            {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
-            },
-            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
+              "confidence": "1",
+              "riskdesc": "Informational (Low)",
               "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
-            },
-            {
-              "name": "Storable and Cacheable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>"
-            },
-            {
-              "name": "Storable but Non-Cacheable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>"
             }
           ]
         }
@@ -7229,7 +6946,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:02.848174519Z",
+        "timestamp": "2022-09-18T03:00:42.125241956Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7254,7 +6971,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:02.848593025Z",
+        "timestamp": "2022-09-18T03:00:42.132160462Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7279,7 +6996,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:02.848634826Z",
+        "timestamp": "2022-09-18T03:00:42.134766439Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7304,304 +7021,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:02.848681326Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-origin",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.722921916Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723032317Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "permission-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723073218Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723110118Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723145019Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723180019Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.72321522Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.72325012Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-credentials",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723288721Z",
+        "timestamp": "2022-09-18T03:00:42.135208253Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7634,7 +7054,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.723323921Z",
+        "timestamp": "2022-09-18T03:00:54.439289199Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7667,40 +7087,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.725673052Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-methods",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.725847755Z",
+        "timestamp": "2022-09-18T03:00:54.439415405Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
         "matcher-status": true,
         "matched-line": null
@@ -7733,8 +7120,364 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:11.726012857Z",
+        "timestamp": "2022-09-18T03:00:54.439463808Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439568613Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439615015Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439665517Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439710219Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-credentials",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439752421Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "permission-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439813124Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.439856526Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.443582801Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-origin",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.444958765Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-methods",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/",
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:00:54.450164109Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://ma-carqueiranne.mgcloud.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/aides/#/carqueiranne/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
+        "info": {
+          "name": "TLS Version",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+        "extracted-results": [
+          "TLS12"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2022-09-18T03:01:21.318503729Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -7761,33 +7504,7 @@
           "mgcloud.fr"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:23:29.911319204Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
-        "info": {
-          "name": "TLS Version",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "type": "ssl",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "extracted-results": [
-          "TLS12"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2022-08-07T02:24:15.3513782Z",
+        "timestamp": "2022-09-18T03:01:44.106221283Z",
         "matcher-status": true,
         "matched-line": null
       }
@@ -7796,41 +7513,62 @@
       {
         "requestedUrl": "https://ma-carqueiranne.mgcloud.fr/",
         "finalUrl": "https://ma-carqueiranne.mgcloud.fr/account-management/carqueiranne-demandeurs/ux/",
-        "fetchTime": "2022-08-07T02:18:39.763Z",
+        "fetchTime": "2022-09-18T02:54:48.398Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://ma-carqueiranne.mgcloud.fr/) was redirected to https://ma-carqueiranne.mgcloud.fr/account-management/carqueiranne-demandeurs/ux/. Try testing the second URL directly."
         ],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.0312286376953125
+            "score": 0.02976055145263672
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
             "score": 1
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.93
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.91
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.33
+            "score": 0.2
           }
         },
         "audits": {
@@ -7840,49 +7578,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 25791,
+            "numericValue": 28920,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 18770,
-                  "firstMeaningfulPaint": 20560,
-                  "largestContentfulPaint": 25730,
-                  "firstCPUIdle": 23039,
-                  "interactive": 25791,
-                  "speedIndex": 18770,
-                  "estimatedInputLatency": 152,
-                  "totalBlockingTime": 929,
-                  "maxPotentialFID": 631,
-                  "cumulativeLayoutShift": 0,
-                  "cumulativeLayoutShiftAllFrames": 0.017901126755608454,
+                  "firstContentfulPaint": 20276,
+                  "firstMeaningfulPaint": 20845,
+                  "largestContentfulPaint": 29205,
+                  "interactive": 28920,
+                  "speedIndex": 20276,
+                  "totalBlockingTime": 1709,
+                  "maxPotentialFID": 915,
+                  "cumulativeLayoutShift": 0.02210932371351454,
+                  "cumulativeLayoutShiftMainFrame": 0.02210932371351454,
+                  "totalCumulativeLayoutShift": 0.023598622216118706,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 190867733,
+                  "observedTimeOriginTs": 243316672,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 190867733,
-                  "observedFirstPaint": 613,
-                  "observedFirstPaintTs": 191480891,
-                  "observedFirstContentfulPaint": 1704,
-                  "observedFirstContentfulPaintTs": 192571677,
-                  "observedFirstMeaningfulPaint": 1985,
-                  "observedFirstMeaningfulPaintTs": 192852537,
-                  "observedLargestContentfulPaint": 1794,
-                  "observedLargestContentfulPaintTs": 192661492,
-                  "observedTraceEnd": 3068,
-                  "observedTraceEndTs": 193935789,
-                  "observedLoad": 1293,
-                  "observedLoadTs": 192161088,
-                  "observedDomContentLoaded": 1293,
-                  "observedDomContentLoadedTs": 192160865,
-                  "observedCumulativeLayoutShift": 0,
-                  "observedCumulativeLayoutShiftAllFrames": 0.017901126755608454,
-                  "observedFirstVisualChange": 7,
-                  "observedFirstVisualChangeTs": 190874733,
-                  "observedLastVisualChange": 2707,
-                  "observedLastVisualChangeTs": 193574733,
-                  "observedSpeedIndex": 1279,
-                  "observedSpeedIndexTs": 192146481
+                  "observedNavigationStartTs": 243316672,
+                  "observedFirstPaint": 1196,
+                  "observedFirstPaintTs": 244512359,
+                  "observedFirstContentfulPaint": 2764,
+                  "observedFirstContentfulPaintTs": 246080732,
+                  "observedFirstContentfulPaintAllFrames": 2764,
+                  "observedFirstContentfulPaintAllFramesTs": 246080732,
+                  "observedFirstMeaningfulPaint": 2858,
+                  "observedFirstMeaningfulPaintTs": 246174492,
+                  "observedLargestContentfulPaint": 2877,
+                  "observedLargestContentfulPaintTs": 246193531,
+                  "observedLargestContentfulPaintAllFrames": 2877,
+                  "observedLargestContentfulPaintAllFramesTs": 246193531,
+                  "observedTraceEnd": 5709,
+                  "observedTraceEndTs": 249025242,
+                  "observedLoad": 2213,
+                  "observedLoadTs": 245530032,
+                  "observedDomContentLoaded": 2213,
+                  "observedDomContentLoadedTs": 245529481,
+                  "observedCumulativeLayoutShift": 0.02210932371351454,
+                  "observedCumulativeLayoutShiftMainFrame": 0.02210932371351454,
+                  "observedTotalCumulativeLayoutShift": 0.023598622216118706,
+                  "observedFirstVisualChange": 6,
+                  "observedFirstVisualChangeTs": 243322672,
+                  "observedLastVisualChange": 3406,
+                  "observedLastVisualChangeTs": 246722672,
+                  "observedSpeedIndex": 1991,
+                  "observedSpeedIndexTs": 245307187
                 },
                 {
                   "lcpInvalidated": false
@@ -7900,22 +7642,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 73,
+                  "numRequests": 75,
                   "numScripts": 15,
                   "numStylesheets": 9,
                   "numFonts": 6,
-                  "numTasks": 1544,
-                  "numTasksOver10ms": 22,
-                  "numTasksOver25ms": 13,
-                  "numTasksOver50ms": 7,
-                  "numTasksOver100ms": 3,
+                  "numTasks": 1675,
+                  "numTasksOver10ms": 29,
+                  "numTasksOver25ms": 15,
+                  "numTasksOver50ms": 13,
+                  "numTasksOver100ms": 6,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.7850000000000001,
-                  "throughput": 8499491.347756963,
-                  "maxRtt": 82.426,
-                  "maxServerLatency": 14.988,
-                  "totalByteWeight": 3506288,
-                  "totalTaskTime": 1570.7739999999985,
+                  "rtt": 7.39,
+                  "throughput": 4883191.470536601,
+                  "maxRtt": 146.272,
+                  "maxServerLatency": 18.56099999999998,
+                  "totalByteWeight": 3513985,
+                  "totalTaskTime": 2575.9320000000025,
                   "mainDocumentTransferSize": 2037
                 }
               ]
@@ -7947,15 +7689,15 @@
       "cookiesCount": 0,
       "trackersGrade": "C",
       "trackersCount": 6,
-      "lighthouse_performance": 0.0312286376953125,
+      "lighthouse_performance": 0.02976055145263672,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
       "lighthouse_seo": 0.91,
       "lighthouse_seoGrade": "A",
-      "lighthouse_pwa": 0.33,
+      "lighthouse_pwa": 0.2,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F"
     }
@@ -20535,7 +20277,7 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-10-14T23:59:00.000Z",
       "testsslGrade": "A",
       "cookiesGrade": "A",
