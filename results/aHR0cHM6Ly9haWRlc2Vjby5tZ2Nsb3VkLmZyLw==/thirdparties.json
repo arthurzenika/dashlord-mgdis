@@ -33,19 +33,19 @@
       }
     },
     {
-      "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/ovmhLiigaw4D9ujHYlHcKKhP/recaptcha__en.js",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
       "type": "jsdelivr",
       "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
       "details": {
         "id": "jsdelivr",
         "message": "Host files locally"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://www.gstatic.com/recaptcha/releases/a9s0j4pCVT6gaTEkLiFbtZPH/recaptcha__en.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
       }
     }
   ],
@@ -55,9 +55,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 25 Sep 2022 02:43:43 GMT",
-    "etag": "W/\"12c3-1833c06bc90\"",
-    "last-modified": "Wed, 14 Sep 2022 12:43:38 GMT",
+    "date": "Sun, 02 Oct 2022 02:46:51 GMT",
+    "etag": "W/\"12c3-1833b217d10\"",
+    "last-modified": "Wed, 14 Sep 2022 08:33:14 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -66,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "7a3e385f-227e-4b32-a20a-9763683226e3",
+    "x-request-id": "fe2b83bc-c449-4eb4-ba87-97d7de6eef6d",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -128,12 +128,27 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.89.20",
-      "geoip": null
+      "ip": "104.16.85.20",
+      "geoip": {
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.62.99",
+      "ip": "74.125.69.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -187,7 +202,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.33.195",
+      "ip": "209.85.200.94",
       "geoip": {
         "continent": {
           "code": "NA",
