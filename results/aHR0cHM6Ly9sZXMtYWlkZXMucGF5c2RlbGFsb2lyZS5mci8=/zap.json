@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 4 Sep 2022 02:30:28",
+	"@generated": "Sun, 16 Oct 2022 02:47:35",
 	"site":[ 
 		{
 			"@name": "https://les-aides.paysdelaloire.fr",
@@ -257,7 +257,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://les-aides.paysdelaloire.fr/aides/",
@@ -267,7 +295,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "6",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -288,9 +316,23 @@
 						{
 							"uri": "https://les-aides.paysdelaloire.fr/",
 							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/",
+							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
 							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://les-aides.paysdelaloire.fr/aides/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://les-aides.paysdelaloire.fr/aides/",
@@ -300,7 +342,7 @@
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -324,16 +366,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "trustAsHtml"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "trustAsHtml"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
@@ -343,7 +378,7 @@
 				},
 				{
 					"pluginid": "10063",
-					"alertRef": "10063",
+					"alertRef": "10063-1",
 					"alert": "Permissions Policy Header Not Set",
 					"name": "Permissions Policy Header Not Set",
 					"riskcode": "1",
@@ -413,90 +448,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/portal-depot-demande-aide.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "25734446"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "428571429"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "42857143"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "48016552"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "61803399"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "80000000"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/resources/styles/images/safari-pinned-tab.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20010904"
-						}
-					],
-					"count": "7",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>25734446, which evaluates to: 1970-10-25 20:27:26</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "57"
 				},
 				{
 					"pluginid": "10094",
@@ -528,16 +488,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "depot/simple/pageInformationsGenerales2/depot-simple-pageInformationsGenerales2"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "org/officeDocument/2006/relationships/image"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p><?xml version=\"1.0\" ?></p><p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\"></p><p>  <linearGradient id=\"grad-ucgg-generated\" gradientUnits=\"userSpaceOnUse\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\"></p><p>    <stop offset=\"0%\" stop-color=\"#ff0000\" stop-opacity=\"1\"/></p><p>    <stop offset=\"16%\" stop-color=\"#ffff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"33%\" stop-color=\"#00ff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"50%\" stop-color=\"#00ffff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"67%\" stop-color=\"#0000ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"84%\" stop-color=\"#ff00ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"100%\" stop-color=\"#ff0004\" stop-opacity=\"1\"/></p><p>  </linearGradient></p><p>  <rect x=\"0\" y=\"0\" width=\"1\" height=\"1\" fill=\"url(#grad-ucgg-generated)\" /></p><p></svg></p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -691,14 +644,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://les-aides.paysdelaloire.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
 						},
 						{
 							"uri": "https://les-aides.paysdelaloire.fr/aides/scripts/app-templates.js",
@@ -720,16 +673,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<a href ng-click=\\\"select($event)\\\" class=\\\"nav-link\\\" uib-tab-heading-transclude>{{heading}}</a>"
-						},
-						{
-							"uri": "https://les-aides.paysdelaloire.fr/aides/scripts/vendor.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a id='\"+y+\"'></a>"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -769,8 +715,8 @@
 					"alert": "Re-examine Cache-control Directives",
 					"name": "Re-examine Cache-control Directives",
 					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
@@ -791,7 +737,7 @@
 					"count": "2",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
 					"sourceid": "1"
