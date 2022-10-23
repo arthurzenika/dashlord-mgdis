@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Oct  2 02:49:16 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
+# Nmap 7.92 scan initiated Sun Oct 23 02:41:15 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
 Nmap scan report for aideseco.mgcloud.fr (149.202.180.217)
 Host is up (0.11s latency).
 Not shown: 998 filtered tcp ports (no-response)
@@ -8,4 +8,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct  2 02:49:50 2022 -- 1 IP address (1 host up) scanned in 33.91 seconds
+# Nmap done at Sun Oct 23 02:41:55 2022 -- 1 IP address (1 host up) scanned in 39.84 seconds

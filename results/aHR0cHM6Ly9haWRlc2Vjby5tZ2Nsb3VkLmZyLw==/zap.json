@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 2 Oct 2022 02:46:02",
+	"@generated": "Sun, 23 Oct 2022 02:38:05",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -23,21 +23,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -198,19 +191,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
+							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
+							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
 						}
 					],
-					"count": "27",
+					"count": "26",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
-					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 10: \"\\\"handicapNo\\\"\" \"\\\"handicapYes\\\"\" ].</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 10: \"\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
@@ -246,6 +239,67 @@
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
 				},
@@ -295,6 +349,175 @@
 					"cweid": "829",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10110",
+					"alertRef": "10110",
+					"alert": "Dangerous JS Functions",
+					"name": "Dangerous JS Functions",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/portal.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "trustAsHtml"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "trustAsHtml"
+						}
+					],
+					"count": "2",
+					"solution": "<p>See the references for security advice on the use of these functions.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://angular.io/guide/security</p>",
+					"cweid": "749",
+					"wascid": "-1",
+					"sourceid": "66"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/configuration.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/form-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ie.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/portal.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/user-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "10",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/css/vendor.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2ZmZmYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzAwZmYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzAwMDBmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjAwMDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "org/TR/2001/REC-SVG-20010904/DTD/svg10"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "depot/simple/pageInformationsGenerales2/depot-simple-pageInformationsGenerales2"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "org/officeDocument/2006/relationships/image"
+						}
+					],
+					"count": "4",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p><?xml version=\"1.0\" ?></p><p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\"></p><p>  <linearGradient id=\"grad-ucgg-generated\" gradientUnits=\"userSpaceOnUse\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\"></p><p>    <stop offset=\"0%\" stop-color=\"#ff0000\" stop-opacity=\"1\"/></p><p>    <stop offset=\"16%\" stop-color=\"#ffff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"33%\" stop-color=\"#00ff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"50%\" stop-color=\"#00ffff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"67%\" stop-color=\"#0000ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"84%\" stop-color=\"#ff00ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"100%\" stop-color=\"#ff0004\" stop-opacity=\"1\"/></p><p>  </linearGradient></p><p>  <rect x=\"0\" y=\"0\" width=\"1\" height=\"1\" fill=\"url(#grad-ucgg-generated)\" /></p><p></svg></p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "60"
 				},
 				{
 					"pluginid": "10027",
@@ -428,6 +651,93 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a ui-sref=\\\"{{\\'app.home\\'}}\\\" title=\\\"Espace Usagers\\\">\\n        <h1>{{\\'home.subtitle\\' | translate}}</h1>\\n      </a>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/portal.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a target=\"_blank\" ng-click=\"downloadDocument()\" ng-class=\"{\\'fusion-downloader-link\\': !noLinkClass}\" class=\"btn btn-primary\">\\n    <i ng-if=\"accept==\\'application/pdf\\'\" class=\"fa fa-file-pdf-o\"></i>\\n    <i ng-if=\"accept==\\'application/vnd.ms-excel\\'\" class=\"fa fa-file-excel-o\"></i>\\n    {{label ? label + \\'&nbsp;&nbsp;\\' : \\'\\'}}\\n</a>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href ng-click=\\\"select($event)\\\" class=\\\"nav-link\\\" uib-tab-heading-transclude>{{heading}}</a>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/vendor.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a id='\"+y+\"'></a>"
+						}
+					],
+					"count": "6",
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302"
+						}
+					],
+					"count": "1",
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
 					"pluginid": "10015",
 					"alertRef": "10015",
 					"alert": "Re-examine Cache-control Directives",
@@ -457,6 +767,121 @@
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
+					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable but Non-Cacheable Content",
+					"name": "Storable but Non-Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-114x114.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-120x120.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-144x144.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-57x57.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-60x60.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-72x72.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						}
+					],
+					"count": "9",
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "1"
 				}
