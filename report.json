@@ -5,7 +5,7 @@
     "http": {
       "url": "https://les-aides.paysdelaloire.fr/",
       "algorithm_version": 2,
-      "end_time": "Sun, 16 Oct 2022 02:48:08 GMT",
+      "end_time": "Sun, 06 Nov 2022 02:10:24 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -14,7 +14,7 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 16 Oct 2022 02:48:06 GMT",
+        "Date": "Sun, 06 Nov 2022 02:10:22 GMT",
         "Etag": "W/\"12c3-183216c9238\"",
         "Last-Modified": "Fri, 09 Sep 2022 08:45:07 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
@@ -25,12 +25,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "08dcda4a-da2c-44a7-9827-6f37af9e7339",
+        "X-Request-Id": "70028207-d063-4164-87e0-c5cca2973675",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 30155666,
+      "scan_id": 30683535,
       "score": 70,
-      "start_time": "Sun, 16 Oct 2022 02:48:02 GMT",
+      "start_time": "Sun, 06 Nov 2022 02:10:19 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -44,6 +44,7 @@
             "data": null,
             "http": false,
             "meta": false,
+            "numPolicies": 0,
             "policy": null
           },
           "pass": false,
@@ -361,6 +362,13 @@
         "finding": "offered"
       },
       {
+        "id": "cipher_order-tls1_2",
+        "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server"
+      },
+      {
         "id": "cipherorder_TLSv1_2",
         "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
         "port": "443",
@@ -582,7 +590,7 @@
         "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
         "port": "443",
         "severity": "OK",
-        "finding": "67 >= 30 days"
+        "finding": "46 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -1334,7 +1342,7 @@
         "ip": "les-aides.paysdelaloire.fr/5.196.220.2",
         "port": "443",
         "severity": "INFO",
-        "finding": "118"
+        "finding": "93"
       }
     ],
     "thirdparties": {
@@ -1372,6 +1380,14 @@
           }
         },
         {
+          "type": "google",
+          "url": "https://www.gstatic.com/recaptcha/releases/Ixi5IiChXmIG6rRkjUa1qXHT/recaptcha__en.js",
+          "details": {
+            "id": "google",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
           "type": "jsdelivr",
           "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
           "details": {
@@ -1380,28 +1396,20 @@
           }
         },
         {
-          "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/vP4jQKq0YJFzU6e21-BGy3GP/recaptcha__en.js",
-          "details": {
-            "id": "google",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
           "type": "unknown",
           "url": "https://analytics.mgcloud.fr/matomo.js"
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=965519&h=2&m=48&s=44&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=8557434fd7176675&_idts=1665888525&_idvc=1&_idn=0&_refts=0&_viewts=1665888525&send_image=1&cookie=1&res=800x600&gt_ms=96&pv_id=0K8d2Z"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=201627&h=2&m=11&s=0&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=f9a4d9d2a10ae0d3&_idts=1667700660&_idvc=1&_idn=0&_refts=0&_viewts=1667700660&send_image=1&cookie=1&res=800x600&gt_ms=87&pv_id=iml2i2"
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=174073&h=2&m=48&s=45&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F%3FredirectTo%3Dapp.connected.tiers-selection%26redirectParams%3D%257B%2522%2523%2522%3Anull%2C%2522tenantId%2522%3A%2522prod%2522%257D&_id=8557434fd7176675&_idts=1665888525&_idvc=1&_idn=0&_refts=0&_viewts=1665888525&send_image=1&cookie=1&res=800x600&gt_ms=96&pv_id=qV2hm2"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=296485&h=2&m=11&s=1&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F%3FredirectTo%3Dapp.connected.tiers-selection%26redirectParams%3D%257B%2522%2523%2522%3Anull%2C%2522tenantId%2522%3A%2522prod%2522%257D&_id=f9a4d9d2a10ae0d3&_idts=1667700660&_idvc=1&_idn=0&_refts=0&_viewts=1667700660&send_image=1&cookie=1&res=800x600&gt_ms=87&pv_id=V9bWPI"
         },
         {
           "type": "unknown",
-          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=323607&h=2&m=48&s=44&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=8557434fd7176675&_idts=1665888525&_idvc=1&_idn=0&_refts=0&_viewts=1665888525&send_image=1&cookie=1&res=800x600&gt_ms=96&pv_id=R4sHWc"
+          "url": "https://analytics.mgcloud.fr/matomo.php?action_name=Espace%20Usagers&idsite=7&rec=1&r=656009&h=2&m=11&s=0&url=https%3A%2F%2Fles-aides.paysdelaloire.fr%2Faides%2F%23%2Fprod%2F&_id=f9a4d9d2a10ae0d3&_idts=1667700660&_idvc=1&_idn=0&_refts=0&_viewts=1667700660&send_image=1&cookie=1&res=800x600&gt_ms=87&pv_id=wpabEb"
         },
         {
           "type": "unknown",
@@ -1413,7 +1421,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/web-widget-framework-8bd776911afeefa93f7a.js"
+          "url": "https://static.zdassets.com/web_widget/latest/web-widget-framework-3d118a1c2798bf0a2233.js"
         },
         {
           "type": "unknown",
@@ -1421,33 +1429,33 @@
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-classic-de934ba.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-classic-8262d85.js"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-8165-de934ba.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-8165-8262d85.js"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-5324-de934ba.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-5324-8262d85.js"
         },
         {
           "type": "unknown",
-          "url": "https://crcrpl.zendesk.com/embeddable_blip?type=settings&data=eyJzZXR0aW5ncyI6eyJ3ZWJXaWRnZXQiOnsiY29sb3IiOnsidGhlbWUiOiIjQUJDQzIxIn0sImxhdW5jaGVyIjp7ImxhYmVsIjp7IioiOiJBc3Npc3RhbmNlIn19LCJvZmZzZXQiOnsibW9iaWxlIjp7Imhvcml6b250YWwiOiIxMHB4In19fX0sImJ1aWQiOiI2NGZlNWNiNTE3OGI0NjgzOTQ1NmFkZGU3Yjk0MTc0OSIsInN1aWQiOiI3MjE5ODEzNjM2ZDQ0ZDYyYTQ1MzRkMTNmYjcxNWZlNCIsInZlcnNpb24iOiJkZTkzNGJhIiwidGltZXN0YW1wIjoiMjAyMi0xMC0xNlQwMjo0ODo0OC4yNTlaIiwidXJsIjoiaHR0cHM6Ly9sZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mci96ZW5kZXNrL3Byb2QvY2hhdCJ9"
+          "url": "https://crcrpl.zendesk.com/embeddable_blip?type=settings&data=eyJzZXR0aW5ncyI6eyJ3ZWJXaWRnZXQiOnsiY29sb3IiOnsidGhlbWUiOiIjQUJDQzIxIn0sImxhdW5jaGVyIjp7ImxhYmVsIjp7IioiOiJBc3Npc3RhbmNlIn19LCJvZmZzZXQiOnsibW9iaWxlIjp7Imhvcml6b250YWwiOiIxMHB4In19fX0sImJ1aWQiOiJhYTM0YTEwMzJlNmI0OTIxYmE0OTliMjFlZmRjOTI3MyIsInN1aWQiOiJhYTkyY2RkMTNlMTM0YWVlYmQ4MDA4YWI4MzZkYmZhYSIsInZlcnNpb24iOiI4MjYyZDg1IiwidGltZXN0YW1wIjoiMjAyMi0xMS0wNlQwMjoxMTowMy43MDRaIiwidXJsIjoiaHR0cHM6Ly9sZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mci96ZW5kZXNrL3Byb2QvY2hhdCJ9"
         },
         {
           "type": "unknown",
-          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-locales/classic/en-us-json-de934ba.js"
+          "url": "https://static.zdassets.com/web_widget/latest/classic/web-widget-locales/classic/en-us-json-8262d85.js"
         }
       ],
       "cookies": [
         {
-          "name": "_pk_ses.7.1dd5",
-          "value": "1",
+          "name": "_pk_id.7.1dd5",
+          "value": "f9a4d9d2a10ae0d3.1667700660.1.1667700661.1667700660.",
           "domain": "les-aides.paysdelaloire.fr",
           "path": "/",
-          "expires": 1665890325,
-          "size": 15,
+          "expires": 1701396660,
+          "size": 65,
           "httpOnly": false,
           "secure": false,
           "session": false,
@@ -1457,12 +1465,12 @@
           "sourcePort": 443
         },
         {
-          "name": "_pk_id.7.1dd5",
-          "value": "8557434fd7176675.1665888525.1.1665888525.1665888525.",
+          "name": "_pk_ses.7.1dd5",
+          "value": "1",
           "domain": "les-aides.paysdelaloire.fr",
           "path": "/",
-          "expires": 1699584525,
-          "size": 65,
+          "expires": 1667702461,
+          "size": 15,
           "httpOnly": false,
           "secure": false,
           "session": false,
@@ -1478,7 +1486,7 @@
         "cache-control": "no-cache",
         "content-length": "984",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 16 Oct 2022 02:48:45 GMT",
+        "date": "Sun, 06 Nov 2022 02:11:01 GMT",
         "etag": "W/\"3d8-181ab167668\"",
         "last-modified": "Tue, 28 Jun 2022 16:13:05 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
@@ -1495,15 +1503,6 @@
           "hostname": "les-aides.paysdelaloire.fr",
           "ip": "5.196.220.2",
           "geoip": {
-            "city": {
-              "geoname_id": 2985143,
-              "names": {
-                "en": "Puget-sur-Argens",
-                "fr": "Puget-sur-Argens",
-                "ru": "Пюже-сюр-Аржан",
-                "zh-CN": "阿尔冈河畔皮热"
-              }
-            },
             "continent": {
               "code": "EU",
               "geoname_id": 6255148,
@@ -1535,12 +1534,9 @@
             },
             "location": {
               "accuracy_radius": 500,
-              "latitude": 43.4583,
-              "longitude": 6.6835,
+              "latitude": 48.8582,
+              "longitude": 2.3387,
               "time_zone": "Europe/Paris"
-            },
-            "postal": {
-              "code": "83480"
             },
             "registered_country": {
               "geoname_id": 3017382,
@@ -1556,38 +1552,12 @@
                 "ru": "Франция",
                 "zh-CN": "法国"
               }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 2985244,
-                "iso_code": "PAC",
-                "names": {
-                  "de": "Provence-Alpes-Côte d’Azur",
-                  "en": "Provence-Alpes-Côte d'Azur",
-                  "es": "Provenza-Alpes-Costa Azul",
-                  "fr": "Provence-Alpes-Côte d'Azur",
-                  "ja": "プロヴァンス＝アルプ＝コート・ダジュール地域圏",
-                  "pt-BR": "Provença-Alpes-Costa Azul",
-                  "ru": "Прованс — Альпы — Лазурный Берег",
-                  "zh-CN": "普罗旺斯-阿尔卑斯-蓝色海岸"
-                }
-              },
-              {
-                "geoname_id": 2970749,
-                "iso_code": "83",
-                "names": {
-                  "de": "Var",
-                  "en": "Var",
-                  "es": "Var",
-                  "fr": "Var"
-                }
-              }
-            ]
+            }
           }
         },
         {
           "hostname": "cdn.jsdelivr.net",
-          "ip": "104.16.85.20",
+          "ip": "104.16.87.20",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -1607,7 +1577,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "142.251.45.4",
+          "ip": "142.251.163.106",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1661,7 +1631,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "142.251.111.94",
+          "ip": "142.251.163.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1822,7 +1792,7 @@
         },
         {
           "hostname": "ekr.zdassets.com",
-          "ip": "104.18.70.113",
+          "ip": "104.18.72.113",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -1842,7 +1812,7 @@
         },
         {
           "hostname": "crcrpl.zendesk.com",
-          "ip": "104.16.51.111",
+          "ip": "104.16.53.111",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -1862,238 +1832,10 @@
         }
       ]
     },
-    "wappalyzer": {
-      "urls": {
-        "https://les-aides.paysdelaloire.fr/": {
-          "status": 302
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "kendo-ui",
-          "name": "Kendo UI",
-          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
-          "confidence": 100,
-          "version": "2019.2.514",
-          "icon": "Kendo UI.png",
-          "website": "https://www.telerik.com/kendo-ui",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "bootstrap",
-          "name": "Bootstrap",
-          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
-          "confidence": 100,
-          "version": "3.4.1",
-          "icon": "Bootstrap.svg",
-          "website": "https://getbootstrap.com",
-          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "socket-io",
-          "name": "Socket.io",
-          "confidence": 100,
-          "version": null,
-          "icon": "Socket.IO.svg",
-          "website": "https://socket.io",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "handlebars",
-          "name": "Handlebars",
-          "description": "Handlebars is a JavaScript library used to create reusable webpage templates.",
-          "confidence": 100,
-          "version": "4.7.7",
-          "icon": "Handlebars.png",
-          "website": "http://handlebarsjs.com",
-          "cpe": "cpe:2.3:a:handlebars.js_project:handlebars.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "angularjs",
-          "name": "AngularJS",
-          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
-          "confidence": 100,
-          "version": "1.8.3",
-          "icon": "AngularJS.svg",
-          "website": "https://angularjs.org",
-          "cpe": "cpe:2.3:a:angularjs:angular.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "font-awesome",
-          "name": "Font Awesome",
-          "description": "Font Awesome is a font and icon toolkit based on CSS and Less.",
-          "confidence": 100,
-          "version": null,
-          "icon": "font-awesome.svg",
-          "website": "https://fontawesome.com/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 17,
-              "slug": "font-scripts",
-              "name": "Font scripts"
-            }
-          ]
-        },
-        {
-          "slug": "recaptcha",
-          "name": "reCAPTCHA",
-          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
-          "confidence": 100,
-          "version": null,
-          "icon": "reCAPTCHA.svg",
-          "website": "https://www.google.com/recaptcha/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "moment-js",
-          "name": "Moment.js",
-          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
-          "confidence": 100,
-          "version": "2.29.4",
-          "icon": "Moment.js.svg",
-          "website": "https://momentjs.com",
-          "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.0.1",
-          "icon": "Lo-dash.png",
-          "website": "http://www.lodash.com",
-          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "2.1.4",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "core-js",
-          "name": "core-js",
-          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
-          "confidence": 100,
-          "version": "3.6.5",
-          "icon": "core-js.png",
-          "website": "https://github.com/zloirock/core-js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jsdelivr",
-          "name": "jsDelivr",
-          "description": "JSDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration.",
-          "confidence": 100,
-          "version": null,
-          "icon": "jsdelivr-icon.svg",
-          "website": "https://www.jsdelivr.com/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 31,
-              "slug": "cdn",
-              "name": "CDN"
-            }
-          ]
-        }
-      ]
-    },
+    "wappalyzer": null,
     "zap": {
-      "@version": "2.11.1",
-      "@generated": "Sun, 16 Oct 2022 02:47:35",
+      "@version": "2.12.0",
+      "@generated": "Sun, 6 Nov 2022 02:09:51",
       "site": [
         {
           "@name": "https://les-aides.paysdelaloire.fr",
@@ -2165,13 +1907,6 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
-            },
-            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
               "confidence": "1",
@@ -2201,7 +1936,7 @@
       {
         "requestedUrl": "https://les-aides.paysdelaloire.fr/",
         "finalUrl": "https://les-aides.paysdelaloire.fr/account-management/prod-demandeurs/ux/",
-        "fetchTime": "2022-10-16T02:47:44.303Z",
+        "fetchTime": "2022-11-06T02:09:59.908Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://les-aides.paysdelaloire.fr/) was redirected to https://les-aides.paysdelaloire.fr/account-management/prod-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -2266,53 +2001,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 32972,
+            "numericValue": 32396,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 14472,
-                  "firstMeaningfulPaint": 19552,
-                  "largestContentfulPaint": 28016,
-                  "interactive": 32972,
-                  "speedIndex": 17980,
-                  "totalBlockingTime": 4542,
-                  "maxPotentialFID": 3200,
-                  "cumulativeLayoutShift": 0.02273115317026774,
-                  "cumulativeLayoutShiftMainFrame": 0.02273115317026774,
-                  "totalCumulativeLayoutShift": 0.025520495414733887,
+                  "firstContentfulPaint": 14517,
+                  "firstMeaningfulPaint": 20874,
+                  "largestContentfulPaint": 28004,
+                  "interactive": 32396,
+                  "speedIndex": 18220,
+                  "totalBlockingTime": 4310,
+                  "maxPotentialFID": 3072,
+                  "cumulativeLayoutShift": 0.023090783754984537,
+                  "cumulativeLayoutShiftMainFrame": 0.023090783754984537,
+                  "totalCumulativeLayoutShift": 0.023090783754984537,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 328308386,
+                  "observedTimeOriginTs": 310957037,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 328308386,
-                  "observedFirstPaint": 621,
-                  "observedFirstPaintTs": 328929705,
-                  "observedFirstContentfulPaint": 621,
-                  "observedFirstContentfulPaintTs": 328929705,
-                  "observedFirstContentfulPaintAllFrames": 621,
-                  "observedFirstContentfulPaintAllFramesTs": 328929705,
-                  "observedFirstMeaningfulPaint": 2035,
-                  "observedFirstMeaningfulPaintTs": 330343536,
-                  "observedLargestContentfulPaint": 1953,
-                  "observedLargestContentfulPaintTs": 330261478,
-                  "observedLargestContentfulPaintAllFrames": 1953,
-                  "observedLargestContentfulPaintAllFramesTs": 330261478,
-                  "observedTraceEnd": 4576,
-                  "observedTraceEndTs": 332884323,
-                  "observedLoad": 1423,
-                  "observedLoadTs": 329731267,
-                  "observedDomContentLoaded": 1423,
-                  "observedDomContentLoadedTs": 329731019,
-                  "observedCumulativeLayoutShift": 0.02273115317026774,
-                  "observedCumulativeLayoutShiftMainFrame": 0.02273115317026774,
-                  "observedTotalCumulativeLayoutShift": 0.025520495414733887,
-                  "observedFirstVisualChange": 28,
-                  "observedFirstVisualChangeTs": 328336386,
-                  "observedLastVisualChange": 4328,
-                  "observedLastVisualChangeTs": 332636386,
-                  "observedSpeedIndex": 1643,
-                  "observedSpeedIndexTs": 329951468
+                  "observedNavigationStartTs": 310957037,
+                  "observedFirstPaint": 623,
+                  "observedFirstPaintTs": 311580319,
+                  "observedFirstContentfulPaint": 623,
+                  "observedFirstContentfulPaintTs": 311580319,
+                  "observedFirstContentfulPaintAllFrames": 623,
+                  "observedFirstContentfulPaintAllFramesTs": 311580319,
+                  "observedFirstMeaningfulPaint": 2020,
+                  "observedFirstMeaningfulPaintTs": 312976571,
+                  "observedLargestContentfulPaint": 1849,
+                  "observedLargestContentfulPaintTs": 312806047,
+                  "observedLargestContentfulPaintAllFrames": 1849,
+                  "observedLargestContentfulPaintAllFramesTs": 312806047,
+                  "observedTraceEnd": 4451,
+                  "observedTraceEndTs": 315408275,
+                  "observedLoad": 1366,
+                  "observedLoadTs": 312323335,
+                  "observedDomContentLoaded": 1366,
+                  "observedDomContentLoadedTs": 312323093,
+                  "observedCumulativeLayoutShift": 0.023090783754984537,
+                  "observedCumulativeLayoutShiftMainFrame": 0.023090783754984537,
+                  "observedTotalCumulativeLayoutShift": 0.023090783754984537,
+                  "observedFirstVisualChange": 13,
+                  "observedFirstVisualChangeTs": 310970037,
+                  "observedLastVisualChange": 4230,
+                  "observedLastVisualChangeTs": 315187037,
+                  "observedSpeedIndex": 1561,
+                  "observedSpeedIndexTs": 312517999
                 },
                 {
                   "lcpInvalidated": false
@@ -2330,22 +2065,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 92,
+                  "numRequests": 93,
                   "numScripts": 22,
                   "numStylesheets": 9,
                   "numFonts": 7,
-                  "numTasks": 1695,
-                  "numTasksOver10ms": 32,
-                  "numTasksOver25ms": 15,
+                  "numTasks": 1686,
+                  "numTasksOver10ms": 36,
+                  "numTasksOver25ms": 16,
                   "numTasksOver50ms": 9,
-                  "numTasksOver100ms": 4,
+                  "numTasksOver100ms": 3,
                   "numTasksOver500ms": 1,
-                  "rtt": 5.22,
-                  "throughput": 9057340.44496532,
-                  "maxRtt": 86.98700000000001,
-                  "maxServerLatency": 140.58900000000003,
-                  "totalByteWeight": 4292182,
-                  "totalTaskTime": 2710.3520000000026,
+                  "rtt": 0.998,
+                  "throughput": 9380886.574582618,
+                  "maxRtt": 86.68599999999999,
+                  "maxServerLatency": 125.979,
+                  "totalByteWeight": 4294876,
+                  "totalTaskTime": 2656.0079999999953,
                   "mainDocumentTransferSize": 2037
                 }
               ]
