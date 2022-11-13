@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Oct 2022 02:32:38",
+	"@generated": "Sun, 13 Nov 2022 02:02:34",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -23,28 +23,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<form class=\\\"row\\\" name=\\\"recapitulatifForm\\\" id=\\\"tcCguAcceptation\\\" novalidate validation-form>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -86,7 +93,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form>"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contactForm\\\" id=\\\"contactForm\\\" novalidate validation-form=\\\"sendMail()\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -128,14 +135,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\">"
+							"evidence": "<form class=\\\"form-horizontal modal-content\\\" novalidate name=\\\"formAttach\\\" validation-form=\\\"demandeRattachement()\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal modal-content\\\" novalidate name=\\\"formAttach\\\" validation-form=\\\"demandeRattachement()\\\">"
+							"evidence": "<form class=\\\"form-horizontal\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -149,7 +156,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contactForm\\\" id=\\\"contactForm\\\" novalidate validation-form=\\\"sendMail()\\\">"
+							"evidence": "<form>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
@@ -184,24 +191,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
+							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
+							"evidence": "<form class=\\\"form-horizontal row\\\">"
 						}
 					],
-					"count": "26",
+					"count": "27",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 10: \"\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -544,6 +551,20 @@
 							"evidence": "user"
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/configuration.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/configuration.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/app-templates.js",
 							"method": "GET",
 							"param": "",
@@ -614,6 +635,13 @@
 							"evidence": "user"
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ie.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bug"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
 							"method": "GET",
 							"param": "",
@@ -642,7 +670,7 @@
 							"evidence": "user"
 						}
 					],
-					"count": "16",
+					"count": "19",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script src=\"scripts/user-templates.js\"></script>\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -735,7 +763,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -801,7 +829,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -849,6 +877,13 @@
 							"evidence": "must-revalidate"
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-152x152.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-57x57.png",
 							"method": "GET",
 							"param": "",
@@ -871,13 +906,6 @@
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/resources/styles/images/favicon-32x32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
