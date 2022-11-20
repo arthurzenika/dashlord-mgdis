@@ -33,19 +33,19 @@
       }
     },
     {
+      "type": "google",
+      "url": "https://www.gstatic.com/recaptcha/releases/Km9gKuG06He-isPsP6saG8cn/recaptcha__en.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
       "type": "jsdelivr",
       "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
       "details": {
         "id": "jsdelivr",
         "message": "Host files locally"
-      }
-    },
-    {
-      "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/jF-AgDWy8ih0GfLx4Semh9UK/recaptcha__en.js",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
       }
     }
   ],
@@ -55,9 +55,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 13 Nov 2022 02:03:17 GMT",
-    "etag": "W/\"12c3-18418ed1b18\"",
-    "last-modified": "Thu, 27 Oct 2022 10:11:43 GMT",
+    "date": "Sun, 20 Nov 2022 02:05:23 GMT",
+    "etag": "W/\"12c3-1845712fcc8\"",
+    "last-modified": "Tue, 08 Nov 2022 11:49:33 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -66,7 +66,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "dd45e1eb-099e-40ec-b70d-13f9733f3d2a",
+    "x-request-id": "99f75238-6c8e-4cd7-bc3d-f1453c1a217e",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -128,7 +128,7 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.87.20",
+      "ip": "104.16.88.20",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -148,7 +148,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.16.104",
+      "ip": "142.251.16.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -202,7 +202,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.251.16.94",
       "geoip": {
         "continent": {
           "code": "NA",
