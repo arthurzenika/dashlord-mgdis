@@ -1,22 +1,6 @@
 {
   "trackers": [
     {
-      "type": "jsdelivr",
-      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
-      "details": {
-        "id": "jsdelivr",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "jsdelivr",
-      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css",
-      "details": {
-        "id": "jsdelivr",
-        "message": "Host files locally"
-      }
-    },
-    {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api.js?render=explicit",
       "details": {
@@ -25,27 +9,11 @@
       }
     },
     {
-      "type": "jsdelivr",
-      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-8cb61c3f.system.js",
-      "details": {
-        "id": "jsdelivr",
-        "message": "Host files locally"
-      }
-    },
-    {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/Km9gKuG06He-isPsP6saG8cn/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/5qcenVbrhOy8zihcc2aHOWD4/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "jsdelivr",
-      "url": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/p-e4a502b5.system.js",
-      "details": {
-        "id": "jsdelivr",
-        "message": "Host files locally"
       }
     }
   ],
@@ -55,9 +23,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 20 Nov 2022 02:05:23 GMT",
-    "etag": "W/\"12c3-1845712fcc8\"",
-    "last-modified": "Tue, 08 Nov 2022 11:49:33 GMT",
+    "date": "Sun, 18 Dec 2022 01:36:58 GMT",
+    "etag": "W/\"5409-184f112ffa8\"",
+    "last-modified": "Thu, 08 Dec 2022 09:31:05 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -66,7 +34,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "99f75238-6c8e-4cd7-bc3d-f1453c1a217e",
+    "x-request-id": "81371fe3-58fe-4e95-ba97-7dd67f155c15",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -104,7 +72,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 500,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
@@ -127,28 +95,8 @@
       }
     },
     {
-      "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.88.20",
-      "geoip": {
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
       "hostname": "www.google.com",
-      "ip": "142.251.16.106",
+      "ip": "172.253.115.103",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -202,8 +150,16 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "142.250.73.227",
       "geoip": {
+        "city": {
+          "geoname_id": 5118626,
+          "names": {
+            "en": "Glen Cove",
+            "ja": "グレンコーブ",
+            "ru": "Глен-Коув"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -234,9 +190,13 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 40.8627,
+          "longitude": -73.6351,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11542"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -251,7 +211,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     }
   ]
