@@ -1,6 +1,7 @@
 {
-	"@version": "2.11.1",
-	"@generated": "Sun, 9 Oct 2022 02:34:42",
+	"@programName": "OWASP ZAP",
+	"@version": "2.12.0",
+	"@generated": "Sun, 25 Dec 2022 01:40:21",
 	"site":[ 
 		{
 			"@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -8,214 +9,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "10202",
-					"alertRef": "10202",
-					"alert": "Absence of Anti-CSRF Tokens",
-					"name": "Absence of Anti-CSRF Tokens",
-					"riskcode": "2",
-					"confidence": "1",
-					"riskdesc": "Medium (Low)",
-					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
-					"instances":[ 
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal padding0\\\" name=\\\"notificationForm\\\" novalidate ng-submit=\\\"submitForm()\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form name=\\\"depotPiecesForm\\\" novalidate>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row padding1 m-b-0\\\" name=\\\"moyensHumainsForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"row\\\" name=\\\"recapitulatifForm\\\" id=\\\"tcCguAcceptation\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\" name=\\\"emailForm\\\" id=\\\"emailForm\\\" novalidate ng-submit=\\\"$ctrl.addEmail(emailForm)\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\" name=\\\"formEditLine\\\" id=\\\"formEditLine\\\" novalidate>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\" novalidate name=\\\"formAttach\\\" validation-form=\\\"\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\" name=\\\"formDemande\\\" id=\\\"formDemande\\\" novalidate>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal modal-content\\\" novalidate name=\\\"formAttach\\\" validation-form=\\\"demandeRattachement()\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\" name=\\\"formDemande\\\" id=\\\"formDemande\\\" novalidate>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contactForm\\\" id=\\\"contactForm\\\" novalidate validation-form=\\\"sendMail()\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form name=\\\"transmettreAttestation\\\" class=\\\"row\\\">"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" id=\\\"contributionAvisForm\\\" name=\\\"contributionAvisForm\\\" novalidate validation-form>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\\\"form-horizontal row\\\" name=\\\"contributionPiecesForm\\\" id=\\\"contributionPiecesForm\\\">"
-						}
-					],
-					"count": "27",
-					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
-					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 10: \"\\\"handicapNo\\\"\" \"\\\"handicapYes\\\"\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
-					"cweid": "352",
-					"wascid": "9",
-					"sourceid": "65"
-				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038",
@@ -232,16 +25,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
@@ -264,45 +50,10 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/variables.css\"\n    />"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "6",
+					"count": "1",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -323,65 +74,18 @@
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/",
 							"method": "GET",
-							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
-							"attack": "",
-							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=explicit",
 							"attack": "",
 							"evidence": "<script src=\"https://www.google.com/recaptcha/api.js?render=explicit\" async defer></script>"
 						}
 					],
-					"count": "4",
+					"count": "1",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10110",
-					"alertRef": "10110",
-					"alert": "Dangerous JS Functions",
-					"name": "Dangerous JS Functions",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
-					"instances":[ 
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/portal.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "trustAsHtml"
-						}
-					],
-					"count": "1",
-					"solution": "<p>See the references for security advice on the use of these functions.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://angular.io/guide/security</p>",
-					"cweid": "749",
-					"wascid": "-1",
-					"sourceid": "66"
 				},
 				{
 					"pluginid": "10063",
@@ -399,71 +103,55 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/configuration.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/form-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/ie.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/portal.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/user-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "9",
+					"count": "1",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -476,169 +164,17 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/css/vendor.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2ZmZmYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzAwZmYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzAwMDBmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjAwMDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/safari-pinned-tab.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "org/TR/2001/REC-SVG-20010904/DTD/svg10"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/theme/spec.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/aides/resources/styles/images/CQ2"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "depot/simple/pageInformationsGenerales2/depot-simple-pageInformationsGenerales2"
-						}
-					],
-					"count": "4",
-					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p><?xml version=\"1.0\" ?></p><p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\"></p><p>  <linearGradient id=\"grad-ucgg-generated\" gradientUnits=\"userSpaceOnUse\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\"></p><p>    <stop offset=\"0%\" stop-color=\"#ff0000\" stop-opacity=\"1\"/></p><p>    <stop offset=\"16%\" stop-color=\"#ffff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"33%\" stop-color=\"#00ff00\" stop-opacity=\"1\"/></p><p>    <stop offset=\"50%\" stop-color=\"#00ffff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"67%\" stop-color=\"#0000ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"84%\" stop-color=\"#ff00ff\" stop-opacity=\"1\"/></p><p>    <stop offset=\"100%\" stop-color=\"#ff0004\" stop-opacity=\"1\"/></p><p>  </linearGradient></p><p>  <rect x=\"0\" y=\"0\" width=\"1\" height=\"1\" fill=\"url(#grad-ucgg-generated)\" /></p><p></svg></p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "60"
-				},
-				{
-					"pluginid": "10027",
-					"alertRef": "10027",
-					"alert": "Information Disclosure - Suspicious Comments",
-					"name": "Information Disclosure - Suspicious Comments",
-					"riskcode": "0",
-					"confidence": "1",
-					"riskdesc": "Informational (Low)",
-					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
-					"instances":[ 
-						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "user"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "administrator"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "from"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "TODO"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/form-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/form-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/form-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/user-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "TODO"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/user-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
+							"evidence": "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"
 						}
 					],
-					"count": "16",
-					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script src=\"scripts/user-templates.js\"></script>\", see evidence field for the suspicious comment/snippet.</p>",
-					"reference": "",
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\uFFFDPNG</p><p>\\x001a</p><p>\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x00009\\x0000\\x0000\\x00009\\x0008\\x0002\\x0000\\x0000\\x0000\\x0003z\\x0014\uFFFD\\x0000\\x0000\\x0000\\x0004gAMA\\x0000\\x0000\uFFFD\uFFFD\\x000b\uFFFDa\\x0005\\x0000\\x0000\\x0000 cHRM\\x0000\\x0000z&\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000\uFFFD\\x0000\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000u0\\x0000\\x0000\uFFFD`\\x0000\\x0000:\uFFFD\\x0000\\x0000\\x0017p\uFFFD\uFFFDQ<\\x0000\\x0000\\x0000\\x0006bKGD\\x0000\uFFFD\\x0000\uFFFD\\x0000\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0007tIME\\x0007\uFFFD\\x0003\\x0008\\x0010\\x000e\\x00063B\uFFFD\uFFFD\\x0000\\x0000</p><p>=IDATh\uFFFD\uFFFDi\uFFFD\\x001cG\\x0015\uFFFD\u07EB>\uFFFD\uFFFD\\x001c{{\\x000f\uFFFD\uFFFD\u05F1\uFFFD\uFFFD8v|\uFFFD\\x0010\uFFFD\\\uFFFD$\uFFFD\\x0014'BA\uFFFD\\x0008\\x0008(\"\uFFFD\\x0010\uFFFD\\x0008$\uFFFD\\x0008!\uFFFD\uFFFD@\uFFFD\uFFFD\\x000f\\x0002\\x0004\uFFFD\\x001f\uFFFD\uFFFD\\x0001(\uFFFD\uFFFDb\uFFFD(\uFFFD`%\"\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkw\uFFFD\uFFFDc\uFFFDg\uFFFD{\uFFFD{\uFFFD{\uFFFD\uFFFD\uFFFDG\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDn\\x001c\uFFFD\uFFFD<\uFFFDfz\uFFFD\uFFFD\uFFFD\u056B\uFFFDW\uFFFD\\x00163\\x0007\uE10F\uFFFD\uFFFDK\r\uFFFD\t\uFFFD%\uFFFD\uFFFD\u03CA\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\\x0017\uFFFDo\uFFFD\\x0014\uFFFD\uFFFD%c]@\uFFFD\uFFFD&\uFFFD\uFFFD\uFFFD+\uFFFD^\tk-%6J\uFFFD\uFFFD\uFFFD\uFFFDc3%W@\uFFFD<\uFFFDY\uFFFDz\uFFFD9\uFFFD\uFFFD<6W&$c\uFFFD\uFFFD ^\uFFFD^k\uFFFD\\x00101\uFFFD\\x001d~\uFFFD\uFFFD.VQ\\x00180D\\x0004V\uFFFD^@\uFFFD:n\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD:\\x000f\uFFFD`H\\x0019.\uFFFD\uFFFDa~\uFFFD*+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u6217\uFFFD\uFFFD\\x0004+cT@X\uFFFD\uFFFD5\uFFFDvMw{\\x001b\\x0000d\uFFFD\uFFFDB\uFFFD\uFFFD\uFFFDz\u0672]\uFFFD\\x000b(\\x0003\\x0000B\uFFFD\uFFFD \uFFFD*p\uFFFD\uFFFD2\uFFFD\\x0018\uFFFD\uFFFD\\x000f\uFFFD@q\uFFFDP\\x0018k\\x001dw1V\\x0016\uFFFD;6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\u0616N&8\uFFFD\\x0003\uFFFD \\x0008\uFFFDJ\uFFFD,[\\x0005\uFFFD\uFFFD+\\x0014\uFFFD\\x0014e2\uFFFDL\uFFFD\uFFFDZ(\uFFFDz\u0672+\uFFFD\\x0017\\x0004\uFFFD\\x0001C@$\uFFFD\uFFFDfL\uFFFDR\u0180\\x0001\\x0010\\x0006\\x000cp\u01A0gpa)\uFFFD\uFFFDf\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFDXr\u0114R\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDF^\u0566\uFFFD\uFFFDdN\uFFFDR\uFFFD\uFFFD|Q\uFFFDJ%\uFFFD4m\uFFFD\uFFFD<?\uFFFDA\uFFFD\\x0007\\x0008!j\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFD+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002</p><p>\\x0000\uFFFD\\x0010Y\uFFFDdY\uFFFDjo\\x001fZ77\uFFFD\uFFFD\uB696\uFFFD\uFFFDFAU\uFFFD\uFFFD\uFFFDD6713\tE\uFFFD0,\uFFFDq}\uFFFDR$\\x0004\t\\x0007K\\x0019CcV\uFFFD\uFFFD_8p\uFFFD@\uFFFD\uFFFDV@\uFFFDN\\x0019\uFFFD$I\uFFFD$\uFFFD\uFFFDS\uFFFD\uFFFD\uFFFD\uFFFD\\x0001x\uFFFD_\uFFFD,\uFFFDd\uFFFDUuZ\u027F?:\uFFFD\uFFFD\uFFFD\uFFFDG]\u0290p\uFFFD\uFFFD6fmK\u012E\u0679\uFFFD\u00C0.2\\x0000Q\\x0010\uFFFDd2\uFFFDL\uFFFD_\uFFFD\\x001f&\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD\\x0013O\uFFFDf\\x000b\uFFFDo\uFFFD\uFFFD\\x001a\uFFFD.=\uFFFDm=\\x001d\uFFFD\\x001f\\x0005kCI\uFFFD\uFFFD\\x0007\\x000f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u04A0\uFFFD+\uFFFD\\x0011+c\uFFFDXL\uFFFD\uFFFD\uFFFD\\x0019k(Wn\uFFFD\uFFFD\uFFFD{\uFFFD\tif\\x0003\uFFFD\uFFFD:\uFFFD:/\uFFFD0`\uFFFDz\\x0001\uFFFD\\x0003jRZ\uFFFD\uFFFDf\uFFFDmX\uFFFDk\uFFFD\uFFFD\u07B2\uFFFD1\uFFFD0\uFFFD\uFFFDq \uFFFD\uFFFDa9\uFFFD,K+\uFFFDc\uFFFDp4E\\x001f\uFFFDig5\uFFFD\uFFFD\\x000b\\6.+\u0268#\t\uFFFD\uFFFD\\x000f$\u3DF4'\\x000f\"</p><p>\\x000b*F#\uFFFD\uFFFD{v\uFFFDs\uFFFD\\x0014\uFFFD\r\uFFFD\uFFFD\u0610U\uFFFDPu\uFFFD-\uFFFD\\.e\uFFFD\uFFFD\u079A\\x0018>6\uFFFD\uFFFDx\uFFFDo\uFFFDI\uFFFDF\uFFFD#\uFFFD$P^\uFFFD\uFFFD1aM\u05C1\uFFFD\uFFFD\uFFFD\uFFFD\\x0013{\uFFFDAC\u0672a0*\uFFFDv\uFFFD\uFFFD7\uFFFD\\x0006\uFFFD\uFFFDh\u068ER(\\x000e\uFFFD\\x0019h\uFFFDR-\uFFFDO\\x001e;\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFDL\uFFFD0\uFFFD\uFFFDS\uFFFD.\\x000b\uFFFD]\uFFFD\r\uFFFD\uFFFDl)\uFFFD\uFFFD'<\uFFFD\uFFFD\uFFFDHR|\uFFFD\uFFFD]\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFDo\uFFFD\uFFFD-\\x001d\uFFFD\u0236i/\uFFFD\uFFFDp\rV<?\uFFFD/,G\uFFFD\uFFFD\uFFFD\uFFFDG\uFFFDO>v\uFFFD:=\uFFFDvW\uFFFD\\x0001\\x0000\uFFFD\\x0016\uFFFDe\uFFFD\uFFFD\\x0005B8\uFFFD\\x0000\uFFFD\\x0003\uFFFDeW\\x001d\u03D7~~xx]\uFFFD\uFFFD=C\uFFFD\\x0010\\x0012_\u0410$\uFFFD\uFFFD \\x0000\uFFFD\uFFFD\\x001aJ@\uFFFDD6\uFFFD$\uFFFD\uFFFD\uFFFD\uFFFDW\t`\uFFFD\uFFFD\\x0015y\uFFFD\uFFFD\uFFFDl\uFFFD0\\x0000\uFFFDB\\x0007\uFFFDr\\x001c\uFFFDJ)I\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD>\uFFFD\uFFFDxBA;[(=\uFFFD\\x001a\uFFFDmO\uFFFD]\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\\\uFFFD*\uFFFD\uFFFDf[\uFFFD\\x0005\uFFFDz\uFFFDzf\uFFFD\\x0019.z\uFFFD\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\\x0012\u046B\\x000c\uFFFD(\\x0002 \uFFFD<I\\x0008|o<\uFFFD\uFFFD\uFFFDskD\uFFFD\\x0016\uFFFD7D\uFFFD\\x001eYH\uD830\uDD08\uFFFDU>\uFFFD\uFFFDhR)\\x0016K\u03F6%\uFFFDBl\uFFFD/mR\uFFFD\u0922x\uFFFD/</p><p>\\x000bW\uFFFD\\x001f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDd\uFFFD\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFD\uFFFD\\x0019\uFFFD}\uFFFD\uFFFD!I\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\\x0001IX+</p><p>}<\uFFFD\uFFFD_@\uFFFD;:\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001e\\x0000\\x001c\uFFFD\\x001c\uFFFDe\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD9\\x000e\\x0018\uFFFD:55\uFFFD+`\uFFFD\uFFFDZ\uFFFD-&\uFFFDw\uFFFD\uFFFDw\uFFFD8\uFFFD\uFFFDgO\uFFFD\uFFFDq\uFFFDl\\x0003\u00A1$\\\uFFFD\\x0014:d$\\ow\uFFFD7\uFFFD\uFFFD\uFFFD\\x0001+\uFFFD\uFFFDF\uFFFD\uFFFD3\uFFFD_\uFFFD\uFFFD\\x0014\"\\x0003\\x0000\\x0004\uFFFD\\x001e\uFFFD\uFFFD\uFFFDsU\uFFFD\uFFFD[A\uFFFD}\\x0000\uFFFD!\\x0016u\uFFFDd\uFFFD\uFFFDd\uFFFD6\uBF71\uFFFDO\uFFFD\uFFFDz\uFFFD\uFFFD!\\x0000\\x0012\uFFFD6v\u01FE\uFFFD-y\uFFFD\uFFFD\uFFFD\uFFFD8\uFFFD\uFFFD\uFFFD1\uFFFD#\uFFFD\uFFFD\uFFFD\u0553\uFFFDq\uFFFD;\uFFFD\uFFFD\uFFFD@\\x0007\\x0013y\\x0000\uFFFD\uFFFD\uFFFD\uFFFD#\uFFFD\\x0016*\uFFFD\uFFFD&.A\uFFFDT\uFFFDhZv\uFFFD\uFFFDf\uFFFDzk\u04CF\uFFFD?=u~\\x0002\uFFFD\\x001d\uFFFD\uFFFD\uFFFD\u05EF\uFFFDgw\uFFFD\uFFFD\uFFFDy\uFFFDg\\x000cl\uFFFDW\uFFFDJ.oLg5\uFFFDq\uFFFD\uFFFDg\\x0006\uFFFD\uFFFD\uFFFDcG\uFFFD*gVGy\uFFFD\\x001cM\uFFFD\uFFFDt\uFFFD</p><p>|GG\uFFFD\uFFFDgu\uFFFD\uFFFD\uFFFD\ro1V\\x0000p<o\uFFFDn\u06E2=]tp\uFFFD\u038E\u020F\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\uFFFD\u00B8\uFFFD\uFFFD@1\u0749\uFFFD5\uFFFD\uFFFD\uFFFDM\uFFFD#\\x0013\uFFFD\uFFFD\\x0005E\uFFFD\uFFFD\\x0005%\u00D1#C\uFFFD\uFFFD\uFFFD\uFFFD[\\x0007w\uFFFD\uFFFD\uFFFD\uFFFDa\u04F3\uFFFD\uFFFDT0\uFFFDd4\uFFFD\uFFFD\uFFFDp\"v]}\uFFFD\\x001c!\uFFFD\uFFFD</p><p>\\x0000~\uFFFD&\uBDAD\uFFFD}\uFFFD\uFFFD\uFFFDkF\uFFFD=t\uFFFDr\uFFFD\uFFFD|\u05F7,\uFFFD0\uFFFD\uFFFDf:E\uFFFD\uFFFDep\\x001cp\\\uFFFD\\x000c\uFFFD\uFFFDD<\uFFFDv'\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDs\uFFFDe\uFFFD{F.\uFFFD\\x001cw\u5234\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\\x0007\\x0010\\x001bX\\x000e\uFFFDq\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD-V5Y\uFFFD\uFFFDU\\x0016dmJ\t\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\\x0002c\uFFFD\uFFFD\uFFFDzP\t\uFFFDg\\x0000\\x0000\\x001c\\x0002G\uFFFD#@\\x0008#\uFFFD\uFFFD\uFFFD:W\uFFFDh\uFFFD)\uFFFD\uFFFD\\x000fRw]\uFFFD\uFFFD+\uFFFD\u052E\u033E\uFFFD\uFFFDrS\uFFFD\\x0013\\x0011I\uFFFD\uFFFD\uFFFD\uFFFD\u0786d2\uFFFD\uFFFDA\uFFFDss\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDyW\uFFFD) \\x0000\\x0002 V\uFFFD\\x0000\uFFFDC\\x0013\\x0012d\uFFFDX0\uFFFD\uFFFD\\x001e\\x001ad\uFFFDXx~}\uFFFD\uFFFDq\uFFFD\r\uFFFD\\x001f\uFFFDq\\x0007\uFFFDb\uFFFD\\x0010\\x0000\uFFFD \uFFFDx\\x001e4:{-d\uFFFD\uFFFD\uFFFD\\x00111[T-\uFFFDN\uFFFD\uFFFD\\x0006o\uFFFD\\x001f\uFFFD:\uFFFD\uFFFD\uFFFD\uFFFDY\uFFFDs\t\\x0003B9\uFFFD\uFFFD\uFFFDr[\uFFFD\uFFFDC\uFFFDr\uFFFD\uFFFD\\x000c\uFFFD\uFFFD\\x0013\uFFFD-\\x0005\uFFFDP}\uFFFD\\x00018\\x0001L\uFFFDtKJ\uFFFD\uFFFD\u0132\\x001d\uFFFD0\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD\\x0000\\x0000\uFFFD\uFFFD\uFFFDt\uFFFD\\\uFFFDJ\\x0010\\x000ef\"\u05EF\uFFFD\uFFFDl\uFFFD\uFFFD\\x0014\\x0018\uFFFD9\uFFFD<\uFFFD\uFFFD\\x000f\uFFFD\u71A7^\uFFFD\\x0007%^\\x0006Q\\x0000?\\x0000\uFFFD!Gz\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDb\uFFFD;Zr\uFFFD's9E--\uFFFD\\x0006\\x0010\uFFFD\uFFFDl\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFD\\x0012\t\\x0000\uFFFD\uFFFDu\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFDyi\uFFFD\uFFFD\\x0001\\x000f\uFFFD\\x0008\uFFFD\\x0000d)\\x0011\uFFFD?\uFFFD-\u0792\uFFFD\uFFFD6 oJ</p><p>|\uFFFDq\uFFFD7N\uFFFD]\uFFFDl\uFFFD\\x001b\uFFFD\uFFFD\"\uFFFD\uFFFDV\u015D\uFFFD\uFFFDn\\x001cj\uFFFD?r\uFFFD\uFFFD\uFFFD\\x000b'\\x000e\\x001dy\uFFFDs9\\x0003\\x0008\uFFFD\uFFFDLt\uFFFDwwE7\uFFFDO\uFEFC\uFFFD\u06B5\u026D\\x001dRR\\^,\uFFFD\uFFFD\uFFFD\\x000e\\x001d9\uFFFD\\\uFFFD{\u05AC\u027AAp\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDaM\uFFFD\u2BCAJ\uFFFD}f\uFFFD\\x001d7l\uFFFD\uFFFD#\uFFFD]\uFFFD\uFFFD\u0569\uFFFD\uFFFDxg\\\\x0014[Wc\uFFFDPJ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDsv\\x0004\t\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\uFFFDC8\uFFFD\uFFFD['\uFFFD3\uFFFD\uFFFDx}\uFFFD\uFFFD\uFFFD\uFFFD\u0343]+`j(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000b\uFFFDz\uFFFDY\uFFFDdA<l\t\u05AAj\\x0011O\uFFFD\\x001f{\uFFFD\uFFFD7o\uFFFD\uFFFD\uFFFD\uFFFDT+\uFFFD\uFFFD\uFFFD\u04E3c\uFFFD\\x001c~\uFFFD\uFFFD\uFFFD\u07A8\\x0004\\x000c\uFFFD\uFFFDc\uFFFD\uFFFD5\u012D\\x0004\uFFFD7O\uFFFD\uFFFD\uFFFD\u0357\uFFFD\uFFFDt\uFFFD\uFFFD)\\x000c\\x0016Y\uFFFDS2\u0322V\uFFFD\\x0016</p><p>S\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD\u0642\uFFFDhZ\uFFFDX*\uFFFD\\x001e\uFFFDE@a\uFFFD\uFFFD[5\\x001b\uFFFDz\u0781\uFFFDW>\uFFFD\uFFFD7\uFFFD\uFFFD\uFFFDe\uFFFD\uFFFDA`;\uFFFDa\uFFFD5\uFFFD\u022Bj\uFFFDP\uFFFDR</p><p>\uFFFD\uFFFDB\uFFFDX\uFFFDk%\uFFFD0M\u02F1*\uFFFD\\x0017\\x0004A5\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x00020\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFDr\uFFFDm\uFFFDvloK%\\x0005\uFFFD\uFFFD\uFFFD:\uFFFDJ\u0672U]/\uFFFDZ\uFFFDP\uFFFD\uFFFDC&\uFFFDX\uFFFDKf\u0674\\x001d\uFFFD\uFFFD\uFFFD\uFFFDM`\uFFFD!\\x000b\uFFFD\uFFFD\\x0000\uFFFD2:\\x001b\uFFFD\uFFFD\u02C8\\x0013\uFFFD\uFFFD\uFFFD!.\r\uFFFD@\uFFFD\uFFFD\uFFFD=\uFFFD\uFFFDgU4\uFFFD\uFFFD~\uFFFDTR\uFFFD\uFFFD>\u03E7\uFFFD\\x0001 \\x0012$U\t\uFFFDD\uFFFD\uFFFD\\x0019\uFFFD\uFFFD\uFFFD0\uFFFD]\uFFFD#\uFFFD\\x0002</p><p>\uFFFD\uFFFD\uFFFDC\uFFFD%\\x001c\\x0017\\x0000\\x001bU\uFFFD#\uFFFDB\\x0018>EB8\uFFFD\\x0010\uFFFD!\\x0002!|\\x0018\uFFFD\\x0006\\x0000\u0280\\x0006\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002\uFFFD\\x00165\uFFFD*+\uFFFD\uFFFDW\\x0004s7\\x0004U\\x0014\uFFFD\uFFFD}A\uFFFD\uFFFD3\\x0018\uFFFD\uFFFDs#X\\x000eh\uFFFD\uFFFD5\uFFFD3\\x001ec\uFFFD\uFFFD\uFFFD_\\x001fB`\uFFFD\\x000b\uFFFDZ\u0139\u03DA\uFFFD[dX\u019DQ-n\uFFFD\uFFFD\\x0016\\x0007\\x0011\\x0019\uFFFDf\\x0015\\x0017>,\uFFFDr\u066C\uFFFD\uFFFDcx\\x0012\uFFFD!f3\\x0017J\r\uFFFD\uFFFD\".W\uFFFD+d\uFFFD\uFFFDi\uFFFD\uFFFDk2\\x0016&4\\x0019\uFFFD</p><p>d\uFFFDw\u01F5\uFFFD\uFFFD\uFFFD\\x000b\uFFFDP\uFFFD\\x0012\uFFFD^t\uFFFD%\uFFFD\uFFFD\uFFFD\uFFFD2>a\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\uFFFD\u02A2\\x0000\uFFFDiD\\x0000\\x0000\\x0000%tEXtdate:create\\x00002016-03-08T16:14:06+01:00\uFFFD.\\x000f\uFFFD\\x0000\\x0000\\x0000%tEXtdate:modify\\x00002016-03-08T16:14:06+01:00\uFFFDs\uFFFD[\\x0000\\x0000\\x0000WzTXtRaw profile type iptc\\x0000\\x0000x\uFFFD\uFFFD\uFFFD\\x000c\\x0008qV((\uFFFDO\uFFFD\uFFFDI\uFFFDR\\x0000\\x0003#\\x000b.c\\x000b\\x0013#\\x0013K\uFFFD\\x0014\\x0003\\x0013 D\uFFFD4\uFFFDd\\x0003#\uFFFDT \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\\x0007\u02C0H\uFFFDJ.\\x0000\uFFFD\\x0017\\x0011t\uFFFDB5\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
 					"sourceid": "1"
@@ -658,70 +194,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/@mgdis/mg-components@3/dist/mg-components/mg-components.js\"></script>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/app-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a ui-sref=\\\"{{\\'app.home\\'}}\\\" title=\\\"Espace Usagers\\\">\\n        <h1>{{\\'home.subtitle\\' | translate}}</h1>\\n      </a>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/portal.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a target=\"_blank\" ng-click=\"downloadDocument()\" ng-class=\"{\\'fusion-downloader-link\\': !noLinkClass}\" class=\"btn btn-primary\">\\n    <i ng-if=\"accept==\\'application/pdf\\'\" class=\"fa fa-file-pdf-o\"></i>\\n    <i ng-if=\"accept==\\'application/vnd.ms-excel\\'\" class=\"fa fa-file-excel-o\"></i>\\n    {{label ? label + \\'&nbsp;&nbsp;\\' : \\'\\'}}\\n</a>"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/scripts/ui-bootstrap-templates.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href ng-click=\\\"select($event)\\\" class=\\\"nav-link\\\" uib-tab-heading-transclude>{{heading}}</a>"
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.3e98036d.js\"></script>"
 						}
 					],
-					"count": "5",
+					"count": "1",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10049",
-					"alertRef": "10049",
-					"alert": "Non-Storable Content",
-					"name": "Non-Storable Content",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
-					"instances":[ 
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "302"
-						}
-					],
-					"count": "1",
-					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
-					"otherinfo": "",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
-					"cweid": "524",
-					"wascid": "13",
-					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -739,16 +221,9 @@
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "public, must-revalidate, proxy-revalidate, max-age=0"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "public, must-revalidate, proxy-revalidate, max-age=0"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -767,6 +242,13 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
+							"uri": "https://ma-carqueiranne.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -781,7 +263,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -805,65 +287,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-114x114.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-120x120.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-144x144.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-57x57.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-60x60.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-72x72.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://ma-carqueiranne.mgcloud.fr/aides/resources/styles/images/apple-touch-icon-76x76.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
 						}
 					],
-					"count": "9",
+					"count": "1",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
