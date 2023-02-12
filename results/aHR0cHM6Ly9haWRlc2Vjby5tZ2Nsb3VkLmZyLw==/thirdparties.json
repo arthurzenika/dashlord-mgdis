@@ -10,7 +10,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/Gg72x2_SHmxi8X0BLo33HMpr/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/tNAc29ZZrpcOCErva2nr4BS9/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -23,9 +23,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 22 Jan 2023 01:46:00 GMT",
-    "etag": "W/\"5409-185639d3408\"",
-    "last-modified": "Fri, 30 Dec 2022 15:18:45 GMT",
+    "date": "Sun, 12 Feb 2023 01:47:17 GMT",
+    "etag": "W/\"5409-1860dd905a0\"",
+    "last-modified": "Wed, 01 Feb 2023 16:39:32 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -34,7 +34,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "f7960088-cd63-4fdb-9936-5f51f83769e5",
+    "x-request-id": "1be10bde-91bf-4fb8-951d-f217744f1fd9",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -96,7 +96,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.136.147",
+      "ip": "142.251.163.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -150,7 +150,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.128.94",
+      "ip": "142.251.163.94",
       "geoip": {
         "continent": {
           "code": "NA",

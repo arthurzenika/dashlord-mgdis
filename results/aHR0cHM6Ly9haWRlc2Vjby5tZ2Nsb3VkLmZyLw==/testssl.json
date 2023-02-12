@@ -1,5 +1,12 @@
 [
          {
+              "id"           : "engine_problem",
+              "ip"           : "aideseco.mgcloud.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "No engine or GOST support via engine with your /home/testssl/bin/openssl.Linux.x86_64"
+          }
+,         {
               "id"           : "service",
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
@@ -103,7 +110,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "INFO",
@@ -111,14 +118,14 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "OK",
@@ -339,7 +346,7 @@
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (54)"
+              "finding"      : "expires < 60 days (33)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1091,6 +1098,6 @@
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "126"
+              "finding"      : "96"
           }
 ]
