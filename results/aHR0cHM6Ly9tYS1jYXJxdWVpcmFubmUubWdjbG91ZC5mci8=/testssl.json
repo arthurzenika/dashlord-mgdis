@@ -110,7 +110,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
@@ -118,14 +118,14 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "OK",
@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (40)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (26)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2023-03-17 23:59"
           }
 ,         {
@@ -1098,6 +1098,6 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "96"
           }
 ]
