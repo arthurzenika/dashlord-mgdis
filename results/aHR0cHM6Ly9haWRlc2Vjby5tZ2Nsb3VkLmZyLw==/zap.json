@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 12 Feb 2023 01:46:11",
+	"@generated": "Sun, 5 Mar 2023 01:58:23",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -33,11 +33,11 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "35"
+					"sourceid": "34"
 				},
 				{
 					"pluginid": "10038",
-					"alertRef": "10038",
+					"alertRef": "10038-1",
 					"alert": "Content Security Policy (CSP) Header Not Set",
 					"name": "Content Security Policy (CSP) Header Not Set",
 					"riskcode": "2",
@@ -61,7 +61,7 @@
 						}
 					],
 					"count": "2",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
@@ -92,7 +92,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "35"
+					"sourceid": "34"
 				},
 				{
 					"pluginid": "90003",
@@ -138,7 +138,7 @@
 					"desc": "<p>The identified library jquery, version 2.2.4 is vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -197,7 +197,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -237,7 +237,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -284,14 +284,14 @@
 							"evidence": "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"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.d3ef571e.css",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.7ac0c1a0.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAACXBIWXMAABcSAAAXOQER7y87AAAAB3RJTUUH3AsbChsyNZaItwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABFSURBVEjHY0xLS2PABoyNjbGKnz17liT1TAw0BqMWjFpAOWChVnrHpX40DkYtGAr5gFrpfbQ+GLVgtD4YrQ9GLRjSFgAAbfUXEVeGAdQAAAAASUVORK5CYII="
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -324,63 +324,63 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "administrator"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "TODO"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "username"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.fb23db84.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.c3bb955a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -410,14 +410,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.fb23db84.js\"></script>"
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.c3bb955a.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.fb23db84.js\"></script>"
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.c3bb955a.js\"></script>"
 						}
 					],
 					"count": "2",
@@ -427,6 +427,32 @@
 					"cweid": "-1",
 					"wascid": "-1",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302"
+						}
+					],
+					"count": "1",
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -492,7 +518,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -506,13 +532,6 @@
 					"instances":[ 
 						{
 							"uri": "https://aideseco.mgcloud.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -555,6 +574,13 @@
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/assets/apple-touch-icon-76x76.8800ce7f.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/favicon-96x96.ee85fdfa.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
