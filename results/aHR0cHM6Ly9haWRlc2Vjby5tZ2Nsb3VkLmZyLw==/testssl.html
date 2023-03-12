@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~179 ciphers]
- on fv-az573-0:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az442-96:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-03-05 01:59:57        --&gt;&gt; 149.202.180.217:443 (aideseco.mgcloud.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-03-12 01:48:41        --&gt;&gt; 149.202.180.217:443 (aideseco.mgcloud.fr) &lt;&lt;--</span>
 
  rDNS (149.202.180.217): aideseco.mgcloud.fr.
  Service detected:       HTTP
@@ -95,15 +95,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>E57CD2B716F9C5373B2EF631DFE52C09 (OK: length 16)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 C9DDD4C5542383AFB10E124C3B49775E23928F90
-                              SHA256 0695A4A40282F96EE91443A11A4C5763BA040ECE4484262E744A647A89B09E39
+<span style="font-weight:bold;"> Serial                       </span>1007DF56B78919B72240C3D990D41CBA (OK: length 16)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 DF7C9C646E78C7BEA522868C1A58013F3A6E10A2
+                              SHA256 67C4D9B87D62883DF4D61C0F9E4330B23C5F11F3F537215B4D8A44224F9DDCDF
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>*.mgcloud.fr </i>
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>*.mgcloud.fr mgcloud.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard and CN wildcard</span> (same w/o SNI)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (12)</span> (2022-02-14 00:00 --&gt; 2023-03-17 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">371 &gt;= 60 days</span> (2023-02-17 00:00 --&gt; 2024-03-17 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://ocsp.sectigo.com
@@ -114,7 +114,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Certificates provided</span>        3
 <span style="font-weight:bold;"> Issuer                       </span><i>Sectigo RSA Organization Validation Secure Server CA</i> (<i>Sectigo Limited</i> from <i>GB</i>)
 <span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2030-12-31 23:59). <i>Sectigo RSA Organization Validation Secure Server CA</i> &lt;-- <i>USERTrust RSA Certification Authority</i>
-                              #2: <span style="color:#008817;">ok &gt; 40 days</span> (2028-12-31 23:59). <i>USERTrust RSA Certification Authority</i> &lt;-- <i>AAA Certificate Services</i>
+                              #2: <span style="color:#008817;">ok &gt; 40 days</span> (2038-01-18 23:59). <i>USERTrust RSA Certification Authority</i> &lt;-- <i>USERTrust RSA Certification Authority</i>
 <span style="font-weight:bold;"> Intermediate Bad OCSP</span> (exp.) <span style="color:#008817;">Ok</span>
 
 
@@ -147,7 +147,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=0695A4A40282F96EE91443A11A4C5763BA040ECE4484262E744A647A89B09E39" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=0695A4A40282F96EE91443A11A4C5763BA040ECE4484262E744A647A89B09E39</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=67C4D9B87D62883DF4D61C0F9E4330B23C5F11F3F537215B4D8A44224F9DDCDF" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=67C4D9B87D62883DF4D61C0F9E4330B23C5F11F3F537215B4D8A44224F9DDCDF</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      common prime with 2048 bits detected: <i>HAProxy</i> (<span style="color:#008817;">2048 bits</span>),
                                            but no DH EXPORT ciphers
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
@@ -208,7 +208,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2023-03-05 02:01:18 [  84s] --&gt;&gt; 149.202.180.217:443 (aideseco.mgcloud.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-03-12 01:50:12 [  94s] --&gt;&gt; 149.202.180.217:443 (aideseco.mgcloud.fr) &lt;&lt;--</span>
 
 
 </pre>
