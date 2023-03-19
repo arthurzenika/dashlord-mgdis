@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 12 Mar 2023 01:47:37",
+	"@generated": "Sun, 19 Mar 2023 01:48:05",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -138,7 +138,7 @@
 					"desc": "<p>The identified library jquery, version 2.2.4 is vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.53c15cd1.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -187,6 +187,32 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10110",
+					"alertRef": "10110",
+					"alert": "Dangerous JS Functions",
+					"name": "Dangerous JS Functions",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "trustAsHtml"
+						}
+					],
+					"count": "1",
+					"solution": "<p>See the references for security advice on the use of these functions.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://angular.io/guide/security</p>",
+					"cweid": "749",
+					"wascid": "-1",
+					"sourceid": "37"
+				},
+				{
 					"pluginid": "10063",
 					"alertRef": "10063-1",
 					"alert": "Permissions Policy Header Not Set",
@@ -211,6 +237,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/scripts/ie.js",
 							"method": "GET",
 							"param": "",
@@ -218,7 +251,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -251,6 +284,13 @@
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAIAAAADehTSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH4AMIEA4GM0LI1gAACj1JREFUaN7tmmmMHEcVgN+rPufwHHt7D4/tjdexje04dnzkEOBchiSKFCdCQZAICCgiihCICCSkCCGBhECJxA8CBMQfgsgBKImFYpIomGAlIo6z2M7la3ez3mOmZ6Z7unu6e/qo4kfP7s7uzOzObhysiDytZnrq/OrVq+pXrxYzB+6Ej4mQSw3wCesll4vPioiI+FGw8heLb8kUxtglY11As4gm2fzyK4ZeCWstJTZKrIOdg2MzJVdAvDzWWaB6xDnW2Tw2VyYkY4zhhyBekV5r4BAx/B1+zdMuVlEYMEQEVoVeQNw6bqusjFGgjMHMOg+FYEgZLv3wYX6tKitjwICF0MjmiJeFuwQrY1RAWNfTNbR2TXd7GwBk84XpQrGg6XrZsl3XCygDAEKQ45AgwSpwrYkyxhiDmQ+gQHHWUBhrHXcxVhb4Ozasu+/g7Xuv2JZOJjiOA4AgCJxKxSxbBa2UKxSnFGUyp0zm8rmiWijpetmyK64XBJQBQ0AkiMhmTJNSxoABEAYMcMagZ3BhKfPFZr4L9b3P79v1wwfv7+nsWHLElFLX9fSyqelGXtWmlfxkTplS8tl8UdFKJcM0bcfxPD+gQYgHCCFqqPN52MvVK2Ob1vT/4P6vtQIKAIQQWZZkWepqbx9aNze9ruualq3pRkFVp5T8RDY3MTMJRd0wLNtxfZ9SJAQJB0sZQ2NW5vtfOHD9QO/qVkCbThmiJEmSJLWnU4OZgdkBeL5ftiy1ZORVdVrJvz869vrwqZPnR13KkHCL4DZmbUvErtm548OALjIAURDEZDKdTK5f0x8m6qb54r9e+8UTT41mC4RvuoQa+y497W09He0fBWtDScTjBw/c+Oj3v7O+p4PSoNkrsBErY4lYTJbE/xlrKFdu2fTte+6WCWlmA431OrM6L44wYJR6AbUDalJaptRmzG1Y8oZr9u7espEx2jC3kXEgqrphOY4sSyuEY8xwNEUfz2lnNeO8644LXDYuK8moIwmCwA8k47e0Jw8iCgsqRiOR/Xt2/XP4FPANlNjYkFXDUHW9LZVcLmXR0t6aGD429up47rhvj0mgRogj874kUF70ojFhTdeBrf33pBN760FD2bJhMCqJdsDqN4QGrIho2o5SKA6uGWidUi3rTx479PKZ5yvBiUyyMJiyU50uC4hdkQ2b12wpp6YnPLH0zkhSfPzeXafu3Pklke+sb6ezLR2PyLZpL63XcA1WPD+bLyxHofStkUfPTz528zo9k3ZXiQEA6BaoZd7zBUI4hADBA4plVx3Pl35+eHhd8t09Q48QEl/QkCSKoiAAtMAaSkDZRDa3JKDm0uGiVwlgf4/XFXnx4NZs6LUwAMpCB4xyHIlKKUns6eYHtoi9PtfmeEJBO1soPa0an21P3l3XNaW09bUFgIRcyCqMsWZb3QXTf3rEembcGS56mRj/95vaEtGrDOsoAiDyPEkIfG88uqGvc2tE2haTN0TlHllI8JyEiIxVPsj+aFIpFkvPtiXuQmzVL21SjuCkoni+LwoLV4AfsL+cyv3kWPFkhaeSBISMmf4ZnX266yFJ3MDAF4UBSVgrCn08l65fQI47OpX/maL+HgAc7xylZY6bt4IFnuc5DhiDOjU10StgrqBali0m53fG4Hf/OPe9Z0+XonHobAPCoSRclhQ6ZCRcb3f7N5uphAErladGp58zzF/y5BQiAwAEvh6I44jAc1WM+VtBo30AgCEWdaNkmqlkojbrvbH8T//wesnlIQASkTZ2x768LXn3+tjaOLfI3DGAI+/++dWTj3HBO5nO4kAHE3kAgIi8lSOrFiqP44QmLkHjVIJoWna+qGb6emvTj78/PXV+AtIdmd7U16/tvmd338CqeYpnDGzXV81KLm9MZzWNcbu2ZwaT/JtjR88qZ1ZHebUcTcf9dIwKfEdH8ov1Z3WO4+oNbzFWAHA8b7pu26I9XXRw7c6OyI+/umvP+raAwrjh6ZVAMd2JgjWa1c9N6iMT6sQFRZ/MBSXDkSND997+21sHd67bf/z8YdOztLJUMPhkNNrf9XAidl19vxwh4rL0CgB+wCbrtq2NfanY/mtGgD10mnLv53zXtyzXMJ2yZjpFg+plcBxwXLAMwaxEPJ92J46b+N1/q7/ec+1lvXtGLrwcd+WItP+y/ge60gcQG1gOz3GCwM/M0lLvLVY1WbiQVRZkbUoJu7vlw+NOseACY+D54HpQCcBnAAAcAkeAI0AII+j39TpX74Fo5JUp+6kPUndd9cAr0dSuzL7tmeujclOHExFJk42y+d6GZDKn+EHAc3Ojj/P4rc3x43lXsSkgAAIgVv8Aw0MTEmTxWDC4xh4aZLFYeH59/LRx+w3bH7xxB+BiqxAA/CCoeB40OnstZJ3d/xExW1Qt207E570Gb+6VH7s6/cjb5lndcwkDQjmOj4lyW5K0Q8xy3PcMqsYTrC0FolB9iQE4AUzbdEtKgKXEsh3NMKGRapuctwAAsaCVdNNcwEoQDmYi16+Wpmzq+BQYkznCPO/dD9TnhqdeygclXgZRAD8AwiFHeqLc5/rl+4Ziuztact4nczlFLS3PBhDAsGy1pPf39NTnpkSSEgkAqJp15NjZJ46ceWmkrAEP0QikAGQpEZM/1S3ekondNiBvSgp8y3HeN068XbJs5BvMwCL2ilbFncrlt24capg/cqH45AsnDh15751zOQMI6+hMdLV3d0U3rU/vu7z72rXJrR1SUlxeLLqolQ4dOYpcy3vWrMm6QXDy9Jmbrru6YU274q+KSrd9ZtMdN2yJxyPtXan+1an+jnhnXBRbV2ONUEr/+Pzf/nN2BAnX8AC1mI9DOP7oWyfuM8zkqnh97ubBrs2DXStgaiiu6/7p0Au/evpZimRBPGwJ1qpqEU+dH3v1jTdv3f/pi8VUK7OhsdOjY88cfvmF196oBAybn2Ob6jXErQT0N0/99YrNl/f3dK+YKQwWWY5TMsyiVsoWClO5/JSSn1Ly2YKqaFquWCq7HuG4RUBhkdhbNRuRet6BvVc+/MA3+pbCZYz5QWA7jmGWNd3Iq2quUJxSCtP5Qq5YzGslzTBNy7EqrhcEQTWaC+H5obaRlbMCMOb729ZnvnLHbft2bG9LJQWep5Q6lUrZslVdL6hatlDM5kMmtVjSS2bZtB3H9arBTWCMIQuDxgCMMjobk6XLiBPikvexIS4NqECgv7M9s7pnVTTq+X6hVFKrsT7Pp5QBIBIkVQnrhUSU0Rmu2ecw0F2NI7cCCq3E4EPDJRwXABtViiO5Qhg+RUI4jhDCIQIhfBjQBgDKgAa0pva8oPYCyhY12iorzO24s1cEczcEVRSk4X1Bg7ozGLOUcyNYDmirrDW4Mx5jtf+qXx9CYJMLuVrEuc+alltkWMadUS1u+LsWBxEZsGYVFz4sk3LZrLWtY3gSrSFmMxdKDcvXIi5XnStkre1pno5rMhYmNBntCmTld8e1vc7dC7dQ+BKwXnSUJeX/+/8yPmH9uLH+F4LmyqIA1WlEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTAzLTA4VDE2OjE0OjA2KzAxOjAw9i4P5wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wMy0wOFQxNjoxNDowNiswMTowMIdzt1sAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
 						},
 						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.7ac0c1a0.css",
 							"method": "GET",
 							"param": "",
@@ -265,13 +305,95 @@
 							"evidence": "org/TR/2001/REC-SVG-20010904/DTD/svg10"
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFDPNG</p><p>\\x001a</p><p>\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x00009\\x0000\\x0000\\x00009\\x0008\\x0002\\x0000\\x0000\\x0000\\x0003z\\x0014\uFFFD\\x0000\\x0000\\x0000\\x0004gAMA\\x0000\\x0000\uFFFD\uFFFD\\x000b\uFFFDa\\x0005\\x0000\\x0000\\x0000 cHRM\\x0000\\x0000z&\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000\uFFFD\\x0000\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000u0\\x0000\\x0000\uFFFD`\\x0000\\x0000:\uFFFD\\x0000\\x0000\\x0017p\uFFFD\uFFFDQ<\\x0000\\x0000\\x0000\\x0006bKGD\\x0000\uFFFD\\x0000\uFFFD\\x0000\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0007tIME\\x0007\uFFFD\\x0003\\x0008\\x0010\\x000e\\x00063B\uFFFD\uFFFD\\x0000\\x0000</p><p>=IDATh\uFFFD\uFFFDi\uFFFD\\x001cG\\x0015\uFFFD\u07EB>\uFFFD\uFFFD\\x001c{{\\x000f\uFFFD\uFFFD\u05F1\uFFFD\uFFFD8v|\uFFFD\\x0010\uFFFD\\\uFFFD$\uFFFD\\x0014'BA\uFFFD\\x0008\\x0008(\"\uFFFD\\x0010\uFFFD\\x0008$\uFFFD\\x0008!\uFFFD\uFFFD@\uFFFD\uFFFD\\x000f\\x0002\\x0004\uFFFD\\x001f\uFFFD\uFFFD\\x0001(\uFFFD\uFFFDb\uFFFD(\uFFFD`%\"\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkw\uFFFD\uFFFDc\uFFFDg\uFFFD{\uFFFD{\uFFFD{\uFFFD\uFFFD\uFFFDG\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDn\\x001c\uFFFD\uFFFD<\uFFFDfz\uFFFD\uFFFD\uFFFD\u056B\uFFFDW\uFFFD\\x00163\\x0007\uE10F\uFFFD\uFFFDK\r\uFFFD\t\uFFFD%\uFFFD\uFFFD\u03CA\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\\x0017\uFFFDo\uFFFD\\x0014\uFFFD\uFFFD%c]@\uFFFD\uFFFD&\uFFFD\uFFFD\uFFFD+\uFFFD^\tk-%6J\uFFFD\uFFFD\uFFFD\uFFFDc3%W@\uFFFD<\uFFFDY\uFFFDz\uFFFD9\uFFFD\uFFFD<6W&$c\uFFFD\uFFFD ^\uFFFD^k\uFFFD\\x00101\uFFFD\\x001d~\uFFFD\uFFFD.VQ\\x00180D\\x0004V\uFFFD^@\uFFFD:n\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD:\\x000f\uFFFD`H\\x0019.\uFFFD\uFFFDa~\uFFFD*+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u6217\uFFFD\uFFFD\\x0004+cT@X\uFFFD\uFFFD5\uFFFDvMw{\\x001b\\x0000d\uFFFD\uFFFDB\uFFFD\uFFFD\uFFFDz\u0672]\uFFFD\\x000b(\\x0003\\x0000B\uFFFD\uFFFD \uFFFD*p\uFFFD\uFFFD2\uFFFD\\x0018\uFFFD\uFFFD\\x000f\uFFFD@q\uFFFDP\\x0018k\\x001dw1V\\x0016\uFFFD;6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\u0616N&8\uFFFD\\x0003\uFFFD \\x0008\uFFFDJ\uFFFD,[\\x0005\uFFFD\uFFFD+\\x0014\uFFFD\\x0014e2\uFFFDL\uFFFD\uFFFDZ(\uFFFDz\u0672+\uFFFD\\x0017\\x0004\uFFFD\\x0001C@$\uFFFD\uFFFDfL\uFFFDR\u0180\\x0001\\x0010\\x0006\\x000cp\u01A0gpa)\uFFFD\uFFFDf\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFDXr\u0114R\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDF^\u0566\uFFFD\uFFFDdN\uFFFDR\uFFFD\uFFFD|Q\uFFFDJ%\uFFFD4m\uFFFD\uFFFD<?\uFFFDA\uFFFD\\x0007\\x0008!j\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFD+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002</p><p>\\x0000\uFFFD\\x0010Y\uFFFDdY\uFFFDjo\\x001fZ77\uFFFD\uFFFD\uB696\uFFFD\uFFFDFAU\uFFFD\uFFFD\uFFFDD6713\tE\uFFFD0,\uFFFDq}\uFFFDR$\\x0004\t\\x0007K\\x0019CcV\uFFFD\uFFFD_8p\uFFFD@\uFFFD\uFFFDV@\uFFFDN\\x0019\uFFFD$I\uFFFD$\uFFFD\uFFFDS\uFFFD\uFFFD\uFFFD\uFFFD\\x0001x\uFFFD_\uFFFD,\uFFFDd\uFFFDUuZ\u027F?:\uFFFD\uFFFD\uFFFD\uFFFDG]\u0290p\uFFFD\uFFFD6fmK\u012E\u0679\uFFFD\u00C0.2\\x0000Q\\x0010\uFFFDd2\uFFFDL\uFFFD_\uFFFD\\x001f&\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD\\x0013O\uFFFDf\\x000b\uFFFDo\uFFFD\uFFFD\\x001a\uFFFD.=\uFFFDm=\\x001d\uFFFD\\x001f\\x0005kCI\uFFFD\uFFFD\\x0007\\x000f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u04A0\uFFFD+\uFFFD\\x0011+c\uFFFDXL\uFFFD\uFFFD\uFFFD\\x0019k(Wn\uFFFD\uFFFD\uFFFD{\uFFFD\tif\\x0003\uFFFD\uFFFD:\uFFFD:/\uFFFD0`\uFFFDz\\x0001\uFFFD\\x0003jRZ\uFFFD\uFFFDf\uFFFDmX\uFFFDk\uFFFD\uFFFD\u07B2\uFFFD1\uFFFD0\uFFFD\uFFFDq \uFFFD\uFFFDa9\uFFFD,K+\uFFFDc\uFFFDp4E\\x001f\uFFFDig5\uFFFD\uFFFD\\x000b\\6.+\u0268#\t\uFFFD\uFFFD\\x000f$\u3DF4'\\x000f\"</p><p>\\x000b*F#\uFFFD\uFFFD{v\uFFFDs\uFFFD\\x0014\uFFFD\r\uFFFD\uFFFD\u0610U\uFFFDPu\uFFFD-\uFFFD\\.e\uFFFD\uFFFD\u079A\\x0018>6\uFFFD\uFFFDx\uFFFDo\uFFFDI\uFFFDF\uFFFD#\uFFFD$P^\uFFFD\uFFFD1aM\u05C1\uFFFD\uFFFD\uFFFD\uFFFD\\x0013{\uFFFDAC\u0672a0*\uFFFDv\uFFFD\uFFFD7\uFFFD\\x0006\uFFFD\uFFFDh\u068ER(\\x000e\uFFFD\\x0019h\uFFFDR-\uFFFDO\\x001e;\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFDL\uFFFD0\uFFFD\uFFFDS\uFFFD.\\x000b\uFFFD]\uFFFD\r\uFFFD\uFFFDl)\uFFFD\uFFFD'<\uFFFD\uFFFD\uFFFDHR|\uFFFD\uFFFD]\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFDo\uFFFD\uFFFD-\\x001d\uFFFD\u0236i/\uFFFD\uFFFDp\rV<?\uFFFD/,G\uFFFD\uFFFD\uFFFD\uFFFDG\uFFFDO>v\uFFFD:=\uFFFDvW\uFFFD\\x0001\\x0000\uFFFD\\x0016\uFFFDe\uFFFD\uFFFD\\x0005B8\uFFFD\\x0000\uFFFD\\x0003\uFFFDeW\\x001d\u03D7~~xx]\uFFFD\uFFFD=C\uFFFD\\x0010\\x0012_\u0410$\uFFFD\uFFFD \\x0000\uFFFD\uFFFD\\x001aJ@\uFFFDD6\uFFFD$\uFFFD\uFFFD\uFFFD\uFFFDW\t`\uFFFD\uFFFD\\x0015y\uFFFD\uFFFD\uFFFDl\uFFFD0\\x0000\uFFFDB\\x0007\uFFFDr\\x001c\uFFFDJ)I\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD>\uFFFD\uFFFDxBA;[(=\uFFFD\\x001a\uFFFDmO\uFFFD]\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\\\uFFFD*\uFFFD\uFFFDf[\uFFFD\\x0005\uFFFDz\uFFFDzf\uFFFD\\x0019.z\uFFFD\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\\x0012\u046B\\x000c\uFFFD(\\x0002 \uFFFD<I\\x0008|o<\uFFFD\uFFFD\uFFFDskD\uFFFD\\x0016\uFFFD7D\uFFFD\\x001eYH\uD830\uDD08\uFFFDU>\uFFFD\uFFFDhR)\\x0016K\u03F6%\uFFFDBl\uFFFD/mR\uFFFD\u0922x\uFFFD/</p><p>\\x000bW\uFFFD\\x001f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDd\uFFFD\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFD\uFFFD\\x0019\uFFFD}\uFFFD\uFFFD!I\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\\x0001IX+</p><p>}<\uFFFD\uFFFD_@\uFFFD;:\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001e\\x0000\\x001c\uFFFD\\x001c\uFFFDe\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD9\\x000e\\x0018\uFFFD:55\uFFFD+`\uFFFD\uFFFDZ\uFFFD-&\uFFFDw\uFFFD\uFFFDw\uFFFD8\uFFFD\uFFFDgO\uFFFD\uFFFDq\uFFFDl\\x0003\u00A1$\\\uFFFD\\x0014:d$\\ow\uFFFD7\uFFFD\uFFFD\uFFFD\\x0001+\uFFFD\uFFFDF\uFFFD\uFFFD3\uFFFD_\uFFFD\uFFFD\\x0014\"\\x0003\\x0000\\x0004\uFFFD\\x001e\uFFFD\uFFFD\uFFFDsU\uFFFD\uFFFD[A\uFFFD}\\x0000\uFFFD!\\x0016u\uFFFDd\uFFFD\uFFFDd\uFFFD6\uBF71\uFFFDO\uFFFD\uFFFDz\uFFFD\uFFFD!\\x0000\\x0012\uFFFD6v\u01FE\uFFFD-y\uFFFD\uFFFD\uFFFD\uFFFD8\uFFFD\uFFFD\uFFFD1\uFFFD#\uFFFD\uFFFD\uFFFD\u0553\uFFFDq\uFFFD;\uFFFD\uFFFD\uFFFD@\\x0007\\x0013y\\x0000\uFFFD\uFFFD\uFFFD\uFFFD#\uFFFD\\x0016*\uFFFD\uFFFD&.A\uFFFDT\uFFFDhZv\uFFFD\uFFFDf\uFFFDzk\u04CF\uFFFD?=u~\\x0002\uFFFD\\x001d\uFFFD\uFFFD\uFFFD\u05EF\uFFFDgw\uFFFD\uFFFD\uFFFDy\uFFFDg\\x000cl\uFFFDW\uFFFDJ.oLg5\uFFFDq\uFFFD\uFFFDg\\x0006\uFFFD\uFFFD\uFFFDcG\uFFFD*gVGy\uFFFD\\x001cM\uFFFD\uFFFDt\uFFFD</p><p>|GG\uFFFD\uFFFDgu\uFFFD\uFFFD\uFFFD\ro1V\\x0000p<o\uFFFDn\u06E2=]tp\uFFFD\u038E\u020F\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\uFFFD\u00B8\uFFFD\uFFFD@1\u0749\uFFFD5\uFFFD\uFFFD\uFFFDM\uFFFD#\\x0013\uFFFD\uFFFD\\x0005E\uFFFD\uFFFD\\x0005%\u00D1#C\uFFFD\uFFFD\uFFFD\uFFFD[\\x0007w\uFFFD\uFFFD\uFFFD\uFFFDa\u04F3\uFFFD\uFFFDT0\uFFFDd4\uFFFD\uFFFD\uFFFDp\"v]}\uFFFD\\x001c!\uFFFD\uFFFD</p><p>\\x0000~\uFFFD&\uBDAD\uFFFD}\uFFFD\uFFFD\uFFFDkF\uFFFD=t\uFFFDr\uFFFD\uFFFD|\u05F7,\uFFFD0\uFFFD\uFFFDf:E\uFFFD\uFFFDep\\x001cp\\\uFFFD\\x000c\uFFFD\uFFFDD<\uFFFDv'\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDs\uFFFDe\uFFFD{F.\uFFFD\\x001cw\u5234\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\\x0007\\x0010\\x001bX\\x000e\uFFFDq\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD-V5Y\uFFFD\uFFFDU\\x0016dmJ\t\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\\x0002c\uFFFD\uFFFD\uFFFDzP\t\uFFFDg\\x0000\\x0000\\x001c\\x0002G\uFFFD#@\\x0008#\uFFFD\uFFFD\uFFFD:W\uFFFDh\uFFFD)\uFFFD\uFFFD\\x000fRw]\uFFFD\uFFFD+\uFFFD\u052E\u033E\uFFFD\uFFFDrS\uFFFD\\x0013\\x0011I\uFFFD\uFFFD\uFFFD\uFFFD\u0786d2\uFFFD\uFFFDA\uFFFDss\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDyW\uFFFD) \\x0000\\x0002 V\uFFFD\\x0000\uFFFDC\\x0013\\x0012d\uFFFDX0\uFFFD\uFFFD\\x001e\\x001ad\uFFFDXx~}\uFFFD\uFFFDq\uFFFD\r\uFFFD\\x001f\uFFFDq\\x0007\uFFFDb\uFFFD\\x0010\\x0000\uFFFD \uFFFDx\\x001e4:{-d\uFFFD\uFFFD\uFFFD\\x00111[T-\uFFFDN\uFFFD\uFFFD\\x0006o\uFFFD\\x001f\uFFFD:\uFFFD\uFFFD\uFFFD\uFFFDY\uFFFDs\t\\x0003B9\uFFFD\uFFFD\uFFFDr[\uFFFD\uFFFDC\uFFFDr\uFFFD\uFFFD\\x000c\uFFFD\uFFFD\\x0013\uFFFD-\\x0005\uFFFDP}\uFFFD\\x00018\\x0001L\uFFFDtKJ\uFFFD\uFFFD\u0132\\x001d\uFFFD0\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD\\x0000\\x0000\uFFFD\uFFFD\uFFFDt\uFFFD\\\uFFFDJ\\x0010\\x000ef\"\u05EF\uFFFD\uFFFDl\uFFFD\uFFFD\\x0014\\x0018\uFFFD9\uFFFD<\uFFFD\uFFFD\\x000f\uFFFD\u71A7^\uFFFD\\x0007%^\\x0006Q\\x0000?\\x0000\uFFFD!Gz\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDb\uFFFD;Zr\uFFFD's9E--\uFFFD\\x0006\\x0010\uFFFD\uFFFDl\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFD\\x0012\t\\x0000\uFFFD\uFFFDu\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFDyi\uFFFD\uFFFD\\x0001\\x000f\uFFFD\\x0008\uFFFD\\x0000d)\\x0011\uFFFD?\uFFFD-\u0792\uFFFD\uFFFD6 oJ</p><p>|\uFFFDq\uFFFD7N\uFFFD]\uFFFDl\uFFFD\\x001b\uFFFD\uFFFD\"\uFFFD\uFFFDV\u015D\uFFFD\uFFFDn\\x001cj\uFFFD?r\uFFFD\uFFFD\uFFFD\\x000b'\\x000e\\x001dy\uFFFDs9\\x0003\\x0008\uFFFD\uFFFDLt\uFFFDwwE7\uFFFDO\uFEFC\uFFFD\u06B5\u026D\\x001dRR\\^,\uFFFD\uFFFD\uFFFD\\x000e\\x001d9\uFFFD\\\uFFFD{\u05AC\u027AAp\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDaM\uFFFD\u2BCAJ\uFFFD}f\uFFFD\\x001d7l\uFFFD\uFFFD#\uFFFD]\uFFFD\uFFFD\u0569\uFFFD\uFFFDxg\\\\x0014[Wc\uFFFDPJ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDsv\\x0004\t\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\uFFFDC8\uFFFD\uFFFD['\uFFFD3\uFFFD\uFFFDx}\uFFFD\uFFFD\uFFFD\uFFFD\u0343]+`j(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000b\uFFFDz\uFFFDY\uFFFDdA<l\t\u05AAj\\x0011O\uFFFD\\x001f{\uFFFD\uFFFD7o\uFFFD\uFFFD\uFFFD\uFFFDT+\uFFFD\uFFFD\uFFFD\u04E3c\uFFFD\\x001c~\uFFFD\uFFFD\uFFFD\u07A8\\x0004\\x000c\uFFFD\uFFFDc\uFFFD\uFFFD5\u012D\\x0004\uFFFD7O\uFFFD\uFFFD\uFFFD\u0357\uFFFD\uFFFDt\uFFFD\uFFFD)\\x000c\\x0016Y\uFFFDS2\u0322V\uFFFD\\x0016</p><p>S\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD\u0642\uFFFDhZ\uFFFDX*\uFFFD\\x001e\uFFFDE@a\uFFFD\uFFFD[5\\x001b\uFFFDz\u0781\uFFFDW>\uFFFD\uFFFD7\uFFFD\uFFFD\uFFFDe\uFFFD\uFFFDA`;\uFFFDa\uFFFD5\uFFFD\u022Bj\uFFFDP\uFFFDR</p><p>\uFFFD\uFFFDB\uFFFDX\uFFFDk%\uFFFD0M\u02F1*\uFFFD\\x0017\\x0004A5\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x00020\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFDr\uFFFDm\uFFFDvloK%\\x0005\uFFFD\uFFFD\uFFFD:\uFFFDJ\u0672U]/\uFFFDZ\uFFFDP\uFFFD\uFFFDC&\uFFFDX\uFFFDKf\u0674\\x001d\uFFFD\uFFFD\uFFFD\uFFFDM`\uFFFD!\\x000b\uFFFD\uFFFD\\x0000\uFFFD2:\\x001b\uFFFD\uFFFD\u02C8\\x0013\uFFFD\uFFFD\uFFFD!.\r\uFFFD@\uFFFD\uFFFD\uFFFD=\uFFFD\uFFFDgU4\uFFFD\uFFFD~\uFFFDTR\uFFFD\uFFFD>\u03E7\uFFFD\\x0001 \\x0012$U\t\uFFFDD\uFFFD\uFFFD\\x0019\uFFFD\uFFFD\uFFFD0\uFFFD]\uFFFD#\uFFFD\\x0002</p><p>\uFFFD\uFFFD\uFFFDC\uFFFD%\\x001c\\x0017\\x0000\\x001bU\uFFFD#\uFFFDB\\x0018>EB8\uFFFD\\x0010\uFFFD!\\x0002!|\\x0018\uFFFD\\x0006\\x0000\u0280\\x0006\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002\uFFFD\\x00165\uFFFD*+\uFFFD\uFFFDW\\x0004s7\\x0004U\\x0014\uFFFD\uFFFD}A\uFFFD\uFFFD3\\x0018\uFFFD\uFFFDs#X\\x000eh\uFFFD\uFFFD5\uFFFD3\\x001ec\uFFFD\uFFFD\uFFFD_\\x001fB`\uFFFD\\x000b\uFFFDZ\u0139\u03DA\uFFFD[dX\u019DQ-n\uFFFD\uFFFD\\x0016\\x0007\\x0011\\x0019\uFFFDf\\x0015\\x0017>,\uFFFDr\u066C\uFFFD\uFFFDcx\\x0012\uFFFD!f3\\x0017J\r\uFFFD\uFFFD\".W\uFFFD+d\uFFFD\uFFFDi\uFFFD\uFFFDk2\\x0016&4\\x0019\uFFFD</p><p>d\uFFFDw\u01F5\uFFFD\uFFFD\uFFFD\\x000b\uFFFDP\uFFFD\\x0012\uFFFD^t\uFFFD%\uFFFD\uFFFD\uFFFD\uFFFD2>a\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\uFFFD\u02A2\\x0000\uFFFDiD\\x0000\\x0000\\x0000%tEXtdate:create\\x00002016-03-08T16:14:06+01:00\uFFFD.\\x000f\uFFFD\\x0000\\x0000\\x0000%tEXtdate:modify\\x00002016-03-08T16:14:06+01:00\uFFFDs\uFFFD[\\x0000\\x0000\\x0000WzTXtRaw profile type iptc\\x0000\\x0000x\uFFFD\uFFFD\uFFFD\\x000c\\x0008qV((\uFFFDO\uFFFD\uFFFDI\uFFFDR\\x0000\\x0003#\\x000b.c\\x000b\\x0013#\\x0013K\uFFFD\\x0014\\x0003\\x0013 D\uFFFD4\uFFFDd\\x0003#\uFFFDT \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\\x0007\u02C0H\uFFFDJ.\\x0000\uFFFD\\x0017\\x0011t\uFFFDB5\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "administrator"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "TODO"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "username"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index.0fde0d10.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "xxx"
+						}
+					],
+					"count": "9",
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 5 times, the first in the element starting with: \"**/(function(d){d.module(\"vcRecaptcha\",[])})(angular);(function(d){function p(){throw new Error(`You need to set the \"key\" attri\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "37"
 				},
 				{
 					"pluginid": "10109",
@@ -288,14 +410,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.53c15cd1.js\"></script>"
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.0fde0d10.js\"></script>"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.53c15cd1.js\"></script>"
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index.0fde0d10.js\"></script>"
 						}
 					],
 					"count": "2",
@@ -330,7 +452,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -396,7 +518,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -417,13 +539,6 @@
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/android-chrome-192x192.dc642549.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -466,6 +581,13 @@
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/assets/apple-touch-icon-76x76.8800ce7f.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "must-revalidate"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/favicon-96x96.ee85fdfa.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
