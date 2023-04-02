@@ -26,7 +26,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/vpEprwpCoBMgy-fvZET0Mz6L/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/NZrMWHVy58-S9gVvad9HVGxk/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -63,6 +63,14 @@
     {
       "type": "unknown",
       "url": "https://carqueiranne.mademande.fr/aides/assets/OpenSans-Regular.b7691097.woff"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/aides/resources/i18n/root-fr.json"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/referentiel-ressources/services/portail-depot-demande-aides/tenants/carqueiranne/resources/root-fr?merge=true"
     },
     {
       "type": "unknown",
@@ -275,7 +283,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 26 Mar 2023 01:41:32 GMT",
+    "date": "Sun, 02 Apr 2023 01:33:08 GMT",
     "etag": "W/\"5409-186e98559a0\"",
     "last-modified": "Thu, 16 Mar 2023 08:24:36 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -286,7 +294,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "90a39888-2581-42e5-b329-9c77a34ac7df",
+    "x-request-id": "debc963f-27f8-4e7e-8fd9-ec1fd92135b8",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -404,7 +412,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.115.106",
+      "ip": "172.253.122.105",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -458,7 +466,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.251.163.94",
       "geoip": {
         "continent": {
           "code": "NA",
