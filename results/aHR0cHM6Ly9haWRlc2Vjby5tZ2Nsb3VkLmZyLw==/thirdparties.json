@@ -10,7 +10,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/4PnKmGB9wRHh1i04o7YUICeI/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/4q6CtudrwcI-LSEYlfoEbDXg/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -23,7 +23,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 23 Apr 2023 01:43:25 GMT",
+    "date": "Sun, 30 Apr 2023 01:37:21 GMT",
     "etag": "W/\"5409-1877657c3e0\"",
     "last-modified": "Wed, 12 Apr 2023 16:41:16 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -34,7 +34,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "ba1c97a1-0e0e-4fdc-80d6-15d311edd451",
+    "x-request-id": "905ae16c-557f-4177-857a-77777ead904b",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -96,7 +96,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.32.132",
+      "ip": "142.251.16.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -128,9 +128,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 40.7064,
-          "longitude": -73.9473,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -145,28 +145,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.32.131",
+      "ip": "172.253.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -198,9 +182,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 40.7064,
-          "longitude": -73.9473,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -215,23 +199,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     }
   ]
