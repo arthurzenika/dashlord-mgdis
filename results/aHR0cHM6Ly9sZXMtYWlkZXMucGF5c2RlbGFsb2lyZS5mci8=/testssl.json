@@ -103,7 +103,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
@@ -111,14 +111,14 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "OK",
@@ -262,7 +262,7 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03D20A676A40E42E3ED1F3EFB8B29A06BF9B"
+              "finding"      : "04918738CE73348C43B373F76DF504B50A6A"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B2E29AE752310C2EDA1C303E1C2FCAD18D7D631D"
+              "finding"      : "D51DDA4FE890700FCD581D8D8C36DB764C809CE5"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "588B5A1DB5794D8CECEA7B79D8C19C2BD4BFDBE73EDC12C03E856163BB11F289"
+              "finding"      : "D40293FB910D4C006BF85B14BDBC534615A1586BC86781B13E44FFE5680F4245"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFOTCCBCGgAwIBAgISA9IKZ2pA5C4+0fPvuLKaBr+bMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjExMjMwMTM2NDRaFw0yMzAyMjEwMTM2NDNaMCUxIzAhBgNVBAMTGmxlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvcnU6qDVRswOgfC8286GlcAgVZnJOVvPSWvgBCxsLJJvTXjsB1mmjXeZxhFtm7RNyvP3omv7PgPeRxiMOQmZnlF5JiwQXPX840h/2+n9Gs5+L25HBpjrLTXjWCL+0vBAUcHXcIp94omDOqt6+Ltu1wMtFwA1gmHgtTg5zF2UBnMPJFiciK1XbFX3spaZrSXMsDmjDGLX9nj2FiKFAGwSgmX5qypK2wNhRAc/ffpzmRpIp0deJOqmk4jTsqFiechA6N38kXE98KGi/O6f/odS0P1cRVCPjkW08whyeJZ8NYQ5MDdXTmTdtBquEnnwcJE3voACs7sG9TrqT0LoWd1XTQIDAQABo4ICVDCCAlAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTWLng02LlglkYflSt6DqdsdOLZEDAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghpsZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhKJYRi8AAAQDAEcwRQIgfk6AbQ9POAIHf3TWKj12hkjJtiOPG0CE4k4wK9wLCrQCIQDjgxpurQkZzh1OXKAwOEXQN2cBb7tJ0ppb8qlrY8YcuQB1AHoyjFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABhKJYRmwAAAQDAEYwRAIgGNC8R9usGCbMxJt6ooHJ8qlyhrIMccf5ikPZaPtOZUcCIFGg/1YdrtULv0bsg1wEOJpjB4Z9HOcVVwvZd+2S8AVFMA0GCSqGSIb3DQEBCwUAA4IBAQAr1EKdbYVnsxW41Y37nWF6GWnpVgGEHlISiDmHSXqOA+X/lHT+JLD2zLHIbOE2ERn1M3/qPXZBi6Pu37B1XzLBPK0CfrG/C55K07VY9IWWA2JUSDWOhjkimqx5fCNugkde8GpWFm5OTYWQI9CpEXDxF22GkYX9E/Ovr79PoLIzhb6hPn8ObE3EKDVu5l76n3m/fD1C/2WSuqkiJWt0J/ApR8frzPuesMPNZ0iIfmnewb2hkdnG5LPN3JrxFKJRNAA88VNO1OULZQyPXhxNwLLVAEkSfGxbG2zdh/vp+cpUJH/DGv7Er0AFIQYm0dlJuruHizyhAlElbFe1HRWMcVzp\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFOjCCBCKgAwIBAgISBJGHOM5zNIxDs3P3bfUEtQpqMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAzMjMwMTMyMzlaFw0yMzA2MjEwMTMyMzhaMCUxIzAhBgNVBAMTGmxlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwydhUzdHfLoYCpveEMc2p0ie9U28Vsitt05vtoW4zT0nEthbMaMTbK/8G0IVgO98C45QaqOu8a4GgVEzPGZ6RJ/kRiOcjjZVbrUVKNVFCZ2VJth7U0EtOMl02xWay/XNq1B8Ut+4n5bt8rfJulZEgJuCxvVF551qfjHAGAhILbtCZh6PnEZSyduTKTueGSMSy98aM3PW6d/B4Lbttl7849Wbx8MQlWg28W4vUh9ukadnO+xEC8j3ibeGeJkm75blSk1jIvFDjxJguHhIK2FSXV5mC96F87q6wjwmiN3dgFZH4+rBM56E+glQ8YdiRaP7q1NkXYYwyXdsnTOUGY8esQIDAQABo4ICVTCCAlEwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTpB0qhUb4VnO035ZmwUGqLzesMATAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghpsZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhwxPqvsAAAQDAEcwRQIhAMgLomjuJY+ipnGi1XtL3sE477Af0xWYm46/pxS9D4qkAiAHb1mx9hcGNc+RiSOx+Xj9Ca5JIUgKkzVOo0Ztgd5O4wB2AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKKAAABhwxPqwEAAAQDAEcwRQIhAND7OMh/5tigKgeWUr8dRVHndqNwCdS0Sh1mN0Z61JwIAiBr80aVsmQjX805PJ6uXodBnZtDpid2UObKwVR6lVDjaTANBgkqhkiG9w0BAQsFAAOCAQEARSBQy5cutZT7aawMotQFvmxj4Y1I3KI0FPZ1t4vSq/jYcBlbG4pUaa4DEsqctzzBRLappYGRfLo0BzxOCuFS07sSVbHAqoIUet5Wkj5n5ephik/XgPB9cto+dMlJELpbGlAQNNEXrYzbcnIx+wncwZhTFlb43IAf04VLXd7DU/UsdWXND6TBpaGtVSXY8tWuu421lu6Scpvy4aFcDjGnl9b0wraH3QoDb03D1d3uuhap5nr0vOYxiaRBUQNI86abcr0tMcjM80zcIDN8wJMHO8GklVnZ2hMjFqTtNc74rhNrC8RRmEMOzXzhJ4Mvrr1X5MRBk6tCbpjXa+tH30ma5g==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -339,21 +339,21 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "43 >= 30 days"
+              "finding"      : "37 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-11-23 01:36"
+              "finding"      : "2023-03-23 01:32"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-02-21 01:36"
+              "finding"      : "2023-06-21 01:32"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -708,7 +708,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=588B5A1DB5794D8CECEA7B79D8C19C2BD4BFDBE73EDC12C03E856163BB11F289"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D40293FB910D4C006BF85B14BDBC534615A1586BC86781B13E44FFE5680F4245"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1091,6 +1091,6 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "116"
+              "finding"      : "54"
           }
 ]
