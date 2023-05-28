@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "37 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (23)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-06-21 01:32"
           }
 ,         {
@@ -1091,6 +1091,6 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "54"
+              "finding"      : "51"
           }
 ]
