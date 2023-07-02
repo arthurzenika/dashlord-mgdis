@@ -10,11 +10,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/aides/assets/index-4b1cda68.js"
+      "url": "https://carqueiranne.mademande.fr/aides/assets/index-143ffc46.js"
     },
     {
       "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/aides/assets/index-a98ef1b1.css"
+      "url": "https://carqueiranne.mademande.fr/aides/assets/index-f0005ff4.css"
     },
     {
       "type": "google",
@@ -26,7 +26,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/IqA9DpBOUJevxkykws9RiIBs/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/khH7Ei3klcvfRI74FvDcfuOo/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -119,6 +119,18 @@
     {
       "type": "unknown",
       "url": "https://carqueiranne.mademande.fr/aides/assets/OpenSans-Regular-b7691097.woff"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/aides/resources/i18n/root-fr.json"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/referentiel-ressources/services/portail-depot-demande-aides/tenants/carqueiranne/resources/root-fr?merge=true"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/aides/admin/tenants/carqueiranne/publicI18N/fr?merge=true"
     },
     {
       "type": "unknown",
@@ -287,90 +299,6 @@
     {
       "type": "unknown",
       "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/css/mgdis-element-essentiel.css"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/angular-i18n//angular-locale_fr.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/admin/publicI18N/fr?merge=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/resources/i18n-modules/form-fr.json"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/resources/i18n-modules/alerts-fr.json"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/admin/publicSettings?merge=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/aides/resources/styles/images/logo-home.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/Poppins-Medium.ttf"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-Regular.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/admin/publicSettings?merge=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/4.b630fc79789024a2d8ce.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/resources/img/fbe56336babd74ad0a9190a3e854e5da.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/fonts/20fd1704ea223900efa9fd4e869efb08.woff2"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-Italic.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-SemiBold.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/Poppins-Medium.ttf"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-Regular.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/fonts/20fd1704ea223900efa9fd4e869efb08.woff2"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-Italic.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-SemiBold.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fmentions-legales"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fcontact-page"
     }
   ],
   "cookies": [],
@@ -380,9 +308,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 25 Jun 2023 02:06:47 GMT",
-    "etag": "W/\"5125-188bdbde5d8\"",
-    "last-modified": "Thu, 15 Jun 2023 06:28:39 GMT",
+    "date": "Sun, 02 Jul 2023 02:02:52 GMT",
+    "etag": "W/\"5125-188e32fe190\"",
+    "last-modified": "Thu, 22 Jun 2023 12:59:06 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -391,7 +319,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "e1d3a2da-1b20-4fee-bb1c-a971b00f2136",
+    "x-request-id": "2bbce5a2-7dd8-4a1b-9054-ffe8ea133f99",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -509,7 +437,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.115.104",
+      "ip": "172.217.12.100",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -563,7 +491,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.163.94",
+      "ip": "142.250.191.35",
       "geoip": {
         "continent": {
           "code": "NA",
