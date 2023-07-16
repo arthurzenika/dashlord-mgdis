@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 2 Jul 2023 02:01:35",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 02:07:14",
 	"site":[ 
 		{
 			"@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -202,7 +202,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-143ffc46.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-efecd06f.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -227,7 +227,7 @@
 						{
 							"uri": "https://ma-carqueiranne.mgcloud.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "public, must-revalidate, proxy-revalidate, max-age=0",
 							"otherinfo": ""
