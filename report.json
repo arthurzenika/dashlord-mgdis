@@ -2030,7 +2030,7 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2023-08-20T03:02:00.000Z",
       "testsslGrade": "A",
       "cookiesGrade": "A",
@@ -2053,7 +2053,207 @@
   {
     "404": [],
     "url": "https://aideseco.mgcloud.fr/",
-    "http": null,
+    "http": {
+      "url": "https://aideseco.mgcloud.fr/",
+      "algorithm_version": 2,
+      "end_time": "Sat, 22 Jul 2023 05:13:21 GMT",
+      "grade": "B",
+      "hidden": true,
+      "likelihood_indicator": "MEDIUM",
+      "response_headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Origin": "aideseco.mgcloud.fr",
+        "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sat, 22 Jul 2023 05:13:20 GMT",
+        "Etag": "W/\"5125-1894e80b870\"",
+        "Last-Modified": "Thu, 13 Jul 2023 09:06:46 GMT",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Strict-Transport-Security": "max-age=63072000;",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Dns-Prefetch-Control": "off",
+        "X-Download-Options": "noopen",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Request-Id": "36dd5cb1-1a57-4f65-8af3-e9edc244ca83",
+        "X-XSS-Protection": "1;mode=block"
+      },
+      "scan_id": 39980637,
+      "score": 70,
+      "start_time": "Sat, 22 Jul 2023 05:13:17 GMT",
+      "state": "FINISHED",
+      "status_code": 200,
+      "tests_failed": 2,
+      "tests_passed": 10,
+      "tests_quantity": 12,
+      "details": {
+        "content-security-policy": {
+          "expectation": "csp-implemented-with-no-unsafe",
+          "name": "content-security-policy",
+          "output": {
+            "data": null,
+            "http": false,
+            "meta": false,
+            "numPolicies": 0,
+            "policy": null
+          },
+          "pass": false,
+          "result": "csp-not-implemented",
+          "score_description": "Content Security Policy (CSP) header not implemented",
+          "score_modifier": -25
+        },
+        "contribute": {
+          "expectation": "contribute-json-only-required-on-mozilla-properties",
+          "name": "contribute",
+          "output": {
+            "data": null
+          },
+          "pass": true,
+          "result": "contribute-json-only-required-on-mozilla-properties",
+          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
+          "score_modifier": 0
+        },
+        "cookies": {
+          "expectation": "cookies-secure-with-httponly-sessions",
+          "name": "cookies",
+          "output": {
+            "data": null,
+            "sameSite": null
+          },
+          "pass": true,
+          "result": "cookies-not-found",
+          "score_description": "No cookies detected",
+          "score_modifier": 0
+        },
+        "cross-origin-resource-sharing": {
+          "expectation": "cross-origin-resource-sharing-not-implemented",
+          "name": "cross-origin-resource-sharing",
+          "output": {
+            "data": {
+              "acao": "aideseco.mgcloud.fr",
+              "clientaccesspolicy": null,
+              "crossdomain": null
+            }
+          },
+          "pass": true,
+          "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+          "score_description": "Content is visible via cross-origin resource sharing (CORS) files or headers, but is restricted to specific domains",
+          "score_modifier": 0
+        },
+        "public-key-pinning": {
+          "expectation": "hpkp-not-implemented",
+          "name": "public-key-pinning",
+          "output": {
+            "data": null,
+            "includeSubDomains": false,
+            "max-age": null,
+            "numPins": null,
+            "preloaded": false
+          },
+          "pass": true,
+          "result": "hpkp-not-implemented",
+          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
+          "score_modifier": 0
+        },
+        "redirection": {
+          "expectation": "redirection-to-https",
+          "name": "redirection",
+          "output": {
+            "destination": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+            "redirects": true,
+            "route": [
+              "http://aideseco.mgcloud.fr/",
+              "https://aideseco.mgcloud.fr/",
+              "https://aideseco.mgcloud.fr/aides/#/aideseco/"
+            ],
+            "status_code": 200
+          },
+          "pass": true,
+          "result": "redirection-to-https",
+          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
+          "score_modifier": 0
+        },
+        "referrer-policy": {
+          "expectation": "referrer-policy-private",
+          "name": "referrer-policy",
+          "output": {
+            "data": "no-referrer-when-downgrade",
+            "http": true,
+            "meta": false
+          },
+          "pass": true,
+          "result": "referrer-policy-no-referrer-when-downgrade",
+          "score_description": "Referrer-Policy header set to \"no-referrer-when-downgrade\"",
+          "score_modifier": 0
+        },
+        "strict-transport-security": {
+          "expectation": "hsts-implemented-max-age-at-least-six-months",
+          "name": "strict-transport-security",
+          "output": {
+            "data": "max-age=63072000;",
+            "includeSubDomains": false,
+            "max-age": 63072000,
+            "preload": false,
+            "preloaded": false
+          },
+          "pass": true,
+          "result": "hsts-implemented-max-age-at-least-six-months",
+          "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
+          "score_modifier": 0
+        },
+        "subresource-integrity": {
+          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+          "name": "subresource-integrity",
+          "output": {
+            "data": {
+              "https://www.google.com/recaptcha/api.js?render=explicit": {
+                "crossorigin": null,
+                "integrity": null
+              }
+            }
+          },
+          "pass": false,
+          "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+          "score_description": "Subresource Integrity (SRI) not implemented, but all external scripts are loaded over HTTPS",
+          "score_modifier": -5
+        },
+        "x-content-type-options": {
+          "expectation": "x-content-type-options-nosniff",
+          "name": "x-content-type-options",
+          "output": {
+            "data": "nosniff"
+          },
+          "pass": true,
+          "result": "x-content-type-options-nosniff",
+          "score_description": "X-Content-Type-Options header set to \"nosniff\"",
+          "score_modifier": 0
+        },
+        "x-frame-options": {
+          "expectation": "x-frame-options-sameorigin-or-deny",
+          "name": "x-frame-options",
+          "output": {
+            "data": "SAMEORIGIN"
+          },
+          "pass": true,
+          "result": "x-frame-options-sameorigin-or-deny",
+          "score_description": "X-Frame-Options (XFO) header set to SAMEORIGIN or DENY",
+          "score_modifier": 0
+        },
+        "x-xss-protection": {
+          "expectation": "x-xss-protection-1-mode-block",
+          "name": "x-xss-protection",
+          "output": {
+            "data": "1;mode=block"
+          },
+          "pass": true,
+          "result": "x-xss-protection-enabled-mode-block",
+          "score_description": "X-XSS-Protection header set to \"1; mode=block\"",
+          "score_modifier": 0
+        }
+      }
+    },
     "updownio": null,
     "nmap": {
       "host": "aideseco.mgcloud.fr",
@@ -2424,7 +2624,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "252 >= 60 days"
+        "finding": "238 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3176,7 +3376,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "INFO",
-        "finding": "52"
+        "finding": "93"
       }
     ],
     "thirdparties": {
@@ -3191,7 +3391,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/khH7Ei3klcvfRI74FvDcfuOo/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/iRvKkcsnpNcOYYwhqaQxPITz/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3205,9 +3405,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 09 Jul 2023 02:04:36 GMT",
-        "etag": "W/\"5125-189072a9ae0\"",
-        "last-modified": "Thu, 29 Jun 2023 12:39:40 GMT",
+        "date": "Sun, 23 Jul 2023 01:44:53 GMT",
+        "etag": "W/\"5125-1894e80b870\"",
+        "last-modified": "Thu, 13 Jul 2023 09:06:46 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -3216,7 +3416,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "544d6da2-3b0a-4cbd-8d3b-275d6bffb2a7",
+        "x-request-id": "4a6bc1f2-1cd2-4a27-8e56-d39170a511d5",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -3278,7 +3478,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "142.251.16.106",
+          "ip": "142.250.189.228",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3332,7 +3532,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.62.94",
+          "ip": "142.250.188.3",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3389,186 +3589,16 @@
     "wappalyzer": {
       "urls": {
         "https://aideseco.mgcloud.fr/": {
-          "status": 302
+          "status": 302,
+          "error": "Navigation timeout of 10000 ms exceeded (https://aideseco.mgcloud.fr/aides/#/aideseco/)"
         }
       },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Node.js.svg",
-          "website": "https://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "kendo-ui",
-          "name": "Kendo UI",
-          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Kendo UI.png",
-          "website": "https://www.telerik.com/kendo-ui",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "bootstrap",
-          "name": "Bootstrap",
-          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
-          "confidence": 100,
-          "version": "3.4.1",
-          "icon": "Bootstrap.svg",
-          "website": "https://getbootstrap.com",
-          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "socket-io",
-          "name": "Socket.io",
-          "description": null,
-          "confidence": 100,
-          "version": null,
-          "icon": "Socket.io.svg",
-          "website": "https://socket.io",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "angularjs",
-          "name": "AngularJS",
-          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
-          "confidence": 100,
-          "version": "1.8.3",
-          "icon": "AngularJS.svg",
-          "website": "https://angularjs.org",
-          "cpe": "cpe:2.3:a:angularjs:angular.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "recaptcha",
-          "name": "reCAPTCHA",
-          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
-          "confidence": 100,
-          "version": null,
-          "icon": "reCAPTCHA.svg",
-          "website": "https://www.google.com/recaptcha/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "moment-js",
-          "name": "Moment.js",
-          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
-          "confidence": 100,
-          "version": "2.29.4",
-          "icon": "Moment.js.svg",
-          "website": "https://momentjs.com",
-          "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.17.21",
-          "icon": "Lodash.svg",
-          "website": "https://www.lodash.com",
-          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "2.2.4",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "core-js",
-          "name": "core-js",
-          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
-          "confidence": 100,
-          "version": "3.6.5",
-          "icon": "core-js.png",
-          "website": "https://github.com/zloirock/core-js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        }
-      ]
+      "technologies": []
     },
     "zap": {
       "@programName": "OWASP ZAP",
-      "@version": "2.12.0",
-      "@generated": "Sun, 9 Jul 2023 02:03:49",
+      "@version": "2.13.0",
+      "@generated": "Sun, 23 Jul 2023 01:43:54",
       "site": [
         {
           "@name": "https://aideseco.mgcloud.fr",
@@ -3640,11 +3670,46 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
+              "name": "Non-Storable Content",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
+            },
+            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
               "confidence": "1",
               "riskdesc": "Informational (Low)",
               "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
+            },
+            {
+              "name": "Sec-Fetch-Dest Header is Missing",
+              "riskcode": "0",
+              "confidence": "3",
+              "riskdesc": "Informational (High)",
+              "desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>"
+            },
+            {
+              "name": "Sec-Fetch-Mode Header is Missing",
+              "riskcode": "0",
+              "confidence": "3",
+              "riskdesc": "Informational (High)",
+              "desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>"
+            },
+            {
+              "name": "Sec-Fetch-Site Header is Missing",
+              "riskcode": "0",
+              "confidence": "3",
+              "riskdesc": "Informational (High)",
+              "desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>"
+            },
+            {
+              "name": "Sec-Fetch-User Header is Missing",
+              "riskcode": "0",
+              "confidence": "3",
+              "riskdesc": "Informational (High)",
+              "desc": "<p>Specifies if a navigation request was initiated by a user.</p>"
             },
             {
               "name": "Storable and Cacheable Content",
@@ -3669,10 +3734,9 @@
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2023-07-09T02:03:59.098Z",
+        "fetchTime": "2023-07-23T01:44:04.525Z",
         "runWarnings": [
-          "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly.",
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+          "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
         "categories": {
           "performance": {
@@ -3683,7 +3747,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.0012973785400390626
+            "score": 0
           },
           "accessibility": {
             "title": "Accessibility",
@@ -3735,53 +3799,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 27951,
+            "numericValue": 30798,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 17226,
-                  "firstMeaningfulPaint": 19597,
-                  "largestContentfulPaint": 28224,
-                  "interactive": 27951,
-                  "speedIndex": 17226,
-                  "totalBlockingTime": 652,
-                  "maxPotentialFID": 481,
-                  "cumulativeLayoutShift": 0.01162232456789115,
-                  "cumulativeLayoutShiftMainFrame": 0.01162232456789115,
-                  "totalCumulativeLayoutShift": 0.01162232456789115,
+                  "firstContentfulPaint": 18036,
+                  "firstMeaningfulPaint": 18152,
+                  "largestContentfulPaint": 31472,
+                  "interactive": 30798,
+                  "speedIndex": 18036,
+                  "totalBlockingTime": 978,
+                  "maxPotentialFID": 553,
+                  "cumulativeLayoutShift": 0.010497996437036444,
+                  "cumulativeLayoutShiftMainFrame": 0.010497996437036444,
+                  "totalCumulativeLayoutShift": 0.011202887992117726,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 227389048,
+                  "observedTimeOriginTs": 330132642,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 227389048,
-                  "observedFirstPaint": 693,
-                  "observedFirstPaintTs": 228082346,
-                  "observedFirstContentfulPaint": 1541,
-                  "observedFirstContentfulPaintTs": 228930449,
-                  "observedFirstContentfulPaintAllFrames": 1541,
-                  "observedFirstContentfulPaintAllFramesTs": 228930449,
-                  "observedFirstMeaningfulPaint": 1870,
-                  "observedFirstMeaningfulPaintTs": 229259045,
-                  "observedLargestContentfulPaint": 1672,
-                  "observedLargestContentfulPaintTs": 229060858,
-                  "observedLargestContentfulPaintAllFrames": 1672,
-                  "observedLargestContentfulPaintAllFramesTs": 229060858,
-                  "observedTraceEnd": 4169,
-                  "observedTraceEndTs": 231558041,
-                  "observedLoad": 1284,
-                  "observedLoadTs": 228672680,
-                  "observedDomContentLoaded": 1283,
-                  "observedDomContentLoadedTs": 228672476,
-                  "observedCumulativeLayoutShift": 0.01162232456789115,
-                  "observedCumulativeLayoutShiftMainFrame": 0.01162232456789115,
-                  "observedTotalCumulativeLayoutShift": 0.01162232456789115,
-                  "observedFirstVisualChange": 18,
-                  "observedFirstVisualChangeTs": 227407048,
-                  "observedLastVisualChange": 2151,
-                  "observedLastVisualChangeTs": 229540048,
-                  "observedSpeedIndex": 1176,
-                  "observedSpeedIndexTs": 228564690
+                  "observedNavigationStartTs": 330132642,
+                  "observedFirstPaint": 1105,
+                  "observedFirstPaintTs": 331237830,
+                  "observedFirstContentfulPaint": 2706,
+                  "observedFirstContentfulPaintTs": 332838871,
+                  "observedFirstContentfulPaintAllFrames": 2706,
+                  "observedFirstContentfulPaintAllFramesTs": 332838871,
+                  "observedFirstMeaningfulPaint": 2807,
+                  "observedFirstMeaningfulPaintTs": 332939419,
+                  "observedLargestContentfulPaint": 2868,
+                  "observedLargestContentfulPaintTs": 333000901,
+                  "observedLargestContentfulPaintAllFrames": 2868,
+                  "observedLargestContentfulPaintAllFramesTs": 333000901,
+                  "observedTraceEnd": 5609,
+                  "observedTraceEndTs": 335741468,
+                  "observedLoad": 2218,
+                  "observedLoadTs": 332351029,
+                  "observedDomContentLoaded": 2218,
+                  "observedDomContentLoadedTs": 332350787,
+                  "observedCumulativeLayoutShift": 0.010497996437036444,
+                  "observedCumulativeLayoutShiftMainFrame": 0.010497996437036444,
+                  "observedTotalCumulativeLayoutShift": 0.011202887992117726,
+                  "observedFirstVisualChange": 37,
+                  "observedFirstVisualChangeTs": 330169642,
+                  "observedLastVisualChange": 3320,
+                  "observedLastVisualChangeTs": 333452642,
+                  "observedSpeedIndex": 1937,
+                  "observedSpeedIndexTs": 332069383
                 },
                 {
                   "lcpInvalidated": false
@@ -3803,18 +3867,18 @@
                   "numScripts": 7,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 1373,
-                  "numTasksOver10ms": 26,
-                  "numTasksOver25ms": 14,
+                  "numTasks": 1670,
+                  "numTasksOver10ms": 32,
+                  "numTasksOver25ms": 19,
                   "numTasksOver50ms": 9,
-                  "numTasksOver100ms": 4,
+                  "numTasksOver100ms": 5,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.6730000000000003,
-                  "throughput": 8076786.055899271,
-                  "maxRtt": 79.801,
-                  "maxServerLatency": 19.08,
-                  "totalByteWeight": 3663214,
-                  "totalTaskTime": 1712.7679999999957,
+                  "rtt": 1.9120000000000001,
+                  "throughput": 4716316.375085624,
+                  "maxRtt": 149.405,
+                  "maxServerLatency": 18.281000000000002,
+                  "totalByteWeight": 3736063,
+                  "totalTaskTime": 2309.974,
                   "mainDocumentTransferSize": 1536
                 }
               ]
@@ -3837,6 +3901,7 @@
     "sonarcloud": null,
     "summary": {
       "404": "A+",
+      "httpGrade": "B",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
@@ -3847,7 +3912,7 @@
       "cookiesCount": 0,
       "trackersGrade": "B",
       "trackersCount": 2,
-      "lighthouse_performance": 0.0012973785400390626,
+      "lighthouse_performance": 0,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.98,
       "lighthouse_accessibilityGrade": "A",
