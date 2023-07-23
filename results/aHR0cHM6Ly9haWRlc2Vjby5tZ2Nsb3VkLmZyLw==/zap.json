@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 02:03:49",
+	"@version": "2.13.0",
+	"@generated": "Sun, 23 Jul 2023 01:43:54",
 	"site":[ 
 		{
 			"@name": "https://aideseco.mgcloud.fr",
@@ -90,7 +90,7 @@
 					"desc": "<p>The identified library jquery, version 2.2.4 is vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -152,7 +152,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -195,7 +195,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -238,20 +238,20 @@
 							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x00009\\x0000\\x0000\\x00009\\x0008\\x0002\\x0000\\x0000\\x0000\\x0003z\\x0014\uFFFD\\x0000\\x0000\\x0000\\x0004gAMA\\x0000\\x0000\uFFFD\uFFFD\\x000b\uFFFDa\\x0005\\x0000\\x0000\\x0000 cHRM\\x0000\\x0000z&\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000\uFFFD\\x0000\\x0000\\x0000\uFFFD\uFFFD\\x0000\\x0000u0\\x0000\\x0000\uFFFD`\\x0000\\x0000:\uFFFD\\x0000\\x0000\\x0017p\uFFFD\uFFFDQ<\\x0000\\x0000\\x0000\\x0006bKGD\\x0000\uFFFD\\x0000\uFFFD\\x0000\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0007tIME\\x0007\uFFFD\\x0003\\x0008\\x0010\\x000e\\x00063B\uFFFD\uFFFD\\x0000\\x0000\n=IDATh\uFFFD\uFFFDi\uFFFD\\x001cG\\x0015\uFFFD\u07EB>\uFFFD\uFFFD\\x001c{{\\x000f\uFFFD\uFFFD\u05F1\uFFFD\uFFFD8v|\uFFFD\\x0010\uFFFD\\\uFFFD$\uFFFD\\x0014'BA\uFFFD\\x0008\\x0008(\"\uFFFD\\x0010\uFFFD\\x0008$\uFFFD\\x0008!\uFFFD\uFFFD@\uFFFD\uFFFD\\x000f\\x0002\\x0004\uFFFD\\x001f\uFFFD\uFFFD\\x0001(\uFFFD\uFFFDb\uFFFD(\uFFFD`%\"\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkw\uFFFD\uFFFDc\uFFFDg\uFFFD{\uFFFD{\uFFFD{\uFFFD\uFFFD\uFFFDG\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDn\\x001c\uFFFD\uFFFD<\uFFFDfz\uFFFD\uFFFD\uFFFD\u056B\uFFFDW\uFFFD\\x00163\\x0007\uE10F\uFFFD\uFFFDK\r\uFFFD\t\uFFFD%\uFFFD\uFFFD\u03CA\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\\x0017\uFFFDo\uFFFD\\x0014\uFFFD\uFFFD%c]@\uFFFD\uFFFD&\uFFFD\uFFFD\uFFFD+\uFFFD^\tk-%6J\uFFFD\uFFFD\uFFFD\uFFFDc3%W@\uFFFD<\uFFFDY\uFFFDz\uFFFD9\uFFFD\uFFFD<6W&$c\uFFFD\uFFFD ^\uFFFD^k\uFFFD\\x00101\uFFFD\\x001d~\uFFFD\uFFFD.VQ\\x00180D\\x0004V\uFFFD^@\uFFFD:n\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD:\\x000f\uFFFD`H\\x0019.\uFFFD\uFFFDa~\uFFFD*+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u6217\uFFFD\uFFFD\\x0004+cT@X\uFFFD\uFFFD5\uFFFDvMw{\\x001b\\x0000d\uFFFD\uFFFDB\uFFFD\uFFFD\uFFFDz\u0672]\uFFFD\\x000b(\\x0003\\x0000B\uFFFD\uFFFD \uFFFD*p\uFFFD\uFFFD2\uFFFD\\x0018\uFFFD\uFFFD\\x000f\uFFFD@q\uFFFDP\\x0018k\\x001dw1V\\x0016\uFFFD;6\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\u0616N&8\uFFFD\\x0003\uFFFD \\x0008\uFFFDJ\uFFFD,[\\x0005\uFFFD\uFFFD+\\x0014\uFFFD\\x0014e2\uFFFDL\uFFFD\uFFFDZ(\uFFFDz\u0672+\uFFFD\\x0017\\x0004\uFFFD\\x0001C@$\uFFFD\uFFFDfL\uFFFDR\u0180\\x0001\\x0010\\x0006\\x000cp\u01A0gpa)\uFFFD\uFFFDf\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFDXr\u0114R\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDF^\u0566\uFFFD\uFFFDdN\uFFFDR\uFFFD\uFFFD|Q\uFFFDJ%\uFFFD4m\uFFFD\uFFFD<?\uFFFDA\uFFFD\\x0007\\x0008!j\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFD+c\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002\n\\x0000\uFFFD\\x0010Y\uFFFDdY\uFFFDjo\\x001fZ77\uFFFD\uFFFD\uB696\uFFFD\uFFFDFAU\uFFFD\uFFFD\uFFFDD6713\tE\uFFFD0,\uFFFDq}\uFFFDR$\\x0004\t\\x0007K\\x0019CcV\uFFFD\uFFFD_8p\uFFFD@\uFFFD\uFFFDV@\uFFFDN\\x0019\uFFFD$I\uFFFD$\uFFFD\uFFFDS\uFFFD\uFFFD\uFFFD\uFFFD\\x0001x\uFFFD_\uFFFD,\uFFFDd\uFFFDUuZ\u027F?:\uFFFD\uFFFD\uFFFD\uFFFDG]\u0290p\uFFFD\uFFFD6fmK\u012E\u0679\uFFFD\u00C0.2\\x0000Q\\x0010\uFFFDd2\uFFFDL\uFFFD_\uFFFD\\x001f&\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD\\x0013O\uFFFDf\\x000b\uFFFDo\uFFFD\uFFFD\\x001a\uFFFD.=\uFFFDm=\\x001d\uFFFD\\x001f\\x0005kCI\uFFFD\uFFFD\\x0007\\x000f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u04A0\uFFFD+\uFFFD\\x0011+c\uFFFDXL\uFFFD\uFFFD\uFFFD\\x0019k(Wn\uFFFD\uFFFD\uFFFD{\uFFFD\tif\\x0003\uFFFD\uFFFD:\uFFFD:/\uFFFD0`\uFFFDz\\x0001\uFFFD\\x0003jRZ\uFFFD\uFFFDf\uFFFDmX\uFFFDk\uFFFD\uFFFD\u07B2\uFFFD1\uFFFD0\uFFFD\uFFFDq \uFFFD\uFFFDa9\uFFFD,K+\uFFFDc\uFFFDp4E\\x001f\uFFFDig5\uFFFD\uFFFD\\x000b\\6.+\u0268#\t\uFFFD\uFFFD\\x000f$\u3DF4'\\x000f\"\n\\x000b*F#\uFFFD\uFFFD{v\uFFFDs\uFFFD\\x0014\uFFFD\r\uFFFD\uFFFD\u0610U\uFFFDPu\uFFFD-\uFFFD\\.e\uFFFD\uFFFD\u079A\\x0018>6\uFFFD\uFFFDx\uFFFDo\uFFFDI\uFFFDF\uFFFD#\uFFFD$P^\uFFFD\uFFFD1aM\u05C1\uFFFD\uFFFD\uFFFD\uFFFD\\x0013{\uFFFDAC\u0672a0*\uFFFDv\uFFFD\uFFFD7\uFFFD\\x0006\uFFFD\uFFFDh\u068ER(\\x000e\uFFFD\\x0019h\uFFFDR-\uFFFDO\\x001e;\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFDL\uFFFD0\uFFFD\uFFFDS\uFFFD.\\x000b\uFFFD]\uFFFD\r\uFFFD\uFFFDl)\uFFFD\uFFFD'<\uFFFD\uFFFD\uFFFDHR|\uFFFD\uFFFD]\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFDo\uFFFD\uFFFD-\\x001d\uFFFD\u0236i/\uFFFD\uFFFDp\rV<?\uFFFD/,G\uFFFD\uFFFD\uFFFD\uFFFDG\uFFFDO>v\uFFFD:=\uFFFDvW\uFFFD\\x0001\\x0000\uFFFD\\x0016\uFFFDe\uFFFD\uFFFD\\x0005B8\uFFFD\\x0000\uFFFD\\x0003\uFFFDeW\\x001d\u03D7~~xx]\uFFFD\uFFFD=C\uFFFD\\x0010\\x0012_\u0410$\uFFFD\uFFFD \\x0000\uFFFD\uFFFD\\x001aJ@\uFFFDD6\uFFFD$\uFFFD\uFFFD\uFFFD\uFFFDW\t`\uFFFD\uFFFD\\x0015y\uFFFD\uFFFD\uFFFDl\uFFFD0\\x0000\uFFFDB\\x0007\uFFFDr\\x001c\uFFFDJ)I\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD>\uFFFD\uFFFDxBA;[(=\uFFFD\\x001a\uFFFDmO\uFFFD]\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\\\uFFFD*\uFFFD\uFFFDf[\uFFFD\\x0005\uFFFDz\uFFFDzf\uFFFD\\x0019.z\uFFFD\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\\x0012\u046B\\x000c\uFFFD(\\x0002 \uFFFD<I\\x0008|o<\uFFFD\uFFFD\uFFFDskD\uFFFD\\x0016\uFFFD7D\uFFFD\\x001eYH\uD830\uDD08\uFFFDU>\uFFFD\uFFFDhR)\\x0016K\u03F6%\uFFFDBl\uFFFD/mR\uFFFD\u0922x\uFFFD/\n\\x000bW\uFFFD\\x001f\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDd\uFFFD\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFD\uFFFD\\x0019\uFFFD}\uFFFD\uFFFD!I\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\\x0001IX+\n}<\uFFFD\uFFFD_@\uFFFD;:\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001e\\x0000\\x001c\uFFFD\\x001c\uFFFDe\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD9\\x000e\\x0018\uFFFD:55\uFFFD+`\uFFFD\uFFFDZ\uFFFD-&\uFFFDw\uFFFD\uFFFDw\uFFFD8\uFFFD\uFFFDgO\uFFFD\uFFFDq\uFFFDl\\x0003\u00A1$\\\uFFFD\\x0014:d$\\ow\uFFFD7\uFFFD\uFFFD\uFFFD\\x0001+\uFFFD\uFFFDF\uFFFD\uFFFD3\uFFFD_\uFFFD\uFFFD\\x0014\"\\x0003\\x0000\\x0004\uFFFD\\x001e\uFFFD\uFFFD\uFFFDsU\uFFFD\uFFFD[A\uFFFD}\\x0000\uFFFD!\\x0016u\uFFFDd\uFFFD\uFFFDd\uFFFD6\uBF71\uFFFDO\uFFFD\uFFFDz\uFFFD\uFFFD!\\x0000\\x0012\uFFFD6v\u01FE\uFFFD-y\uFFFD\uFFFD\uFFFD\uFFFD8\uFFFD\uFFFD\uFFFD1\uFFFD#\uFFFD\uFFFD\uFFFD\u0553\uFFFDq\uFFFD;\uFFFD\uFFFD\uFFFD@\\x0007\\x0013y\\x0000\uFFFD\uFFFD\uFFFD\uFFFD#\uFFFD\\x0016*\uFFFD\uFFFD&.A\uFFFDT\uFFFDhZv\uFFFD\uFFFDf\uFFFDzk\u04CF\uFFFD?=u~\\x0002\uFFFD\\x001d\uFFFD\uFFFD\uFFFD\u05EF\uFFFDgw\uFFFD\uFFFD\uFFFDy\uFFFDg\\x000cl\uFFFDW\uFFFDJ.oLg5\uFFFDq\uFFFD\uFFFDg\\x0006\uFFFD\uFFFD\uFFFDcG\uFFFD*gVGy\uFFFD\\x001cM\uFFFD\uFFFDt\uFFFD\n|GG\uFFFD\uFFFDgu\uFFFD\uFFFD\uFFFD\ro1V\\x0000p<o\uFFFDn\u06E2=]tp\uFFFD\u038E\u020F\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\uFFFD\u00B8\uFFFD\uFFFD@1\u0749\uFFFD5\uFFFD\uFFFD\uFFFDM\uFFFD#\\x0013\uFFFD\uFFFD\\x0005E\uFFFD\uFFFD\\x0005%\u00D1#C\uFFFD\uFFFD\uFFFD\uFFFD[\\x0007w\uFFFD\uFFFD\uFFFD\uFFFDa\u04F3\uFFFD\uFFFDT0\uFFFDd4\uFFFD\uFFFD\uFFFDp\"v]}\uFFFD\\x001c!\uFFFD\uFFFD\n\\x0000~\uFFFD&\uBDAD\uFFFD}\uFFFD\uFFFD\uFFFDkF\uFFFD=t\uFFFDr\uFFFD\uFFFD|\u05F7,\uFFFD0\uFFFD\uFFFDf:E\uFFFD\uFFFDep\\x001cp\\\uFFFD\\x000c\uFFFD\uFFFDD<\uFFFDv'\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDs\uFFFDe\uFFFD{F.\uFFFD\\x001cw\u5234\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\\x0007\\x0010\\x001bX\\x000e\uFFFDq\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD-V5Y\uFFFD\uFFFDU\\x0016dmJ\t\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\\x0002c\uFFFD\uFFFD\uFFFDzP\t\uFFFDg\\x0000\\x0000\\x001c\\x0002G\uFFFD#@\\x0008#\uFFFD\uFFFD\uFFFD:W\uFFFDh\uFFFD)\uFFFD\uFFFD\\x000fRw]\uFFFD\uFFFD+\uFFFD\u052E\u033E\uFFFD\uFFFDrS\uFFFD\\x0013\\x0011I\uFFFD\uFFFD\uFFFD\uFFFD\u0786d2\uFFFD\uFFFDA\uFFFDss\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDyW\uFFFD) \\x0000\\x0002 V\uFFFD\\x0000\uFFFDC\\x0013\\x0012d\uFFFDX0\uFFFD\uFFFD\\x001e\\x001ad\uFFFDXx~}\uFFFD\uFFFDq\uFFFD\r\uFFFD\\x001f\uFFFDq\\x0007\uFFFDb\uFFFD\\x0010\\x0000\uFFFD \uFFFDx\\x001e4:{-d\uFFFD\uFFFD\uFFFD\\x00111[T-\uFFFDN\uFFFD\uFFFD\\x0006o\uFFFD\\x001f\uFFFD:\uFFFD\uFFFD\uFFFD\uFFFDY\uFFFDs\t\\x0003B9\uFFFD\uFFFD\uFFFDr[\uFFFD\uFFFDC\uFFFDr\uFFFD\uFFFD\\x000c\uFFFD\uFFFD\\x0013\uFFFD-\\x0005\uFFFDP}\uFFFD\\x00018\\x0001L\uFFFDtKJ\uFFFD\uFFFD\u0132\\x001d\uFFFD0\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD\\x0000\\x0000\uFFFD\uFFFD\uFFFDt\uFFFD\\\uFFFDJ\\x0010\\x000ef\"\u05EF\uFFFD\uFFFDl\uFFFD\uFFFD\\x0014\\x0018\uFFFD9\uFFFD<\uFFFD\uFFFD\\x000f\uFFFD\u71A7^\uFFFD\\x0007%^\\x0006Q\\x0000?\\x0000\uFFFD!Gz\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDb\uFFFD;Zr\uFFFD's9E--\uFFFD\\x0006\\x0010\uFFFD\uFFFDl\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFD\\x0012\t\\x0000\uFFFD\uFFFDu\uFFFD\uFFFD\uFFFD'\uFFFD\uFFFDyi\uFFFD\uFFFD\\x0001\\x000f\uFFFD\\x0008\uFFFD\\x0000d)\\x0011\uFFFD?\uFFFD-\u0792\uFFFD\uFFFD6 oJ\n|\uFFFDq\uFFFD7N\uFFFD]\uFFFDl\uFFFD\\x001b\uFFFD\uFFFD\"\uFFFD\uFFFDV\u015D\uFFFD\uFFFDn\\x001cj\uFFFD?r\uFFFD\uFFFD\uFFFD\\x000b'\\x000e\\x001dy\uFFFDs9\\x0003\\x0008\uFFFD\uFFFDLt\uFFFDwwE7\uFFFDO\uFEFC\uFFFD\u06B5\u026D\\x001dRR\\^,\uFFFD\uFFFD\uFFFD\\x000e\\x001d9\uFFFD\\\uFFFD{\u05AC\u027AAp\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDaM\uFFFD\u2BCAJ\uFFFD}f\uFFFD\\x001d7l\uFFFD\uFFFD#\uFFFD]\uFFFD\uFFFD\u0569\uFFFD\uFFFDxg\\\\x0014[Wc\uFFFDPJ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDsv\\x0004\t\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\uFFFDC8\uFFFD\uFFFD['\uFFFD3\uFFFD\uFFFDx}\uFFFD\uFFFD\uFFFD\uFFFD\u0343]+`j(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000b\uFFFDz\uFFFDY\uFFFDdA<l\t\u05AAj\\x0011O\uFFFD\\x001f{\uFFFD\uFFFD7o\uFFFD\uFFFD\uFFFD\uFFFDT+\uFFFD\uFFFD\uFFFD\u04E3c\uFFFD\\x001c~\uFFFD\uFFFD\uFFFD\u07A8\\x0004\\x000c\uFFFD\uFFFDc\uFFFD\uFFFD5\u012D\\x0004\uFFFD7O\uFFFD\uFFFD\uFFFD\u0357\uFFFD\uFFFDt\uFFFD\uFFFD)\\x000c\\x0016Y\uFFFDS2\u0322V\uFFFD\\x0016\nS\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD\u0642\uFFFDhZ\uFFFDX*\uFFFD\\x001e\uFFFDE@a\uFFFD\uFFFD[5\\x001b\uFFFDz\u0781\uFFFDW>\uFFFD\uFFFD7\uFFFD\uFFFD\uFFFDe\uFFFD\uFFFDA`;\uFFFDa\uFFFD5\uFFFD\u022Bj\uFFFDP\uFFFDR\n\uFFFD\uFFFDB\uFFFDX\uFFFDk%\uFFFD0M\u02F1*\uFFFD\\x0017\\x0004A5\uFFFD\\x000b\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x00020\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFDr\uFFFDm\uFFFDvloK%\\x0005\uFFFD\uFFFD\uFFFD:\uFFFDJ\u0672U]/\uFFFDZ\uFFFDP\uFFFD\uFFFDC&\uFFFDX\uFFFDKf\u0674\\x001d\uFFFD\uFFFD\uFFFD\uFFFDM`\uFFFD!\\x000b\uFFFD\uFFFD\\x0000\uFFFD2:\\x001b\uFFFD\uFFFD\u02C8\\x0013\uFFFD\uFFFD\uFFFD!.\r\uFFFD@\uFFFD\uFFFD\uFFFD=\uFFFD\uFFFDgU4\uFFFD\uFFFD~\uFFFDTR\uFFFD\uFFFD>\u03E7\uFFFD\\x0001 \\x0012$U\t\uFFFDD\uFFFD\uFFFD\\x0019\uFFFD\uFFFD\uFFFD0\uFFFD]\uFFFD#\uFFFD\\x0002\n\uFFFD\uFFFD\uFFFDC\uFFFD%\\x001c\\x0017\\x0000\\x001bU\uFFFD#\uFFFDB\\x0018>EB8\uFFFD\\x0010\uFFFD!\\x0002!|\\x0018\uFFFD\\x0006\\x0000\u0280\\x0006\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0002\uFFFD\\x00165\uFFFD*+\uFFFD\uFFFDW\\x0004s7\\x0004U\\x0014\uFFFD\uFFFD}A\uFFFD\uFFFD3\\x0018\uFFFD\uFFFDs#X\\x000eh\uFFFD\uFFFD5\uFFFD3\\x001ec\uFFFD\uFFFD\uFFFD_\\x001fB`\uFFFD\\x000b\uFFFDZ\u0139\u03DA\uFFFD[dX\u019DQ-n\uFFFD\uFFFD\\x0016\\x0007\\x0011\\x0019\uFFFDf\\x0015\\x0017>,\uFFFDr\u066C\uFFFD\uFFFDcx\\x0012\uFFFD!f3\\x0017J\r\uFFFD\uFFFD\".W\uFFFD+d\uFFFD\uFFFDi\uFFFD\uFFFDk2\\x0016&4\\x0019\uFFFD\nd\uFFFDw\u01F5\uFFFD\uFFFD\uFFFD\\x000b\uFFFDP\uFFFD\\x0012\uFFFD^t\uFFFD%\uFFFD\uFFFD\uFFFD\uFFFD2>a\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\uFFFD\uFFFD\u02A2\\x0000\uFFFDiD\\x0000\\x0000\\x0000%tEXtdate:create\\x00002016-03-08T16:14:06+01:00\uFFFD.\\x000f\uFFFD\\x0000\\x0000\\x0000%tEXtdate:modify\\x00002016-03-08T16:14:06+01:00\uFFFDs\uFFFD[\\x0000\\x0000\\x0000WzTXtRaw profile type iptc\\x0000\\x0000x\uFFFD\uFFFD\uFFFD\\x000c\\x0008qV((\uFFFDO\uFFFD\uFFFDI\uFFFDR\\x0000\\x0003#\\x000b.c\\x000b\\x0013#\\x0013K\uFFFD\\x0014\\x0003\\x0013 D\uFFFD4\uFFFDd\\x0003#\uFFFDT \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\\x0007\u02C0H\uFFFDJ.\\x0000\uFFFD\\x0017\\x0011t\uFFFDB5\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-c0dd63fa.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAACXBIWXMAABcSAAAXOQER7y87AAAAB3RJTUUH3AsbChsyNZaItwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABFSURBVEjHY0xLS2PABoyNjbGKnz17liT1TAw0BqMWjFpAOWChVnrHpX40DkYtGAr5gFrpfbQ+GLVgtD4YrQ9GLRjSFgAAbfUXEVeGAdQAAAAASUVORK5CYII=",
-							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x0000 \\x0000\\x0000\\x0000 \\x0008\\x0002\\x0000\\x0000\\x0000\uFFFD\\x0018\uFFFD\\x0000\\x0000\\x0000\tpHYs\\x0000\\x0000\\x0017\\x0012\\x0000\\x0000\\x00179\\x0001\\x0011\uFFFD/;\\x0000\\x0000\\x0000\\x0007tIME\\x0007\uFFFD\\x000b\\x001b\n\\x001b25\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0019tEXtComment\\x0000Created with GIMPW\uFFFD\\x000e\\x0017\\x0000\\x0000\\x0000EIDATH\uFFFDcLKKc\uFFFD\\x0006\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD={\uFFFD$\uFFFDL\\x000c4\\x0006\uFFFD\\x0016\uFFFDZ@9`\uFFFDVz\u01E5~4\\x000eF-\\x0018\n\uFFFD\uFFFDZ\uFFFD}\uFFFD>\\x0018\uFFFD`\uFFFD>\\x0018\uFFFD\\x000fF-\\x0018\uFFFD\\x0016\\x0000\\x0000m\uFFFD\\x0017\\x0011W\uFFFD\\x0001\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 							"otherinfo": "\uFFFD]\uFFFD\u37BB\uFFFD\u059Bq\u05DF\uFFFD\\x0018\uFFFD\uFFFDY\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06EF\uFFFD\\x001c\uFFFD\\x0000\\x0010\uFFFD\\x0010Q\uFFFD \uFFFD\uFFFD0\u04CFA\\x0014\uFFFDQU\uFFFDa"
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-a1a268e2.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAACXBIWXMAABcSAAAXOQER7y87AAAAB3RJTUUH3AsbChsyNZaItwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABFSURBVEjHY0xLS2PABoyNjbGKnz17liT1TAw0BqMWjFpAOWChVnrHpX40DkYtGAr5gFrpfbQ+GLVgtD4YrQ9GLRjSFgAAbfUXEVeGAdQAAAAASUVORK5CYII=",
+							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x0000 \\x0000\\x0000\\x0000 \\x0008\\x0002\\x0000\\x0000\\x0000\uFFFD\\x0018\uFFFD\\x0000\\x0000\\x0000\tpHYs\\x0000\\x0000\\x0017\\x0012\\x0000\\x0000\\x00179\\x0001\\x0011\uFFFD/;\\x0000\\x0000\\x0000\\x0007tIME\\x0007\uFFFD\\x000b\\x001b\n\\x001b25\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0019tEXtComment\\x0000Created with GIMPW\uFFFD\\x000e\\x0017\\x0000\\x0000\\x0000EIDATH\uFFFDcLKKc\uFFFD\\x0006\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD={\uFFFD$\uFFFDL\\x000c4\\x0006\uFFFD\\x0016\uFFFDZ@9`\uFFFDVz\u01E5~4\\x000eF-\\x0018\n\uFFFD\uFFFDZ\uFFFD}\uFFFD>\\x0018\uFFFD`\uFFFD>\\x0018\uFFFD\\x000fF-\\x0018\uFFFD\\x0016\\x0000\\x0000m\uFFFD\\x0017\\x0011W\uFFFD\\x0001\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/assets/safari-pinned-tab-120a5a18.svg",
@@ -281,7 +281,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -289,7 +289,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 7 times, the first in the element starting with: \"**/(function(p){p.module(\"vcRecaptcha\",[])})(angular);(function(p){function m(){throw new Error(`You need to set the \"key\" attri\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -297,39 +297,47 @@
 							"otherinfo": "The following pattern was used: \\bADMINISTRATOR\\b and was detected 15 times, the first in the element starting with: \"            administrator=\"administrator\"\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Db",
+							"otherinfo": "The following pattern was used: \\bDB\\b and was detected 6 times, the first in the element starting with: \" */(function(p,m){(function(){var g,b=\"4.17.21\",v=200,z=\"Unsupported core-js use. Try https://npms.io/search?q=ponyfill.\",O=\"Exp\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "debug",
-							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 4 times, the first in the element starting with: \"`)}};function y(q,T,R){this._lateQueue.push(q,T,R),this._queueTick()}function C(q,T,R){this._normalQueue.push(q,T,R),this._queue\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 4 times, the first in the element starting with: \"`)}};function x(R,N,I){this._lateQueue.push(R,N,I),this._queueTick()}function E(R,N,I){this._normalQueue.push(R,N,I),this._queue\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 32 times, the first in the element starting with: \"var Ff=Object.defineProperty;var Bf=(p,m,g)=>m in p?Ff(p,m,{enumerable:!0,configurable:!0,writable:!0,value:g}):p[m]=g;var Hr=(p\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 36 times, the first in the element starting with: \"var Az=Object.defineProperty;var yz=(p,m,g)=>m in p?Az(p,m,{enumerable:!0,configurable:!0,writable:!0,value:g}):p[m]=g;var Sc=(p\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 16 times, the first in the element starting with: \"* Copyright (c) 2014 Nicolas Cuillery; Licensed MIT */(function(p,m,g){function b(x,w){return m.equals(x.length,w.length)?x>w:x.\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 16 times, the first in the element starting with: \"* Copyright (c) 2014 Nicolas Cuillery; Licensed MIT */(function(p,m,g){function b(T,q){return m.equals(T.length,q.length)?T>q:T.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 186 times, the first in the element starting with: \" */(function(p){(function(m,g){p.exports=m.document?g(m,!0):function(b){if(!b.document)throw new Error(\"jQuery requires a window\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 183 times, the first in the element starting with: \" */(function(p){(function(m,g){p.exports=m.document?g(m,!0):function(b){if(!b.document)throw new Error(\"jQuery requires a window\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -337,31 +345,31 @@
 							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected 6 times, the first in the element starting with: \"      <!-- TODO: replace with a single resource, and use bind-html-->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 220 times, the first in the element starting with: \"`+we+\"}\":\"{\"+Ue.join(\",\")+\"}\",qt=we,vt}}typeof k.stringify!==ne&&(k.stringify=function(Ze,st,dt){var ut;if(qt=\"\",jt=\"\",typeof dt\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 221 times, the first in the element starting with: \"`+po+\"}\":\"{\"+Eo.join(\",\")+\"}\",bs=po,ss}}typeof Z.stringify!==Wa&&(Z.stringify=function(Po,Go,Jo){var Zo;if(bs=\"\",Is=\"\",typeof Jo\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "username",
-							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected 6 times, the first in the element starting with: \"`)}}).get()}}),q.ajaxSettings.xhr=function(){try{return new m.XMLHttpRequest}catch{}};var Ei={0:200,1223:204},Wi=q.ajaxSettings.\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected 6 times, the first in the element starting with: \"`)}}).get()}}),R.ajaxSettings.xhr=function(){try{return new m.XMLHttpRequest}catch{}};var bl={0:200,1223:204},Ol=R.ajaxSettings.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-efecd06f.js",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/index-9088fcc8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "xxx",
-							"otherinfo": "The following pattern was used: \\bXXX\\b and was detected 2 times, the first in the element starting with: \"`,this.separators.line)),this.hasText=!0}else if(x.isBlock(ae)&&this.hasText){var K=this.actions[x.name(ae)]||this.actions.block\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bXXX\\b and was detected 2 times, the first in the element starting with: \"`,this.separators.line)),this.hasText=!0}else if(T.isBlock(Ua)&&this.hasText){var _t=this.actions[T.name(Ua)]||this.actions.bloc\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 7 times, the first in the element starting with: \"**/(function(p){p.module(\"vcRecaptcha\",[])})(angular);(function(p){function m(){throw new Error(`You need to set the \"key\" attri\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -384,7 +392,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-efecd06f.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-9088fcc8.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -392,7 +400,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-efecd06f.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"./assets/index-9088fcc8.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -403,6 +411,33 @@
 					"cweid": "-1",
 					"wascid": "-1",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -417,7 +452,7 @@
 						{
 							"uri": "https://aideseco.mgcloud.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "public, must-revalidate, proxy-revalidate, max-age=0",
 							"otherinfo": ""
@@ -425,7 +460,7 @@
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "public, must-revalidate, proxy-revalidate, max-age=0",
 							"otherinfo": ""
@@ -440,6 +475,146 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"uri": "https://aideseco.mgcloud.fr/",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
 					"pluginid": "10049",
 					"alertRef": "10049",
 					"alert": "Storable and Cacheable Content",
@@ -450,6 +625,14 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
+							"uri": "https://aideseco.mgcloud.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://aideseco.mgcloud.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -458,7 +641,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -486,14 +669,6 @@
 						},
 						{
 							"uri": "https://aideseco.mgcloud.fr/aides/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "must-revalidate",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/android-chrome-192x192-dc642549.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -549,7 +724,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aideseco.mgcloud.fr/aides/assets/safari-pinned-tab-120a5a18.svg",
+							"uri": "https://aideseco.mgcloud.fr/aides/assets/favicon-96x96-ee85fdfa.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -557,7 +732,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
