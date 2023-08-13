@@ -10,11 +10,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/aides/assets/index-a86d7767.js"
+      "url": "https://carqueiranne.mademande.fr/aides/assets/index-4129ec8d.js"
     },
     {
       "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/aides/assets/index-02e849ef.css"
+      "url": "https://carqueiranne.mademande.fr/aides/assets/index-530eb9a2.css"
     },
     {
       "type": "google",
@@ -26,7 +26,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/pCoGBhjs9s8EhFOHJFe8cqis/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/3kTz7WGoZLQTivI-amNftGZO/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -363,6 +363,14 @@
     {
       "type": "unknown",
       "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-SemiBold.woff"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fmentions-legales"
+    },
+    {
+      "type": "unknown",
+      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fcontact-page"
     }
   ],
   "cookies": [],
@@ -372,9 +380,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 30 Jul 2023 01:28:23 GMT",
-    "etag": "W/\"5125-189787fd598\"",
-    "last-modified": "Fri, 21 Jul 2023 12:49:51 GMT",
+    "date": "Sun, 13 Aug 2023 01:16:21 GMT",
+    "etag": "W/\"5125-189ba78a4c0\"",
+    "last-modified": "Thu, 03 Aug 2023 08:16:56 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -383,7 +391,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "30882602-f777-4851-ace4-338350e4cb95",
+    "x-request-id": "d2dc85ed-fb8a-478e-8d03-757a0b648427",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -501,7 +509,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.138.104",
+      "ip": "172.253.62.103",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -555,7 +563,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.115.94",
+      "ip": "142.251.16.94",
       "geoip": {
         "continent": {
           "code": "NA",
