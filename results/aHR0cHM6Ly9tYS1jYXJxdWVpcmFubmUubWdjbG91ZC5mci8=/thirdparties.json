@@ -26,7 +26,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/x19joXI_IeQnFJ7YnfDapSZq/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -363,14 +363,6 @@
     {
       "type": "unknown",
       "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/themes/fonts/OpenSans-SemiBold.woff"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fmentions-legales"
-    },
-    {
-      "type": "unknown",
-      "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/url-validation/https%3A%2F%2Fcarqueiranne.mademande.fr%2Faides%2F%23%2Fcarqueiranne%2Fcontact-page"
     }
   ],
   "cookies": [],
@@ -380,7 +372,7 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 20 Aug 2023 01:15:41 GMT",
+    "date": "Sun, 27 Aug 2023 01:18:08 GMT",
     "etag": "W/\"5125-189dec7daf8\"",
     "last-modified": "Thu, 10 Aug 2023 09:29:47 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
@@ -391,7 +383,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "a956dee9-35e9-4186-99ce-95ba5c42804f",
+    "x-request-id": "d1b929f2-ac7a-452e-bc64-c3dc096242a2",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -509,7 +501,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.111.103",
+      "ip": "142.250.103.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -563,7 +555,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "74.125.132.94",
       "geoip": {
         "continent": {
           "code": "NA",
