@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Sep 10 01:19:57 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
+# Nmap 7.92 scan initiated Sun Sep 17 01:21:10 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
 Host: 149.202.180.217 (aideseco.mgcloud.fr)	Status: Up
 Host: 149.202.180.217 (aideseco.mgcloud.fr)	Ports: 80/open/tcp//http-proxy//HAProxy http proxy 1.3.1 or later/, 443/open/tcp//ssl|http-proxy//HAProxy http proxy 1.3.1 or later/	Ignored State: filtered (998)
-# Nmap done at Sun Sep 10 01:20:27 2023 -- 1 IP address (1 host up) scanned in 29.85 seconds
+# Nmap done at Sun Sep 17 01:21:49 2023 -- 1 IP address (1 host up) scanned in 38.59 seconds
