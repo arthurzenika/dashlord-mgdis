@@ -2512,7 +2512,7 @@
     "http": {
       "url": "https://aideseco.mgcloud.fr/",
       "algorithm_version": 2,
-      "end_time": "Sat, 14 Oct 2023 23:24:50 GMT",
+      "end_time": "Sat, 28 Oct 2023 02:51:07 GMT",
       "grade": "B",
       "hidden": true,
       "likelihood_indicator": "MEDIUM",
@@ -2522,9 +2522,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sat, 14 Oct 2023 23:24:49 GMT",
-        "Etag": "W/\"5257-18affd68338\"",
-        "Last-Modified": "Thu, 05 Oct 2023 12:36:03 GMT",
+        "Date": "Sat, 28 Oct 2023 02:51:06 GMT",
+        "Etag": "W/\"5257-18b47e8e800\"",
+        "Last-Modified": "Thu, 19 Oct 2023 12:28:48 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -2533,12 +2533,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "08298fee-e2fe-4ecc-ad7b-58c8af863086",
+        "X-Request-Id": "4ba9f983-6cb1-4d2b-ac35-e3fb67181c6b",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 43267058,
+      "scan_id": 43728659,
       "score": 70,
-      "start_time": "Sat, 14 Oct 2023 23:24:46 GMT",
+      "start_time": "Sat, 28 Oct 2023 02:51:02 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -2714,22 +2714,13 @@
     "nmap": {
       "host": "aideseco.mgcloud.fr",
       "protocol": "tcp",
-      "closed_ports": "998",
+      "closed_ports": "999",
       "open_ports": [
         {
           "service": {
             "name": "http-proxy",
             "product": "HAProxy http proxy",
             "id": "80",
-            "version": "1.3.1 or later",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "http-proxy",
-            "product": "HAProxy http proxy",
-            "id": "443",
             "version": "1.3.1 or later",
             "vulnerabilities": []
           }
@@ -3080,7 +3071,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "154 >= 60 days"
+        "finding": "140 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3832,7 +3823,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "INFO",
-        "finding": "56"
+        "finding": "83"
       }
     ],
     "thirdparties": {
@@ -3847,7 +3838,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/MydHw_zggsxIJuhSbyOmPv5R/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/vm_YDiq1BiI3a8zfbIPZjtF2/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3861,9 +3852,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 15 Oct 2023 01:21:13 GMT",
-        "etag": "W/\"5257-18affd68338\"",
-        "last-modified": "Thu, 05 Oct 2023 12:36:03 GMT",
+        "date": "Sun, 29 Oct 2023 01:20:30 GMT",
+        "etag": "W/\"5257-18b47e8e800\"",
+        "last-modified": "Thu, 19 Oct 2023 12:28:48 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -3872,7 +3863,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "d8b64d5d-1933-48dd-b028-cdeaf7b54943",
+        "x-request-id": "d5e1b257-06dd-4a28-8679-2293d2ca8e84",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -3934,7 +3925,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.122.103",
+          "ip": "173.194.196.147",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3988,7 +3979,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.63.94",
+          "ip": "172.217.219.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4054,7 +4045,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 15 Oct 2023 01:20:21",
+      "@generated": "Sun, 29 Oct 2023 01:19:36",
       "site": [
         {
           "@name": "https://aideseco.mgcloud.fr",
@@ -4124,13 +4115,6 @@
               "confidence": "2",
               "riskdesc": "Informational (Medium)",
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
-            },
-            {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
             },
             {
               "name": "Re-examine Cache-control Directives",
@@ -4209,7 +4193,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:23:55.389106588Z",
+        "timestamp": "2023-10-29T01:23:53.501672814Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4236,81 +4220,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:23:55.389181889Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352135013Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352194113Z",
+        "timestamp": "2023-10-29T01:23:53.501742414Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4347,7 +4257,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352207113Z",
+        "timestamp": "2023-10-29T01:24:08.819537737Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4384,7 +4294,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352222513Z",
+        "timestamp": "2023-10-29T01:24:08.819582337Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4421,7 +4331,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352234114Z",
+        "timestamp": "2023-10-29T01:24:08.819594537Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4458,7 +4368,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352245114Z",
+        "timestamp": "2023-10-29T01:24:08.819607137Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4495,7 +4405,81 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:19.352256814Z",
+        "timestamp": "2023-10-29T01:24:08.819616737Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2023-10-29T01:24:08.819626537Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2023-10-29T01:24:08.819636437Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4532,7 +4516,7 @@
           "https://www.google.com/recaptcha/api.js?render=explicit"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:24:26.405230902Z",
+        "timestamp": "2023-10-29T01:24:35.07380448Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: aideseco.mgcloud.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4562,7 +4546,7 @@
           "Sectigo Limited"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:26:15.364520616Z",
+        "timestamp": "2023-10-29T01:26:40.107493176Z",
         "matcher-status": true
       },
       {
@@ -4592,7 +4576,7 @@
           "mgcloud.fr"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:26:15.365133122Z",
+        "timestamp": "2023-10-29T01:26:40.107614877Z",
         "matcher-status": true
       },
       {
@@ -4627,7 +4611,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:26:15.365404725Z",
+        "timestamp": "2023-10-29T01:26:40.107642777Z",
         "matcher-status": true
       },
       {
@@ -4657,7 +4641,7 @@
           "tls12"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2023-10-15T01:26:17.97966165Z",
+        "timestamp": "2023-10-29T01:26:41.500199625Z",
         "matcher-status": true
       }
     ],
@@ -4665,7 +4649,7 @@
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2023-10-15T01:20:31.030Z",
+        "fetchTime": "2023-10-29T01:19:45.778Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -4730,53 +4714,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 29898,
+            "numericValue": 29272,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 17448,
-                  "firstMeaningfulPaint": 20276,
-                  "largestContentfulPaint": 28392,
-                  "interactive": 29898,
-                  "speedIndex": 17448,
-                  "totalBlockingTime": 735,
-                  "maxPotentialFID": 521,
-                  "cumulativeLayoutShift": 0.011562193416689686,
-                  "cumulativeLayoutShiftMainFrame": 0.011562193416689686,
-                  "totalCumulativeLayoutShift": 0.011562193416689686,
+                  "firstContentfulPaint": 17844,
+                  "firstMeaningfulPaint": 17927,
+                  "largestContentfulPaint": 29125,
+                  "interactive": 29272,
+                  "speedIndex": 17844,
+                  "totalBlockingTime": 561,
+                  "maxPotentialFID": 463,
+                  "cumulativeLayoutShift": 0.010357257658229277,
+                  "cumulativeLayoutShiftMainFrame": 0.010357257658229277,
+                  "totalCumulativeLayoutShift": 0.010357257658229277,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 367311186,
+                  "observedTimeOriginTs": 380909719,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 367311186,
-                  "observedFirstPaint": 763,
-                  "observedFirstPaintTs": 368074055,
-                  "observedFirstContentfulPaint": 1562,
-                  "observedFirstContentfulPaintTs": 368873599,
-                  "observedFirstContentfulPaintAllFrames": 1562,
-                  "observedFirstContentfulPaintAllFramesTs": 368873599,
-                  "observedFirstMeaningfulPaint": 1889,
-                  "observedFirstMeaningfulPaintTs": 369200043,
-                  "observedLargestContentfulPaint": 1655,
-                  "observedLargestContentfulPaintTs": 368966130,
-                  "observedLargestContentfulPaintAllFrames": 1655,
-                  "observedLargestContentfulPaintAllFramesTs": 368966130,
-                  "observedTraceEnd": 4311,
-                  "observedTraceEndTs": 371621839,
-                  "observedLoad": 1295,
-                  "observedLoadTs": 368606123,
-                  "observedDomContentLoaded": 1295,
-                  "observedDomContentLoadedTs": 368605794,
-                  "observedCumulativeLayoutShift": 0.011562193416689686,
-                  "observedCumulativeLayoutShiftMainFrame": 0.011562193416689686,
-                  "observedTotalCumulativeLayoutShift": 0.011562193416689686,
-                  "observedFirstVisualChange": 40,
-                  "observedFirstVisualChangeTs": 367351186,
-                  "observedLastVisualChange": 2190,
-                  "observedLastVisualChangeTs": 369501186,
-                  "observedSpeedIndex": 1209,
-                  "observedSpeedIndexTs": 368520592
+                  "observedNavigationStartTs": 380909719,
+                  "observedFirstPaint": 875,
+                  "observedFirstPaintTs": 381785005,
+                  "observedFirstContentfulPaint": 2021,
+                  "observedFirstContentfulPaintTs": 382930592,
+                  "observedFirstContentfulPaintAllFrames": 2021,
+                  "observedFirstContentfulPaintAllFramesTs": 382930592,
+                  "observedFirstMeaningfulPaint": 2108,
+                  "observedFirstMeaningfulPaintTs": 383018145,
+                  "observedLargestContentfulPaint": 2125,
+                  "observedLargestContentfulPaintTs": 383034942,
+                  "observedLargestContentfulPaintAllFrames": 2125,
+                  "observedLargestContentfulPaintAllFramesTs": 383034942,
+                  "observedTraceEnd": 4763,
+                  "observedTraceEndTs": 385673044,
+                  "observedLoad": 1704,
+                  "observedLoadTs": 382613221,
+                  "observedDomContentLoaded": 1703,
+                  "observedDomContentLoadedTs": 382613032,
+                  "observedCumulativeLayoutShift": 0.010357257658229277,
+                  "observedCumulativeLayoutShiftMainFrame": 0.010357257658229277,
+                  "observedTotalCumulativeLayoutShift": 0.010357257658229277,
+                  "observedFirstVisualChange": 41,
+                  "observedFirstVisualChangeTs": 380950719,
+                  "observedLastVisualChange": 2641,
+                  "observedLastVisualChangeTs": 383550719,
+                  "observedSpeedIndex": 1462,
+                  "observedSpeedIndexTs": 382371371
                 },
                 {
                   "lcpInvalidated": false
@@ -4798,19 +4782,19 @@
                   "numScripts": 7,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 1404,
-                  "numTasksOver10ms": 27,
-                  "numTasksOver25ms": 13,
+                  "numTasks": 1521,
+                  "numTasksOver10ms": 24,
+                  "numTasksOver25ms": 11,
                   "numTasksOver50ms": 9,
                   "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
-                  "rtt": 6.558999999999999,
-                  "throughput": 7924903.089434088,
-                  "maxRtt": 84.057,
-                  "maxServerLatency": 18.980999999999995,
-                  "totalByteWeight": 3766666,
-                  "totalTaskTime": 1793.9989999999957,
-                  "mainDocumentTransferSize": 1116
+                  "rtt": 22.802,
+                  "throughput": 6276897.68571564,
+                  "maxRtt": 116.40699999999998,
+                  "maxServerLatency": 15.841999999999999,
+                  "totalByteWeight": 3769616,
+                  "totalTaskTime": 1633.1099999999956,
+                  "mainDocumentTransferSize": 1118
                 }
               ]
             }
@@ -4833,7 +4817,7 @@
       "404": "A+",
       "httpGrade": "B",
       "nmapGrade": "A",
-      "nmapOpenPortsCount": 2,
+      "nmapOpenPortsCount": 1,
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
       "testsslExpireDate": "2024-03-17T23:59:00.000Z",
