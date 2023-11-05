@@ -4842,207 +4842,7 @@
   {
     "404": [],
     "url": "https://ma-carqueiranne.mgcloud.fr/",
-    "http": {
-      "url": "https://ma-carqueiranne.mgcloud.fr/",
-      "algorithm_version": 2,
-      "end_time": "Sun, 01 Oct 2023 01:24:06 GMT",
-      "grade": "B-",
-      "hidden": false,
-      "likelihood_indicator": "MEDIUM",
-      "response_headers": {
-        "Accept-Ranges": "bytes",
-        "Access-Control-Allow-Origin": "carqueiranne.mademande.fr",
-        "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
-        "Content-Encoding": "gzip",
-        "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 01 Oct 2023 01:24:04 GMT",
-        "Etag": "W/\"5257-18a92aa2210\"",
-        "Last-Modified": "Thu, 14 Sep 2023 07:48:58 GMT",
-        "Referrer-Policy": "no-referrer-when-downgrade",
-        "Strict-Transport-Security": "max-age=63072000;",
-        "Transfer-Encoding": "chunked",
-        "Vary": "Accept-Encoding",
-        "X-Content-Type-Options": "nosniff",
-        "X-Dns-Prefetch-Control": "off",
-        "X-Download-Options": "noopen",
-        "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "cb0878b9-dd6a-46f9-9756-9f8c992c29d1",
-        "X-XSS-Protection": "1;mode=block"
-      },
-      "scan_id": 42740194,
-      "score": 65,
-      "start_time": "Sun, 01 Oct 2023 01:24:01 GMT",
-      "state": "FINISHED",
-      "status_code": 200,
-      "tests_failed": 3,
-      "tests_passed": 9,
-      "tests_quantity": 12,
-      "details": {
-        "content-security-policy": {
-          "expectation": "csp-implemented-with-no-unsafe",
-          "name": "content-security-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false,
-            "numPolicies": 0,
-            "policy": null
-          },
-          "pass": false,
-          "result": "csp-not-implemented",
-          "score_description": "Content Security Policy (CSP) header not implemented",
-          "score_modifier": -25
-        },
-        "contribute": {
-          "expectation": "contribute-json-only-required-on-mozilla-properties",
-          "name": "contribute",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "contribute-json-only-required-on-mozilla-properties",
-          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
-          "score_modifier": 0
-        },
-        "cookies": {
-          "expectation": "cookies-secure-with-httponly-sessions",
-          "name": "cookies",
-          "output": {
-            "data": null,
-            "sameSite": null
-          },
-          "pass": true,
-          "result": "cookies-not-found",
-          "score_description": "No cookies detected",
-          "score_modifier": 0
-        },
-        "cross-origin-resource-sharing": {
-          "expectation": "cross-origin-resource-sharing-not-implemented",
-          "name": "cross-origin-resource-sharing",
-          "output": {
-            "data": {
-              "acao": "carqueiranne.mademande.fr",
-              "clientaccesspolicy": null,
-              "crossdomain": null
-            }
-          },
-          "pass": true,
-          "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
-          "score_description": "Content is visible via cross-origin resource sharing (CORS) files or headers, but is restricted to specific domains",
-          "score_modifier": 0
-        },
-        "public-key-pinning": {
-          "expectation": "hpkp-not-implemented",
-          "name": "public-key-pinning",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "numPins": null,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hpkp-not-implemented",
-          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
-          "score_modifier": 0
-        },
-        "redirection": {
-          "expectation": "redirection-to-https",
-          "name": "redirection",
-          "output": {
-            "destination": "https://carqueiranne.mademande.fr/aides/#/carqueiranne/",
-            "redirects": true,
-            "route": [
-              "http://ma-carqueiranne.mgcloud.fr/",
-              "https://carqueiranne.mademande.fr/",
-              "https://carqueiranne.mademande.fr/aides/#/carqueiranne/"
-            ],
-            "status_code": 302
-          },
-          "pass": false,
-          "result": "redirection-off-host-from-http",
-          "score_description": "Initial redirection from HTTP to HTTPS is to a different host, preventing HSTS",
-          "score_modifier": -5
-        },
-        "referrer-policy": {
-          "expectation": "referrer-policy-private",
-          "name": "referrer-policy",
-          "output": {
-            "data": "no-referrer-when-downgrade",
-            "http": true,
-            "meta": false
-          },
-          "pass": true,
-          "result": "referrer-policy-no-referrer-when-downgrade",
-          "score_description": "Referrer-Policy header set to \"no-referrer-when-downgrade\"",
-          "score_modifier": 0
-        },
-        "strict-transport-security": {
-          "expectation": "hsts-implemented-max-age-at-least-six-months",
-          "name": "strict-transport-security",
-          "output": {
-            "data": "max-age=63072000;",
-            "includeSubDomains": false,
-            "max-age": 63072000,
-            "preload": false,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hsts-implemented-max-age-at-least-six-months",
-          "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
-          "score_modifier": 0
-        },
-        "subresource-integrity": {
-          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-          "name": "subresource-integrity",
-          "output": {
-            "data": {
-              "https://www.google.com/recaptcha/api.js?render=explicit": {
-                "crossorigin": null,
-                "integrity": null
-              }
-            }
-          },
-          "pass": false,
-          "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-          "score_description": "Subresource Integrity (SRI) not implemented, but all external scripts are loaded over HTTPS",
-          "score_modifier": -5
-        },
-        "x-content-type-options": {
-          "expectation": "x-content-type-options-nosniff",
-          "name": "x-content-type-options",
-          "output": {
-            "data": "nosniff"
-          },
-          "pass": true,
-          "result": "x-content-type-options-nosniff",
-          "score_description": "X-Content-Type-Options header set to \"nosniff\"",
-          "score_modifier": 0
-        },
-        "x-frame-options": {
-          "expectation": "x-frame-options-sameorigin-or-deny",
-          "name": "x-frame-options",
-          "output": {
-            "data": "SAMEORIGIN"
-          },
-          "pass": true,
-          "result": "x-frame-options-sameorigin-or-deny",
-          "score_description": "X-Frame-Options (XFO) header set to SAMEORIGIN or DENY",
-          "score_modifier": 0
-        },
-        "x-xss-protection": {
-          "expectation": "x-xss-protection-1-mode-block",
-          "name": "x-xss-protection",
-          "output": {
-            "data": "1;mode=block"
-          },
-          "pass": true,
-          "result": "x-xss-protection-enabled-mode-block",
-          "score_description": "X-XSS-Protection header set to \"1; mode=block\"",
-          "score_modifier": 0
-        }
-      }
-    },
+    "http": null,
     "updownio": null,
     "nmap": {
       "host": "ma-carqueiranne.mgcloud.fr",
@@ -5413,7 +5213,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "168 >= 60 days"
+        "finding": "133 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6165,7 +5965,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "53"
+        "finding": "49"
       }
     ],
     "thirdparties": {
@@ -6180,11 +5980,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/aides/assets/index-72e1c4a3.js"
+          "url": "https://carqueiranne.mademande.fr/aides/assets/index-6ee15407.js"
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/aides/assets/index-8e88f018.css"
+          "url": "https://carqueiranne.mademande.fr/aides/assets/index-33b1384e.css"
         },
         {
           "type": "google",
@@ -6196,7 +5996,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/pxZcVU8Dk73FyvFvdCgp2MSG/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/3sU2vDRVDmUU2E0Ro4VadvPr/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6444,7 +6244,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/app-tenant.cc272b34db48e44fba2e.css"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/app-tenant.7892ca9ed2f9e4d6e847.css"
         },
         {
           "type": "unknown",
@@ -6456,7 +6256,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/js/app-tenant.cc272b34db48e44fba2e.js"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/js/app-tenant.7892ca9ed2f9e4d6e847.js"
         },
         {
           "type": "unknown",
@@ -6504,7 +6304,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/3.cc272b34db48e44fba2e.js"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/3.7892ca9ed2f9e4d6e847.js"
         },
         {
           "type": "unknown",
@@ -6558,9 +6358,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 01 Oct 2023 01:24:36 GMT",
-        "etag": "W/\"5257-18a92aa2210\"",
-        "last-modified": "Thu, 14 Sep 2023 07:48:58 GMT",
+        "date": "Sun, 05 Nov 2023 01:20:44 GMT",
+        "etag": "W/\"5257-18b5d58c2a0\"",
+        "last-modified": "Mon, 23 Oct 2023 16:23:00 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -6569,7 +6369,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "427cb544-eb56-4273-be6b-e342556b4055",
+        "x-request-id": "423c487a-870d-41a7-9009-ebb663e50588",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -6687,7 +6487,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.115.106",
+          "ip": "172.253.63.106",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6741,7 +6541,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.63.94",
+          "ip": "172.253.122.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6825,8 +6625,8 @@
     },
     "zap": {
       "@programName": "ZAP",
-      "@version": "2.13.0",
-      "@generated": "Sun, 1 Oct 2023 01:23:29",
+      "@version": "2.14.0",
+      "@generated": "Sun, 5 Nov 2023 01:19:57",
       "site": [
         {
           "@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -6936,12 +6736,209 @@
         }
       ]
     },
-    "nuclei": [],
+    "nuclei": [
+      {
+        "template": "dns/caa-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+        "template-id": "caa-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+        "info": {
+          "name": "CAA Record",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "caa"
+          ],
+          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+          "reference": [
+            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "ma-carqueiranne.mgcloud.fr.",
+        "matched-at": "ma-carqueiranne.mgcloud.fr",
+        "timestamp": "2023-11-05T01:22:35.0288246Z",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/missing-sri.yaml",
+        "template-url": "https://templates.nuclei.sh/public/missing-sri",
+        "template-id": "missing-sri",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-sri.yaml",
+        "info": {
+          "name": "Missing Subresource Integrity",
+          "author": [
+            "lucky0x0d",
+            "pulsesecurity.co.nz"
+          ],
+          "tags": [
+            "compliance",
+            "js",
+            "sri",
+            "misconfig"
+          ],
+          "description": "Checks if script tags within the HTML response have Subresource Integrity implemented via the integrity attribute\n",
+          "reference": [
+            "https://cheatsheetseries.owasp.org/cheatsheets/third_party_javascript_management_cheat_sheet.html#subresource-integrity"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://carqueiranne.mademande.fr/aides/#/carqueiranne/",
+        "extracted-results": [
+          "https://www.google.com/recaptcha/api.js?render=explicit"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2023-11-05T01:23:47.399517181Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Host: ma-carqueiranne.mgcloud.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/detect-ssl-issuer.yaml",
+        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+        "template-id": "ssl-issuer",
+        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+        "info": {
+          "name": "Detect SSL Certificate Issuer",
+          "author": [
+            "lingtren"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "ssl",
+        "host": "ma-carqueiranne.mgcloud.fr",
+        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
+        "extracted-results": [
+          "Sectigo Limited"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2023-11-05T01:25:33.244220832Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/ssl-dns-names.yaml",
+        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+        "template-id": "ssl-dns-names",
+        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+        "info": {
+          "name": "SSL DNS Names",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "ssl",
+        "host": "ma-carqueiranne.mgcloud.fr",
+        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
+        "extracted-results": [
+          "*.mgcloud.fr",
+          "mgcloud.fr"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2023-11-05T01:25:33.244345194Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/wildcard-tls.yaml",
+        "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
+        "template-id": "wildcard-tls",
+        "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
+        "info": {
+          "name": "Wildcard TLS Certificate",
+          "author": [
+            "lucky0x0d"
+          ],
+          "tags": [
+            "ssl",
+            "wildcard",
+            "tls"
+          ],
+          "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
+          "reference": [
+            "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_protection_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "ssl",
+        "host": "ma-carqueiranne.mgcloud.fr",
+        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
+        "extracted-results": [
+          " SAN: [*.mgcloud.fr mgcloud.fr]",
+          "CN: *.mgcloud.fr"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2023-11-05T01:25:33.244390779Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://templates.nuclei.sh/public/tls-version",
+        "template-id": "tls-version",
+        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+        "info": {
+          "name": "TLS Version - Detect",
+          "author": [
+            "pdteam",
+            "pussycat0x"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 4
+          }
+        },
+        "type": "ssl",
+        "host": "ma-carqueiranne.mgcloud.fr",
+        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
+        "extracted-results": [
+          "tls12"
+        ],
+        "ip": "141.94.209.199",
+        "timestamp": "2023-11-05T01:25:36.325351803Z",
+        "matcher-status": true
+      }
+    ],
     "lhr": [
       {
         "requestedUrl": "https://ma-carqueiranne.mgcloud.fr/",
         "finalUrl": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/",
-        "fetchTime": "2023-10-01T01:23:38.857Z",
+        "fetchTime": "2023-11-05T01:20:06.483Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://ma-carqueiranne.mgcloud.fr/) was redirected to https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -6954,7 +6951,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.010089874267578125
+            "score": 0.008776664733886719
           },
           "accessibility": {
             "title": "Accessibility",
@@ -7006,53 +7003,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 30749,
+            "numericValue": 30689,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 18442,
-                  "firstMeaningfulPaint": 18749,
-                  "largestContentfulPaint": 29452,
-                  "interactive": 30749,
-                  "speedIndex": 18442,
-                  "totalBlockingTime": 1002,
-                  "maxPotentialFID": 534,
-                  "cumulativeLayoutShift": 0.002319233324082501,
-                  "cumulativeLayoutShiftMainFrame": 0.002319233324082501,
-                  "totalCumulativeLayoutShift": 0.002319233324082501,
+                  "firstContentfulPaint": 18456,
+                  "firstMeaningfulPaint": 20682,
+                  "largestContentfulPaint": 29301,
+                  "interactive": 30689,
+                  "speedIndex": 18456,
+                  "totalBlockingTime": 705,
+                  "maxPotentialFID": 543,
+                  "cumulativeLayoutShift": 0.00211377028837587,
+                  "cumulativeLayoutShiftMainFrame": 0.00211377028837587,
+                  "totalCumulativeLayoutShift": 0.00211377028837587,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 180340220,
+                  "observedTimeOriginTs": 183449315,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 180340220,
-                  "observedFirstPaint": 691,
-                  "observedFirstPaintTs": 181031294,
-                  "observedFirstContentfulPaint": 1521,
-                  "observedFirstContentfulPaintTs": 181861460,
-                  "observedFirstContentfulPaintAllFrames": 1521,
-                  "observedFirstContentfulPaintAllFramesTs": 181861460,
-                  "observedFirstMeaningfulPaint": 1643,
-                  "observedFirstMeaningfulPaintTs": 181983245,
-                  "observedLargestContentfulPaint": 1595,
-                  "observedLargestContentfulPaintTs": 181935127,
-                  "observedLargestContentfulPaintAllFrames": 1595,
-                  "observedLargestContentfulPaintAllFramesTs": 181935127,
-                  "observedTraceEnd": 4183,
-                  "observedTraceEndTs": 184522802,
-                  "observedLoad": 1261,
-                  "observedLoadTs": 181601031,
-                  "observedDomContentLoaded": 1261,
-                  "observedDomContentLoadedTs": 181600842,
-                  "observedCumulativeLayoutShift": 0.002319233324082501,
-                  "observedCumulativeLayoutShiftMainFrame": 0.002319233324082501,
-                  "observedTotalCumulativeLayoutShift": 0.002319233324082501,
-                  "observedFirstVisualChange": 19,
-                  "observedFirstVisualChangeTs": 180359220,
-                  "observedLastVisualChange": 2135,
-                  "observedLastVisualChangeTs": 182475220,
-                  "observedSpeedIndex": 1358,
-                  "observedSpeedIndexTs": 181698398
+                  "observedNavigationStartTs": 183449315,
+                  "observedFirstPaint": 643,
+                  "observedFirstPaintTs": 184092170,
+                  "observedFirstContentfulPaint": 1482,
+                  "observedFirstContentfulPaintTs": 184931137,
+                  "observedFirstContentfulPaintAllFrames": 1482,
+                  "observedFirstContentfulPaintAllFramesTs": 184931137,
+                  "observedFirstMeaningfulPaint": 1853,
+                  "observedFirstMeaningfulPaintTs": 185302743,
+                  "observedLargestContentfulPaint": 1547,
+                  "observedLargestContentfulPaintTs": 184995915,
+                  "observedLargestContentfulPaintAllFrames": 1547,
+                  "observedLargestContentfulPaintAllFramesTs": 184995915,
+                  "observedTraceEnd": 4141,
+                  "observedTraceEndTs": 187590474,
+                  "observedLoad": 1263,
+                  "observedLoadTs": 184712623,
+                  "observedDomContentLoaded": 1263,
+                  "observedDomContentLoadedTs": 184712441,
+                  "observedCumulativeLayoutShift": 0.00211377028837587,
+                  "observedCumulativeLayoutShiftMainFrame": 0.00211377028837587,
+                  "observedTotalCumulativeLayoutShift": 0.00211377028837587,
+                  "observedFirstVisualChange": 10,
+                  "observedFirstVisualChangeTs": 183459315,
+                  "observedLastVisualChange": 2109,
+                  "observedLastVisualChangeTs": 185558315,
+                  "observedSpeedIndex": 1331,
+                  "observedSpeedIndexTs": 184780109
                 },
                 {
                   "lcpInvalidated": false
@@ -7074,19 +7071,19 @@
                   "numScripts": 7,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 1446,
-                  "numTasksOver10ms": 26,
-                  "numTasksOver25ms": 12,
-                  "numTasksOver50ms": 9,
-                  "numTasksOver100ms": 4,
+                  "numTasks": 1678,
+                  "numTasksOver10ms": 19,
+                  "numTasksOver25ms": 11,
+                  "numTasksOver50ms": 6,
+                  "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.829,
-                  "throughput": 8071581.381385825,
-                  "maxRtt": 81.416,
-                  "maxServerLatency": 24.116999999999976,
-                  "totalByteWeight": 3617116,
-                  "totalTaskTime": 1771.5479999999932,
-                  "mainDocumentTransferSize": 1122
+                  "rtt": 6.132,
+                  "throughput": 7722099.555843902,
+                  "maxRtt": 82.936,
+                  "maxServerLatency": 21.29800000000003,
+                  "totalByteWeight": 3624001,
+                  "totalTaskTime": 1341.4089999999974,
+                  "mainDocumentTransferSize": 1127
                 }
               ]
             }
@@ -7107,7 +7104,6 @@
     "sonarcloud": null,
     "summary": {
       "404": "A+",
-      "httpGrade": "B-",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
@@ -7118,7 +7114,7 @@
       "cookiesCount": 0,
       "trackersGrade": "F",
       "trackersCount": 93,
-      "lighthouse_performance": 0.010089874267578125,
+      "lighthouse_performance": 0.008776664733886719,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
