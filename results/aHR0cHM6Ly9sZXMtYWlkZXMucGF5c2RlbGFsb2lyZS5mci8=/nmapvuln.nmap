@@ -1,13 +1,12 @@
-# Nmap 7.92 scan initiated Sun Oct 22 01:22:42 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln les-aides.paysdelaloire.fr
+# Nmap 7.92 scan initiated Sun Nov 19 01:26:16 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln les-aides.paysdelaloire.fr
 Nmap scan report for les-aides.paysdelaloire.fr (5.196.220.2)
-Host is up (0.084s latency).
+Host is up (0.085s latency).
 rDNS record for 5.196.220.2: crpl-prod-sddc.mgcloud.fr
-Not shown: 997 filtered tcp ports (no-response)
-PORT     STATE  SERVICE        VERSION
-80/tcp   open   http-proxy     HAProxy http proxy 1.3.1 or later
-443/tcp  open   ssl/http-proxy HAProxy http proxy 1.3.1 or later
-8300/tcp closed tmi
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     HAProxy http proxy 1.3.1 or later
+443/tcp open  ssl/http-proxy HAProxy http proxy 1.3.1 or later
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct 22 01:23:11 2023 -- 1 IP address (1 host up) scanned in 29.67 seconds
+# Nmap done at Sun Nov 19 01:26:46 2023 -- 1 IP address (1 host up) scanned in 30.29 seconds
