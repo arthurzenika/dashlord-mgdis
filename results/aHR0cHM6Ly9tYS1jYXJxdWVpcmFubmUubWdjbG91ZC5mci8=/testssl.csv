@@ -47,7 +47,7 @@
 "cert_trust_wildcard","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","LOW","trust is via wildcard","",""
 "cert_chain_of_trust","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","OK","passed.","",""
 "cert_certificatePolicies_EV","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","INFO","no","",""
-"cert_expirationStatus","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","OK","112 >= 60 days","",""
+"cert_expirationStatus","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","OK","105 >= 60 days","",""
 "cert_notBefore","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","INFO","2023-02-17 00:00","",""
 "cert_notAfter","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","OK","2024-03-17 23:59","",""
 "cert_extlifeSpan","ma-carqueiranne.mgcloud.fr/141.94.209.199","443","OK","certificate has no extended life time according to browser forum","",""
