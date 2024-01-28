@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jan 14 01:27:23 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
+# Nmap 7.92 scan initiated Sun Jan 28 01:21:17 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
 Nmap scan report for aideseco.mgcloud.fr (149.202.180.217)
-Host is up (0.085s latency).
+Host is up (0.086s latency).
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
 80/tcp  open  http-proxy     HAProxy http proxy 1.3.1 or later
@@ -8,4 +8,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jan 14 01:27:53 2024 -- 1 IP address (1 host up) scanned in 30.63 seconds
+# Nmap done at Sun Jan 28 01:21:48 2024 -- 1 IP address (1 host up) scanned in 30.69 seconds
