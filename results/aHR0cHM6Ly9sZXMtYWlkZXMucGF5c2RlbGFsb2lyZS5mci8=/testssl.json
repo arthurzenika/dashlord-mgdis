@@ -262,7 +262,7 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "043C2A365D499BE6D3B4045681C3A1B85551"
+              "finding"      : "03EE4CB049B42529CC82A0EBD0030CD39D61"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "7C9FDC84D3263DA28200138F309A67257DF80B29"
+              "finding"      : "D52C4A5E5FE4F44B187C7646ACF7B5BAD9D3602A"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "268F8DA4362F484F80D882EF4CBE631593F5410E07A4CA38B4D478885DD3C5CB"
+              "finding"      : "43B835DFD92124D6044D9D572FFF471EA387CD492FB858B6D3E89C464A34CEFA"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFAjCCA+qgAwIBAgISBDwqNl1Jm+bTtARWgcOhuFVRMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzExMTkwMDExMTFaFw0yNDAyMTcwMDExMTBaMCUxIzAhBgNVBAMTGmxlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0tp/yR3TgS9l2AzPZb1g8RcojS41+H9eGR73nkbQN1Bko2wja5ZVjbsc3NweiYFeNhChZWXaztQzPav6YUIJZ0Lc1Dro3U9xbcJKsKqjt7Mj0d7pXl01PJkl4qwJyw7CVaMWNCGyiSjdMjj4EaaRhFkHx9+7nQMa4CXkeTEL+igDywM0WRFZgMOQAkRdtnbBdD84y8WZrrZ2DmIfNcNcTzj1tNwmCRblRRePHWQZZjHEnGeRoz/IuxVo8aHa8VkoztUHnuC5y4q3b1GP+RqxWhFsZX8ZAWmtr/AmYc3yMrLbqvoA0GiM2y08avRy3YAQ7HJYU7nLPJlum+c+NrnK0QIDAQABo4ICHTCCAhkwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRSbnQNT2pk8vl9zyWE7ZOUhSxVRzAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghpsZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi+UhsC8AAAQDAEcwRQIgRS6UwAhII47zjmFqPh80Cj9H5bi3QDSHs8S+narg3LMCIQCVeVXGjPEOQo9anMrfeNNXub4zPkqs7piO4gEKcatg5gB3ADtTd3U+LbmAToswWwb+QDtn2E/D9Me9AA0tcm/h+tQXAAABi+UhsDUAAAQDAEgwRgIhAPFI9B08PiiEfFZhstDPz1KfxtkvoMjYaXsepMoRIL0oAiEAx+fWe2Ys7HjUHzAoDSChS1SM7kI9L7W8pTMdWPaEm9IwDQYJKoZIhvcNAQELBQADggEBAD0C1y5QPLy9ROyCC+uR9xtsDaNNcw+1cRdp+/gNhylQd7AjyNLHxj63OIXdDl7LRC35Eh5RG3FMfbkn9bJQIG2Kfso1Te+dyyyjZgjYy3DOf8Bug66GNLaIyj0NP7XoYdBcQE3e65BM79w2SQFW7JZ1R7CkfGxhrLVg7EHHliUsOUfkCWBhC4Ab/Ls4yKMPHz8r12fVMdw9cGR/vh7YH5XiH3Q+CiN1Yz7ysVWGgpvcx/FEgyu1y+wyUIBrH9qENIM4zOERMuchmpbT4pIVynytCeKPm8THBGBrJf0hBOe3lt8f+/AFgg8UMV6l6FUCwODEwt4ehLD7LxCVzkzVh3M=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgISA+5MsEm0JSnMgqDr0AMM051hMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAxMTgwMTMxNTJaFw0yNDA0MTcwMTMxNTFaMCUxIzAhBgNVBAMTGmxlcy1haWRlcy5wYXlzZGVsYWxvaXJlLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzz6kVoPTxMeiZ8zkaEyxuV4E3K/9kRCxs6bhvoBi8Nq6f9jJZNrsvxxRj66xr/NoYMH9sSBdE5KSZ61SPzVMMiP1ZP5X9YJIpIHHFPwPi59AkCGu6kzua2+PydEkWz9CD7wRUpevHJbTE5L5cKwJpF0vMQV6P6xpEzpI3TtWPK9onOy/waFd5r56SpahnRLjfYVfO2Zzxfla01L5unVPL5+5DFRaSQilR7dI0XXHh7ptkTE7Mzxfi32KTfFfHlZimPzwT62sM5XVB7jZtcLXqgGE++rZaebLexrfJhEH4PmVHmjRpUZwC6pUbtBYYrf2ZTlRwS0m286HzZWTFqiriwIDAQABo4ICGjCCAhYwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSVfarYOjNRKjHd3fFCab2NTXguDjAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghpsZXMtYWlkZXMucGF5c2RlbGFsb2lyZS5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQIGCisGAQQB1nkCBAIEgfMEgfAA7gB1AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABjRppGt0AAAQDAEYwRAIgGzLBBCLVm7OZcW35naZG0Kzz8JE9WDI8WZZymabyfDECIBMApLbtGze2rYTVm5Zw4z6jMZWa3sDKS8XQxG0pEuThAHUA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGNGmka5AAABAMARjBEAiBZpT1OhbwqbSn33ukUwXGltngW6yNqr7xC5F2nip8/HAIgVmF3iluBCi8C/A6kTdiStx/wsO73eU8gDgEoVU4obpUwDQYJKoZIhvcNAQELBQADggEBAFiqySXdeaUFEGDiInBIETR7M6N2GK8o6b3FsFMPS8ygU6km38WV/AngEuPYTo6TSJ+p2oL5YCoHuffZ10M5blKzXD45l/NEZ98Fx9OjixHPnnwX+vRdpky/bO3tMKQLEr7mqK3RvkxWngfgdd592GAGLKMUKrU+hVxH/nbGbcO6zRDjpCOkPaVGGXgUlxjYQGdtXYjIgTs2HJq+K15861+EYHrBZQMWeI6CulOnehj9GwPKL9m1EgFIb4JATVYGeR/DNKADm/UUlRpDkJYGwIR9spgiAISlZ5wEQGnni58Px/dRF7D9Obf4R7Xo1ARyalqdon8tzW7dI0owVj5LyYM=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -339,21 +339,21 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "40 >= 30 days"
+              "finding"      : "73 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-11-19 00:11"
+              "finding"      : "2024-01-18 01:31"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-02-17 00:11"
+              "finding"      : "2024-04-17 01:31"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -708,7 +708,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=268F8DA4362F484F80D882EF4CBE631593F5410E07A4CA38B4D478885DD3C5CB"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=43B835DFD92124D6044D9D572FFF471EA387CD492FB858B6D3E89C464A34CEFA"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1091,6 +1091,6 @@
               "ip"           : "les-aides.paysdelaloire.fr/5.196.220.2",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "49"
+              "finding"      : "48"
           }
 ]
