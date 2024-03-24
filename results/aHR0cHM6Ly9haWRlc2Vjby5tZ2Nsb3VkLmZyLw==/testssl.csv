@@ -47,7 +47,7 @@
 "cert_trust_wildcard","aideseco.mgcloud.fr/149.202.180.217","443","LOW","trust is via wildcard","",""
 "cert_chain_of_trust","aideseco.mgcloud.fr/149.202.180.217","443","OK","passed.","",""
 "cert_certificatePolicies_EV","aideseco.mgcloud.fr/149.202.180.217","443","INFO","no","",""
-"cert_expirationStatus","aideseco.mgcloud.fr/149.202.180.217","443","OK","371 >= 60 days","",""
+"cert_expirationStatus","aideseco.mgcloud.fr/149.202.180.217","443","OK","364 >= 60 days","",""
 "cert_notBefore","aideseco.mgcloud.fr/149.202.180.217","443","INFO","2024-02-21 00:00","",""
 "cert_notAfter","aideseco.mgcloud.fr/149.202.180.217","443","OK","2025-03-23 23:59","",""
 "cert_extlifeSpan","aideseco.mgcloud.fr/149.202.180.217","443","OK","certificate has no extended life time according to browser forum","",""
