@@ -2515,7 +2515,7 @@
     "http": {
       "url": "https://aideseco.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sat, 23 Mar 2024 14:26:50 GMT",
+      "end_time": "Sat, 30 Mar 2024 17:05:31 GMT",
       "grade": "B",
       "hidden": true,
       "likelihood_indicator": "MEDIUM",
@@ -2525,9 +2525,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sat, 23 Mar 2024 14:26:49 GMT",
-        "Etag": "W/\"5257-18e3c132b28\"",
-        "Last-Modified": "Thu, 14 Mar 2024 08:27:53 GMT",
+        "Date": "Sat, 30 Mar 2024 17:05:29 GMT",
+        "Etag": "W/\"5257-18e5c2d9538\"",
+        "Last-Modified": "Wed, 20 Mar 2024 14:04:35 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -2536,12 +2536,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "a341f33d-4b88-4f8b-9a7f-277272d4d17a",
+        "X-Request-Id": "56212e39-3527-4656-94de-2c0d8031fd1e",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 49208283,
+      "scan_id": 49480487,
       "score": 70,
-      "start_time": "Sat, 23 Mar 2024 14:26:47 GMT",
+      "start_time": "Sat, 30 Mar 2024 17:05:27 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -2712,87 +2712,87 @@
             "version": "1.3.1 or later",
             "vulnerabilities": [
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2012-2942",
+                "is_exploit": "false",
                 "cvss": "5.1"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2012-2942",
+                "is_exploit": "false",
                 "cvss": "5.1"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2023-26044",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2022-36032",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2019-14241",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20615",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20103",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20102",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-14645",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-10184",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-20103",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-20102",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-14645",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-10184",
+                "is_exploit": "false",
                 "cvss": "5.0"
               }
             ]
@@ -2806,87 +2806,87 @@
             "version": "1.3.1 or later",
             "vulnerabilities": [
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2012-2942",
+                "is_exploit": "false",
                 "cvss": "5.1"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2012-2942",
+                "is_exploit": "false",
                 "cvss": "5.1"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2023-26044",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2022-36032",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2019-14241",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20615",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20103",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-20102",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-14645",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "prion",
                 "id": "PRION:CVE-2018-10184",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-20103",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-20102",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-14645",
+                "is_exploit": "false",
                 "cvss": "5.0"
               },
               {
-                "is_exploit": "false",
                 "type": "cve",
                 "id": "CVE-2018-10184",
+                "is_exploit": "false",
                 "cvss": "5.0"
               }
             ]
@@ -3245,7 +3245,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "364 >= 60 days"
+        "finding": "357 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -4012,7 +4012,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/Hq4JZivTyQ7GP8Kt571Tzodj/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/moV1mTgQ6S91nuTnmll4Y9yf/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -4026,9 +4026,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 24 Mar 2024 01:21:48 GMT",
-        "etag": "W/\"5257-18e3c132b28\"",
-        "last-modified": "Thu, 14 Mar 2024 08:27:53 GMT",
+        "date": "Sun, 31 Mar 2024 01:22:08 GMT",
+        "etag": "W/\"5257-18e5c2d9538\"",
+        "last-modified": "Wed, 20 Mar 2024 14:04:35 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -4037,7 +4037,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "20d3aaff-0fa6-49f1-9942-130b75701ade",
+        "x-request-id": "acb932a8-25f4-4f6c-aae2-4ed991557676",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -4099,7 +4099,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "142.251.16.99",
+          "ip": "142.251.16.106",
           "geoip": {
             "city": {
               "geoname_id": 5133273,
@@ -4179,14 +4179,8 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "142.251.167.94",
+          "ip": "172.253.62.94",
           "geoip": {
-            "city": {
-              "geoname_id": 5116931,
-              "names": {
-                "en": "Farmingdale"
-              }
-            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -4216,14 +4210,10 @@
               }
             },
             "location": {
-              "accuracy_radius": 500,
-              "latitude": 40.7306,
-              "longitude": -73.4313,
-              "metro_code": 501,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "11735"
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -4238,23 +4228,7 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 5128638,
-                "iso_code": "NY",
-                "names": {
-                  "de": "New York",
-                  "en": "New York",
-                  "es": "Nueva York",
-                  "fr": "New York",
-                  "ja": "ニューヨーク州",
-                  "pt-BR": "Nova Iorque",
-                  "ru": "Нью-Йорк",
-                  "zh-CN": "纽约州"
-                }
-              }
-            ]
+            }
           }
         }
       ]
@@ -4262,16 +4236,186 @@
     "wappalyzer": {
       "urls": {
         "https://aideseco.mgcloud.fr/": {
-          "status": 302,
-          "error": "Navigation timeout of 10000 ms exceeded (https://aideseco.mgcloud.fr/aides/#/aideseco/)"
+          "status": 302
         }
       },
-      "technologies": []
+      "technologies": [
+        {
+          "slug": "node-js",
+          "name": "Node.js",
+          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Node.js.svg",
+          "website": "https://nodejs.org",
+          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 27,
+              "slug": "programming-languages",
+              "name": "Programming languages"
+            }
+          ]
+        },
+        {
+          "slug": "kendo-ui",
+          "name": "Kendo UI",
+          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Kendo UI.png",
+          "website": "https://www.telerik.com/kendo-ui",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 66,
+              "slug": "ui-frameworks",
+              "name": "UI frameworks"
+            }
+          ]
+        },
+        {
+          "slug": "bootstrap",
+          "name": "Bootstrap",
+          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+          "confidence": 100,
+          "version": "3.4.1",
+          "icon": "Bootstrap.svg",
+          "website": "https://getbootstrap.com",
+          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 66,
+              "slug": "ui-frameworks",
+              "name": "UI frameworks"
+            }
+          ]
+        },
+        {
+          "slug": "socket-io",
+          "name": "Socket.io",
+          "description": null,
+          "confidence": 100,
+          "version": null,
+          "icon": "Socket.io.svg",
+          "website": "https://socket.io",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 12,
+              "slug": "javascript-frameworks",
+              "name": "JavaScript frameworks"
+            }
+          ]
+        },
+        {
+          "slug": "angularjs",
+          "name": "AngularJS",
+          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
+          "confidence": 100,
+          "version": "1.8.3",
+          "icon": "AngularJS.svg",
+          "website": "https://angularjs.org",
+          "cpe": "cpe:2.3:a:angularjs:angular.js:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 12,
+              "slug": "javascript-frameworks",
+              "name": "JavaScript frameworks"
+            }
+          ]
+        },
+        {
+          "slug": "recaptcha",
+          "name": "reCAPTCHA",
+          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
+          "confidence": 100,
+          "version": null,
+          "icon": "reCAPTCHA.svg",
+          "website": "https://www.google.com/recaptcha/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ]
+        },
+        {
+          "slug": "moment-js",
+          "name": "Moment.js",
+          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
+          "confidence": 100,
+          "version": "2.29.4",
+          "icon": "Moment.js.svg",
+          "website": "https://momentjs.com",
+          "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ]
+        },
+        {
+          "slug": "lodash",
+          "name": "Lodash",
+          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
+          "confidence": 100,
+          "version": "4.17.21",
+          "icon": "Lodash.svg",
+          "website": "https://www.lodash.com",
+          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ]
+        },
+        {
+          "slug": "jquery",
+          "name": "jQuery",
+          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+          "confidence": 100,
+          "version": "2.2.4",
+          "icon": "jQuery.svg",
+          "website": "https://jquery.com",
+          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ]
+        },
+        {
+          "slug": "core-js",
+          "name": "core-js",
+          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+          "confidence": 100,
+          "version": "3.6.5",
+          "icon": "core-js.png",
+          "website": "https://github.com/zloirock/core-js",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ]
+        }
+      ]
     },
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 24 Mar 2024 01:21:05",
+      "@generated": "Sun, 31 Mar 2024 01:21:26",
       "site": [
         {
           "@name": "https://aideseco.mgcloud.fr",
@@ -4435,7 +4579,7 @@
         "type": "dns",
         "host": "aideseco.mgcloud.fr.",
         "matched-at": "aideseco.mgcloud.fr",
-        "timestamp": "2024-03-24T01:23:36.506753126Z",
+        "timestamp": "2024-03-31T01:23:55.218196028Z",
         "matcher-status": true
       },
       {
@@ -4461,7 +4605,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:23.809856534Z",
+        "timestamp": "2024-03-31T01:24:41.55052304Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4488,229 +4632,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:23.809897581Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.693029295Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.69306955Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.693081603Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.693090058Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.693103955Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.69311769Z",
+        "timestamp": "2024-03-31T01:24:41.550578684Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4747,7 +4669,229 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:35.69313368Z",
+        "timestamp": "2024-03-31T01:24:53.559422281Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559465502Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559478005Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559492252Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559505526Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559520274Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "permissions-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-03-31T01:24:53.559535953Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4784,7 +4928,7 @@
           "https://www.google.com/recaptcha/api.js?render=explicit"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:24:56.819139833Z",
+        "timestamp": "2024-03-31T01:25:14.672476268Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: aideseco.mgcloud.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4815,7 +4959,7 @@
           "Sectigo Limited"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:27:01.390941841Z",
+        "timestamp": "2024-03-31T01:27:19.081625518Z",
         "matcher-status": true
       },
       {
@@ -4846,7 +4990,7 @@
           "mgcloud.fr"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:27:01.391065572Z",
+        "timestamp": "2024-03-31T01:27:19.081752465Z",
         "matcher-status": true
       },
       {
@@ -4881,7 +5025,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:27:01.391113992Z",
+        "timestamp": "2024-03-31T01:27:19.08179797Z",
         "matcher-status": true
       },
       {
@@ -4912,7 +5056,7 @@
           "tls12"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-03-24T01:27:02.965166002Z",
+        "timestamp": "2024-03-31T01:27:20.434720113Z",
         "matcher-status": true
       }
     ],
@@ -4920,7 +5064,7 @@
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2024-03-24T01:21:13.697Z",
+        "fetchTime": "2024-03-31T01:21:35.317Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -4985,53 +5129,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 27607,
+            "numericValue": 25052,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 18452,
-                  "firstMeaningfulPaint": 19648,
-                  "largestContentfulPaint": 29615,
-                  "interactive": 27607,
-                  "speedIndex": 18452,
-                  "totalBlockingTime": 328,
-                  "maxPotentialFID": 394,
-                  "cumulativeLayoutShift": 0.01707151317395526,
-                  "cumulativeLayoutShiftMainFrame": 0.01707151317395526,
-                  "totalCumulativeLayoutShift": 0.01707151317395526,
+                  "firstContentfulPaint": 17055,
+                  "firstMeaningfulPaint": 18233,
+                  "largestContentfulPaint": 24531,
+                  "interactive": 25052,
+                  "speedIndex": 17055,
+                  "totalBlockingTime": 433,
+                  "maxPotentialFID": 392,
+                  "cumulativeLayoutShift": 0.017074612646831924,
+                  "cumulativeLayoutShiftMainFrame": 0.017074612646831924,
+                  "totalCumulativeLayoutShift": 0.017074612646831924,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 198329070,
+                  "observedTimeOriginTs": 336634000,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 198329070,
-                  "observedFirstPaint": 633,
-                  "observedFirstPaintTs": 198962263,
-                  "observedFirstContentfulPaint": 1589,
-                  "observedFirstContentfulPaintTs": 199917700,
-                  "observedFirstContentfulPaintAllFrames": 1589,
-                  "observedFirstContentfulPaintAllFramesTs": 199917700,
-                  "observedFirstMeaningfulPaint": 1701,
-                  "observedFirstMeaningfulPaintTs": 200030316,
-                  "observedLargestContentfulPaint": 1817,
-                  "observedLargestContentfulPaintTs": 200146193,
-                  "observedLargestContentfulPaintAllFrames": 1817,
-                  "observedLargestContentfulPaintAllFramesTs": 200146193,
-                  "observedTraceEnd": 4300,
-                  "observedTraceEndTs": 202629206,
-                  "observedLoad": 1425,
-                  "observedLoadTs": 199753701,
-                  "observedDomContentLoaded": 1312,
-                  "observedDomContentLoadedTs": 199641102,
-                  "observedCumulativeLayoutShift": 0.01707151317395526,
-                  "observedCumulativeLayoutShiftMainFrame": 0.01707151317395526,
-                  "observedTotalCumulativeLayoutShift": 0.01707151317395526,
-                  "observedFirstVisualChange": 629,
-                  "observedFirstVisualChangeTs": 198958070,
-                  "observedLastVisualChange": 4096,
-                  "observedLastVisualChangeTs": 202425070,
-                  "observedSpeedIndex": 1355,
-                  "observedSpeedIndexTs": 199684179
+                  "observedNavigationStartTs": 336634000,
+                  "observedFirstPaint": 539,
+                  "observedFirstPaintTs": 337173297,
+                  "observedFirstContentfulPaint": 1587,
+                  "observedFirstContentfulPaintTs": 338221426,
+                  "observedFirstContentfulPaintAllFrames": 1587,
+                  "observedFirstContentfulPaintAllFramesTs": 338221426,
+                  "observedFirstMeaningfulPaint": 1858,
+                  "observedFirstMeaningfulPaintTs": 338491714,
+                  "observedLargestContentfulPaint": 1806,
+                  "observedLargestContentfulPaintTs": 338440166,
+                  "observedLargestContentfulPaintAllFrames": 1806,
+                  "observedLargestContentfulPaintAllFramesTs": 338440166,
+                  "observedTraceEnd": 4268,
+                  "observedTraceEndTs": 340902079,
+                  "observedLoad": 1495,
+                  "observedLoadTs": 338129268,
+                  "observedDomContentLoaded": 1358,
+                  "observedDomContentLoadedTs": 337992414,
+                  "observedCumulativeLayoutShift": 0.017074612646831924,
+                  "observedCumulativeLayoutShiftMainFrame": 0.017074612646831924,
+                  "observedTotalCumulativeLayoutShift": 0.017074612646831924,
+                  "observedFirstVisualChange": 285,
+                  "observedFirstVisualChangeTs": 336919000,
+                  "observedLastVisualChange": 4085,
+                  "observedLastVisualChangeTs": 340719000,
+                  "observedSpeedIndex": 1314,
+                  "observedSpeedIndexTs": 337948148
                 },
                 {
                   "lcpInvalidated": false
@@ -5049,22 +5193,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 76,
-                  "numScripts": 9,
+                  "numRequests": 75,
+                  "numScripts": 8,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 1139,
-                  "numTasksOver10ms": 19,
+                  "numTasks": 1299,
+                  "numTasksOver10ms": 18,
                   "numTasksOver25ms": 9,
-                  "numTasksOver50ms": 6,
+                  "numTasksOver50ms": 7,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.456,
-                  "throughput": 8410136.504823634,
-                  "maxRtt": 82.059,
-                  "maxServerLatency": 23.864000000000004,
-                  "totalByteWeight": 3897904,
-                  "totalTaskTime": 1096.823000000001,
+                  "rtt": 80.95700000000001,
+                  "throughput": 8046475.731936314,
+                  "maxRtt": 80.95700000000001,
+                  "maxServerLatency": 22.37899999999999,
+                  "totalByteWeight": 3694095,
+                  "totalTaskTime": 1072.240999999999,
                   "mainDocumentTransferSize": 1122
                 }
               ]
