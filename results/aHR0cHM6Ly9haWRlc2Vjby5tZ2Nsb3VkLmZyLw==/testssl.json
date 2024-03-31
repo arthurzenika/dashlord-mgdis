@@ -346,7 +346,7 @@
               "ip"           : "aideseco.mgcloud.fr/149.202.180.217",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "364 >= 60 days"
+              "finding"      : "357 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
