@@ -5263,53 +5263,80 @@
     "http": {
       "url": "https://ma-carqueiranne.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sun, 10 Mar 2024 01:18:15 GMT",
-      "grade": "B-",
+      "end_time": "Sun, 07 Apr 2024 01:21:43 GMT",
+      "grade": "C",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
-        "Accept-Ranges": "bytes",
-        "Access-Control-Allow-Origin": "carqueiranne.mademande.fr",
-        "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
-        "Content-Encoding": "gzip",
-        "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 10 Mar 2024 01:18:13 GMT",
-        "Etag": "W/\"5257-18df447ed38\"",
-        "Last-Modified": "Thu, 29 Feb 2024 09:52:51 GMT",
-        "Referrer-Policy": "no-referrer-when-downgrade",
-        "Strict-Transport-Security": "max-age=63072000;",
-        "Transfer-Encoding": "chunked",
-        "Vary": "Accept-Encoding",
-        "X-Content-Type-Options": "nosniff",
-        "X-Dns-Prefetch-Control": "off",
-        "X-Download-Options": "noopen",
-        "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "4bf9bb90-4f60-416e-91dd-9110dac2bf4b",
-        "X-XSS-Protection": "1;mode=block"
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "carqueiranne.mademande.fr",
+        "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
+        "content-encoding": "gzip",
+        "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Sun, 07 Apr 2024 01:21:41 GMT",
+        "etag": "W/\"5257-18e841791e8\"",
+        "feature-policy": "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; layout-animation 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-get 'none'; speaker-selection 'none'; sync-xhr 'self' https://carqueiranne.mademande.fr; unoptimized-images 'none'; unsized-media 'none'; usb 'none'; screen-wake-lock 'none'; web-share 'none'; xr-spatial-tracking 'none'; vibrate 'none'; vr 'none';",
+        "last-modified": "Thu, 28 Mar 2024 08:05:21 GMT",
+        "permissions-policy": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), usb=(), web-share=(), xr-spatial-tracking=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "strict-transport-security": "max-age=31536000, max-age=15768000",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-iplb-instance": "57100",
+        "x-iplb-request-id": "22A8086E:5E01_5CDECC32:01BB_6611F525_1257E0:1EFA",
+        "x-request-id": "55a8b02f-9c5c-4864-925f-9838af6a75eb",
+        "x-xss-protection": "1; mode=block"
       },
-      "scan_id": 48672138,
-      "score": 65,
-      "start_time": "Sun, 10 Mar 2024 01:18:11 GMT",
+      "scan_id": 49761066,
+      "score": 50,
+      "start_time": "Sun, 07 Apr 2024 01:21:38 GMT",
       "state": "FINISHED",
       "status_code": 200,
-      "tests_failed": 3,
-      "tests_passed": 8,
+      "tests_failed": 4,
+      "tests_passed": 7,
       "tests_quantity": 11,
       "details": {
         "content-security-policy": {
           "expectation": "csp-implemented-with-no-unsafe",
           "name": "content-security-policy",
           "output": {
-            "data": null,
-            "http": false,
+            "data": {
+              "form-action": [
+                "'self'"
+              ],
+              "frame-ancestors": [
+                "'self'"
+              ],
+              "object-src": [
+                "'none'"
+              ]
+            },
+            "http": true,
             "meta": false,
-            "numPolicies": 0,
-            "policy": null
+            "numPolicies": 1,
+            "policy": {
+              "antiClickjacking": true,
+              "defaultNone": false,
+              "insecureBaseUri": true,
+              "insecureFormAction": false,
+              "insecureSchemeActive": false,
+              "insecureSchemePassive": false,
+              "strictDynamic": false,
+              "unsafeEval": false,
+              "unsafeInline": true,
+              "unsafeInlineStyle": true,
+              "unsafeObjects": false
+            }
           },
           "pass": false,
-          "result": "csp-not-implemented",
-          "score_description": "Content Security Policy (CSP) header not implemented",
-          "score_modifier": -25
+          "result": "csp-implemented-with-unsafe-inline",
+          "score_description": "Content Security Policy (CSP) implemented unsafely. This includes 'unsafe-inline' or data: inside script-src, overly broad sources such as https: inside object-src or script-src, or not restricting the sources for object-src or script-src.",
+          "score_modifier": -20
         },
         "contribute": {
           "expectation": "contribute-json-only-required-on-mozilla-properties",
@@ -5360,7 +5387,7 @@
               "https://carqueiranne.mademande.fr/",
               "https://carqueiranne.mademande.fr/aides/#/carqueiranne/"
             ],
-            "status_code": 302
+            "status_code": 301
           },
           "pass": false,
           "result": "redirection-off-host-from-http",
@@ -5371,29 +5398,29 @@
           "expectation": "referrer-policy-private",
           "name": "referrer-policy",
           "output": {
-            "data": "no-referrer-when-downgrade",
+            "data": "strict-origin-when-cross-origin",
             "http": true,
             "meta": false
           },
           "pass": true,
-          "result": "referrer-policy-no-referrer-when-downgrade",
-          "score_description": "Referrer-Policy header set to \"no-referrer-when-downgrade\"",
-          "score_modifier": 0
+          "result": "referrer-policy-private",
+          "score_description": "Referrer-Policy header set to \"no-referrer\", \"same-origin\", \"strict-origin\" or \"strict-origin-when-cross-origin\"",
+          "score_modifier": 5
         },
         "strict-transport-security": {
           "expectation": "hsts-implemented-max-age-at-least-six-months",
           "name": "strict-transport-security",
           "output": {
-            "data": "max-age=63072000;",
+            "data": "max-age=31536000, max-age=15768000",
             "includeSubDomains": false,
-            "max-age": 63072000,
+            "max-age": null,
             "preload": false,
             "preloaded": false
           },
-          "pass": true,
-          "result": "hsts-implemented-max-age-at-least-six-months",
-          "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
-          "score_modifier": 0
+          "pass": false,
+          "result": "hsts-header-invalid",
+          "score_description": "HTTP Strict Transport Security (HSTS) header cannot be recognized",
+          "score_modifier": -20
         },
         "subresource-integrity": {
           "expectation": "sri-implemented-and-external-scripts-loaded-securely",
@@ -5429,15 +5456,15 @@
             "data": "SAMEORIGIN"
           },
           "pass": true,
-          "result": "x-frame-options-sameorigin-or-deny",
-          "score_description": "X-Frame-Options (XFO) header set to SAMEORIGIN or DENY",
-          "score_modifier": 0
+          "result": "x-frame-options-implemented-via-csp",
+          "score_description": "X-Frame-Options (XFO) implemented via the CSP frame-ancestors directive",
+          "score_modifier": 5
         },
         "x-xss-protection": {
           "expectation": "x-xss-protection-disabled",
           "name": "x-xss-protection",
           "output": {
-            "data": "1;mode=block"
+            "data": "1; mode=block"
           },
           "pass": true,
           "result": "x-xss-protection-enabled-mode-block",
@@ -5458,7 +5485,92 @@
             "product": "HAProxy http proxy",
             "id": "80",
             "version": "1.3.1 or later",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              {
+                "cvss": "5.1",
+                "id": "PRION:CVE-2012-2942",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.1",
+                "id": "CVE-2012-2942",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2023-26044",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2022-36032",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2019-14241",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20615",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20103",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20102",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-14645",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-10184",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-20103",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-20102",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-14645",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-10184",
+                "is_exploit": "false",
+                "type": "cve"
+              }
+            ]
           }
         },
         {
@@ -5467,11 +5579,96 @@
             "product": "HAProxy http proxy",
             "id": "443",
             "version": "1.3.1 or later",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              {
+                "cvss": "5.1",
+                "id": "PRION:CVE-2012-2942",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.1",
+                "id": "CVE-2012-2942",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2023-26044",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2022-36032",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2019-14241",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20615",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20103",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-20102",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-14645",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "PRION:CVE-2018-10184",
+                "is_exploit": "false",
+                "type": "prion"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-20103",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-20102",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-14645",
+                "is_exploit": "false",
+                "type": "cve"
+              },
+              {
+                "cvss": "5.0",
+                "id": "CVE-2018-10184",
+                "is_exploit": "false",
+                "type": "cve"
+              }
+            ]
           }
         }
       ],
-      "grade": "A"
+      "grade": "F"
     },
     "dependabot": null,
     "codescan": null,
@@ -5823,7 +6020,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "378 >= 60 days"
+        "finding": "350 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6575,7 +6772,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "48"
+        "finding": "54"
       }
     ],
     "thirdparties": {
@@ -6590,11 +6787,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/aides/assets/index-bc5939b1.js"
+          "url": "https://carqueiranne.mademande.fr/aides/assets/index-87e29888.js"
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/aides/assets/index-94da8d02.css"
+          "url": "https://carqueiranne.mademande.fr/aides/assets/index-a59584e9.css"
         },
         {
           "type": "google",
@@ -6606,7 +6803,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/QquE1_MNjnFHgZF4HPsEcf_2/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/rz4DvU-cY2JYCwHSTck0_qm-/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6682,7 +6879,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/aides/assets/mg-action-more_34.entry-94cb84a5.js"
+          "url": "https://carqueiranne.mademande.fr/aides/assets/mg-action-more_34.entry-1a216d5e.js"
         },
         {
           "type": "unknown",
@@ -6814,7 +7011,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/app-tenant.679cb686d5875c6779fc.css"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/css/app-tenant.d7815e4ff81bd4ce0296.css"
         },
         {
           "type": "unknown",
@@ -6826,7 +7023,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/js/app-tenant.679cb686d5875c6779fc.js"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/js/app-tenant.d7815e4ff81bd4ce0296.js"
         },
         {
           "type": "unknown",
@@ -6862,7 +7059,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/3.679cb686d5875c6779fc.js"
+          "url": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/3.d7815e4ff81bd4ce0296.js"
         },
         {
           "type": "unknown",
@@ -6927,20 +7124,25 @@
         "access-control-allow-origin": "carqueiranne.mademande.fr",
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
+        "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 10 Mar 2024 01:18:30 GMT",
-        "etag": "W/\"5257-18df447ed38\"",
-        "last-modified": "Thu, 29 Feb 2024 09:52:51 GMT",
-        "referrer-policy": "no-referrer-when-downgrade",
-        "strict-transport-security": "max-age=63072000;",
+        "date": "Sun, 07 Apr 2024 01:21:58 GMT",
+        "etag": "W/\"5257-18e841791e8\"",
+        "feature-policy": "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; layout-animation 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-get 'none'; speaker-selection 'none'; sync-xhr 'self' https://carqueiranne.mademande.fr; unoptimized-images 'none'; unsized-media 'none'; usb 'none'; screen-wake-lock 'none'; web-share 'none'; xr-spatial-tracking 'none'; vibrate 'none'; vr 'none';",
+        "last-modified": "Thu, 28 Mar 2024 08:05:21 GMT",
+        "permissions-policy": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), usb=(), web-share=(), xr-spatial-tracking=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "strict-transport-security": "max-age=31536000\nmax-age=15768000",
         "transfer-encoding": "chunked",
         "vary": "Accept-Encoding",
         "x-content-type-options": "nosniff",
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "afc5a0f7-dab1-4974-9af1-94fe9d85136a",
-        "x-xss-protection": "1;mode=block"
+        "x-iplb-instance": "57100",
+        "x-iplb-request-id": "ACB73528:3C40_5CDECC32:01BB_6611F536_1257FE:1EFA",
+        "x-request-id": "dce1c700-752b-4d24-b450-86043b07f8ec",
+        "x-xss-protection": "1; mode=block"
       },
       "endpoints": [
         {
@@ -7001,8 +7203,21 @@
         },
         {
           "hostname": "carqueiranne.mademande.fr",
-          "ip": "141.94.209.199",
+          "ip": "92.222.204.50",
           "geoip": {
+            "city": {
+              "geoname_id": 2988507,
+              "names": {
+                "de": "Paris",
+                "en": "Paris",
+                "es": "París",
+                "fr": "Paris",
+                "ja": "パリ",
+                "pt-BR": "Paris",
+                "ru": "Париж",
+                "zh-CN": "巴黎"
+              }
+            },
             "continent": {
               "code": "EU",
               "geoname_id": 6255148,
@@ -7034,9 +7249,12 @@
             },
             "location": {
               "accuracy_radius": 1000,
-              "latitude": 48.8582,
-              "longitude": 2.3387,
+              "latitude": 48.8323,
+              "longitude": 2.4075,
               "time_zone": "Europe/Paris"
+            },
+            "postal": {
+              "code": "75001"
             },
             "registered_country": {
               "geoname_id": 3017382,
@@ -7052,12 +7270,38 @@
                 "ru": "Франция",
                 "zh-CN": "法国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 3012874,
+                "iso_code": "IDF",
+                "names": {
+                  "de": "Île-de-France",
+                  "en": "Île-de-France",
+                  "es": "Isla de Francia",
+                  "fr": "Île-de-France",
+                  "ja": "イル・ド・フランス",
+                  "pt-BR": "Ilha de França",
+                  "ru": "Иль-де-Франс",
+                  "zh-CN": "法兰西岛"
+                }
+              },
+              {
+                "geoname_id": 2968815,
+                "iso_code": "75",
+                "names": {
+                  "de": "Paris",
+                  "en": "Paris",
+                  "es": "Paris",
+                  "fr": "Paris"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.115.103",
+          "ip": "142.250.191.100",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -7111,7 +7355,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.122.94",
+          "ip": "172.217.5.3",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -7196,7 +7440,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 10 Mar 2024 01:17:42",
+      "@generated": "Sun, 7 Apr 2024 01:21:10",
       "site": [
         {
           "@name": "https://ma-carqueiranne.mgcloud.fr",
@@ -7205,11 +7449,25 @@
           "@ssl": "true",
           "alerts": [
             {
-              "name": "Content Security Policy (CSP) Header Not Set",
+              "name": "CSP: Wildcard Directive",
               "riskcode": "2",
               "confidence": "3",
               "riskdesc": "Medium (High)",
-              "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
+              "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
+            },
+            {
+              "name": "CSP: script-src unsafe-inline",
+              "riskcode": "2",
+              "confidence": "3",
+              "riskdesc": "Medium (High)",
+              "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
+            },
+            {
+              "name": "CSP: style-src unsafe-inline",
+              "riskcode": "2",
+              "confidence": "3",
+              "riskdesc": "Medium (High)",
+              "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
             },
             {
               "name": "Sub Resource Integrity Attribute Missing",
@@ -7226,11 +7484,11 @@
               "desc": "<p>The page includes one or more script files from a third-party domain.</p>"
             },
             {
-              "name": "Permissions Policy Header Not Set",
+              "name": "Deprecated Feature Policy Header Set",
               "riskcode": "1",
               "confidence": "2",
               "riskdesc": "Low (Medium)",
-              "desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
+              "desc": "<p>The header has now been renamed to Permissions-Policy. </p>"
             },
             {
               "name": "Strict-Transport-Security Header Not Set",
@@ -7238,6 +7496,13 @@
               "confidence": "3",
               "riskdesc": "Low (High)",
               "desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>"
+            },
+            {
+              "name": "Strict-Transport-Security Multiple Header Entries (Non-compliant with Spec)",
+              "riskcode": "1",
+              "confidence": "3",
+              "riskdesc": "Low (High)",
+              "desc": "<p>HTTP Strict Transport Security (HSTS) headers were found, a response with multiple HSTS header entries is not compliant with the specification (RFC 6797) and only the first HSTS header will be processed others will be ignored by user agents or the HSTS policy may be incorrectly applied.</p><p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL).</p>"
             },
             {
               "name": "Base64 Disclosure",
@@ -7306,212 +7571,12 @@
         }
       ]
     },
-    "nuclei": [
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "ma-carqueiranne.mgcloud.fr.",
-        "matched-at": "ma-carqueiranne.mgcloud.fr",
-        "timestamp": "2024-03-10T01:20:20.149932894Z",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/missing-sri.yaml",
-        "template-url": "https://templates.nuclei.sh/public/missing-sri",
-        "template-id": "missing-sri",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-sri.yaml",
-        "info": {
-          "name": "Missing Subresource Integrity",
-          "author": [
-            "lucky0x0d",
-            "pulsesecurity.co.nz"
-          ],
-          "tags": [
-            "compliance",
-            "js",
-            "sri",
-            "misconfig"
-          ],
-          "description": "Checks if script tags within the HTML response have Subresource Integrity implemented via the integrity attribute\n",
-          "reference": [
-            "https://cheatsheetseries.owasp.org/cheatsheets/third_party_javascript_management_cheat_sheet.html#subresource-integrity"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://carqueiranne.mademande.fr/aides/#/carqueiranne/",
-        "extracted-results": [
-          "https://www.google.com/recaptcha/api.js?render=explicit"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-03-10T01:21:39.728281026Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Host: ma-carqueiranne.mgcloud.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/detect-ssl-issuer.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
-        "template-id": "ssl-issuer",
-        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
-        "info": {
-          "name": "Detect SSL Certificate Issuer",
-          "author": [
-            "lingtren"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "Sectigo Limited"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-03-10T01:23:44.991905842Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
-        "template-id": "ssl-dns-names",
-        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
-        "info": {
-          "name": "SSL DNS Names",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "*.mgcloud.fr",
-          "mgcloud.fr"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-03-10T01:23:44.992043077Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/wildcard-tls.yaml",
-        "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
-        "template-id": "wildcard-tls",
-        "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
-        "info": {
-          "name": "Wildcard TLS Certificate",
-          "author": [
-            "lucky0x0d"
-          ],
-          "tags": [
-            "ssl",
-            "tls",
-            "wildcard"
-          ],
-          "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
-          "reference": [
-            "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_protection_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "CN: *.mgcloud.fr",
-          " SAN: [*.mgcloud.fr mgcloud.fr]"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-03-10T01:23:44.99209263Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "tls12"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-03-10T01:23:46.21703415Z",
-        "matcher-status": true
-      }
-    ],
+    "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://ma-carqueiranne.mgcloud.fr/",
         "finalUrl": "https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/",
-        "fetchTime": "2024-03-10T01:17:51.164Z",
+        "fetchTime": "2024-04-07T01:21:19.450Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://ma-carqueiranne.mgcloud.fr/) was redirected to https://carqueiranne.mademande.fr/account-management/carqueiranne-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -7576,53 +7641,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 29662,
+            "numericValue": 33873,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 19227,
-                  "firstMeaningfulPaint": 20246,
-                  "largestContentfulPaint": 28624,
-                  "interactive": 29662,
-                  "speedIndex": 19227,
-                  "totalBlockingTime": 533,
-                  "maxPotentialFID": 390,
-                  "cumulativeLayoutShift": 0.00537716763144044,
-                  "cumulativeLayoutShiftMainFrame": 0.00537716763144044,
-                  "totalCumulativeLayoutShift": 0.00537716763144044,
+                  "firstContentfulPaint": 20064,
+                  "firstMeaningfulPaint": 23100,
+                  "largestContentfulPaint": 32328,
+                  "interactive": 33873,
+                  "speedIndex": 20786,
+                  "totalBlockingTime": 618,
+                  "maxPotentialFID": 401,
+                  "cumulativeLayoutShift": 0.005629602664589709,
+                  "cumulativeLayoutShiftMainFrame": 0.005629602664589709,
+                  "totalCumulativeLayoutShift": 0.005629602664589709,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 322377322,
+                  "observedTimeOriginTs": 328335457,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 322377322,
-                  "observedFirstPaint": 610,
-                  "observedFirstPaintTs": 322987538,
-                  "observedFirstContentfulPaint": 1480,
-                  "observedFirstContentfulPaintTs": 323857285,
-                  "observedFirstContentfulPaintAllFrames": 1480,
-                  "observedFirstContentfulPaintAllFramesTs": 323857285,
-                  "observedFirstMeaningfulPaint": 1480,
-                  "observedFirstMeaningfulPaintTs": 323857285,
-                  "observedLargestContentfulPaint": 1597,
-                  "observedLargestContentfulPaintTs": 323974441,
-                  "observedLargestContentfulPaintAllFrames": 1597,
-                  "observedLargestContentfulPaintAllFramesTs": 323974441,
-                  "observedTraceEnd": 4118,
-                  "observedTraceEndTs": 326495336,
-                  "observedLoad": 1383,
-                  "observedLoadTs": 323760534,
-                  "observedDomContentLoaded": 1266,
-                  "observedDomContentLoadedTs": 323643714,
-                  "observedCumulativeLayoutShift": 0.00537716763144044,
-                  "observedCumulativeLayoutShiftMainFrame": 0.00537716763144044,
-                  "observedTotalCumulativeLayoutShift": 0.00537716763144044,
-                  "observedFirstVisualChange": 309,
-                  "observedFirstVisualChangeTs": 322686322,
-                  "observedLastVisualChange": 3976,
-                  "observedLastVisualChangeTs": 326353322,
-                  "observedSpeedIndex": 1410,
-                  "observedSpeedIndexTs": 323787548
+                  "observedNavigationStartTs": 328335457,
+                  "observedFirstPaint": 652,
+                  "observedFirstPaintTs": 328987836,
+                  "observedFirstContentfulPaint": 1101,
+                  "observedFirstContentfulPaintTs": 329436245,
+                  "observedFirstContentfulPaintAllFrames": 1101,
+                  "observedFirstContentfulPaintAllFramesTs": 329436245,
+                  "observedFirstMeaningfulPaint": 1376,
+                  "observedFirstMeaningfulPaintTs": 329711378,
+                  "observedLargestContentfulPaint": 1289,
+                  "observedLargestContentfulPaintTs": 329624731,
+                  "observedLargestContentfulPaintAllFrames": 1289,
+                  "observedLargestContentfulPaintAllFramesTs": 329624731,
+                  "observedTraceEnd": 3757,
+                  "observedTraceEndTs": 332092346,
+                  "observedLoad": 1444,
+                  "observedLoadTs": 329779860,
+                  "observedDomContentLoaded": 800,
+                  "observedDomContentLoadedTs": 329135714,
+                  "observedCumulativeLayoutShift": 0.005629602664589709,
+                  "observedCumulativeLayoutShiftMainFrame": 0.005629602664589709,
+                  "observedTotalCumulativeLayoutShift": 0.005629602664589709,
+                  "observedFirstVisualChange": 618,
+                  "observedFirstVisualChangeTs": 328953457,
+                  "observedLastVisualChange": 3617,
+                  "observedLastVisualChangeTs": 331952457,
+                  "observedSpeedIndex": 1111,
+                  "observedSpeedIndexTs": 329445988
                 },
                 {
                   "lcpInvalidated": false
@@ -7644,19 +7709,19 @@
                   "numScripts": 9,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 1255,
+                  "numTasks": 1125,
                   "numTasksOver10ms": 17,
                   "numTasksOver25ms": 9,
                   "numTasksOver50ms": 6,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 6.016,
-                  "throughput": 8165936.289035678,
-                  "maxRtt": 88.34100000000001,
-                  "maxServerLatency": 16.460000000000008,
-                  "totalByteWeight": 3756221,
-                  "totalTaskTime": 1047.2809999999981,
-                  "mainDocumentTransferSize": 1128
+                  "rtt": 1.7300000000000004,
+                  "throughput": 19291948.32989239,
+                  "maxRtt": 100.467,
+                  "maxServerLatency": 155.32999999999998,
+                  "totalByteWeight": 3875738,
+                  "totalTaskTime": 1122.8149999999996,
+                  "mainDocumentTransferSize": 2659
                 }
               ]
             }
@@ -7678,8 +7743,8 @@
     "dsfr": null,
     "summary": {
       "404": "A+",
-      "httpGrade": "B-",
-      "nmapGrade": "A",
+      "httpGrade": "C",
+      "nmapGrade": "F",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
@@ -7689,7 +7754,7 @@
       "cookiesCount": 0,
       "trackersGrade": "F",
       "trackersCount": 83,
-      "zapCount": 5,
+      "zapCount": 8,
       "zapGrade": "D",
       "lighthouse_performance": 0,
       "lighthouse_performanceGrade": "F",
