@@ -346,7 +346,7 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "336 >= 60 days"
+              "finding"      : "329 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -535,21 +535,42 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "301 Moved Permanently ('/')"
+              "finding"      : "404 Not Found ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Got no HTTP time, maybe try different URL?"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
-              "id"           : "HSTS",
+              "id"           : "HTTP_headerTime",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "not offered"
+              "severity"     : "INFO",
+              "finding"      : "1714267346"
+          }
+,         {
+              "id"           : "HSTS_time",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "730 days (=63072000 seconds) > 15552000 seconds"
+          }
+,         {
+              "id"           : "HSTS_subdomains",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "only for this domain"
+          }
+,         {
+              "id"           : "HSTS_preload",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "domain is NOT marked for preloading"
           }
 ,         {
               "id"           : "HPKP",
@@ -580,11 +601,39 @@
               "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
           }
 ,         {
-              "id"           : "security_headers",
+              "id"           : "X-Frame-Options",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "--"
+              "severity"     : "OK",
+              "finding"      : "SAMEORIGIN"
+          }
+,         {
+              "id"           : "X-Content-Type-Options",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "nosniff"
+          }
+,         {
+              "id"           : "X-XSS-Protection",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1;mode=block"
+          }
+,         {
+              "id"           : "Access-Control-Allow-Origin",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ma-carqueiranne.mgcloud.fr"
+          }
+,         {
+              "id"           : "Referrer-Policy",
+              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no-referrer-when-downgrade"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1084,20 +1133,13 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "A"
-          }
-,         {
-              "id"           : "grade_cap_reason_1",
-              "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to A. HSTS is not offered"
+              "finding"      : "A+"
           }
 ,         {
               "id"           : "scanTime",
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "48"
+              "finding"      : "55"
           }
 ]
