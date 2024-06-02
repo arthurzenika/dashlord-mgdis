@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Mar 31 01:23:10 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
+# Nmap 7.92 scan initiated Sun Jun  2 01:27:22 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln aideseco.mgcloud.fr
 Nmap scan report for aideseco.mgcloud.fr (149.202.180.217)
 Host is up (0.081s latency).
 Not shown: 998 filtered tcp ports (no-response)
@@ -16,6 +16,8 @@ PORT    STATE SERVICE        VERSION
 |     	PRION:CVE-2018-20102	5.0	https://vulners.com/prion/PRION:CVE-2018-20102
 |     	PRION:CVE-2018-14645	5.0	https://vulners.com/prion/PRION:CVE-2018-14645
 |     	PRION:CVE-2018-10184	5.0	https://vulners.com/prion/PRION:CVE-2018-10184
+|     	CVE-2023-0836	5.0	https://vulners.com/cve/CVE-2023-0836
+|     	CVE-2022-0711	5.0	https://vulners.com/cve/CVE-2022-0711
 |     	CVE-2018-20103	5.0	https://vulners.com/cve/CVE-2018-20103
 |     	CVE-2018-20102	5.0	https://vulners.com/cve/CVE-2018-20102
 |     	CVE-2018-14645	5.0	https://vulners.com/cve/CVE-2018-14645
@@ -33,6 +35,8 @@ PORT    STATE SERVICE        VERSION
 |     	PRION:CVE-2018-20102	5.0	https://vulners.com/prion/PRION:CVE-2018-20102
 |     	PRION:CVE-2018-14645	5.0	https://vulners.com/prion/PRION:CVE-2018-14645
 |     	PRION:CVE-2018-10184	5.0	https://vulners.com/prion/PRION:CVE-2018-10184
+|     	CVE-2023-0836	5.0	https://vulners.com/cve/CVE-2023-0836
+|     	CVE-2022-0711	5.0	https://vulners.com/cve/CVE-2022-0711
 |     	CVE-2018-20103	5.0	https://vulners.com/cve/CVE-2018-20103
 |     	CVE-2018-20102	5.0	https://vulners.com/cve/CVE-2018-20102
 |     	CVE-2018-14645	5.0	https://vulners.com/cve/CVE-2018-14645
@@ -40,4 +44,4 @@ PORT    STATE SERVICE        VERSION
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar 31 01:23:40 2024 -- 1 IP address (1 host up) scanned in 29.88 seconds
+# Nmap done at Sun Jun  2 01:27:52 2024 -- 1 IP address (1 host up) scanned in 30.19 seconds
