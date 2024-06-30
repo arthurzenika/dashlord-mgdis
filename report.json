@@ -5161,7 +5161,7 @@
     "http": {
       "url": "https://ma-carqueiranne.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sun, 23 Jun 2024 01:27:00 GMT",
+      "end_time": "Sun, 30 Jun 2024 01:35:16 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -5169,16 +5169,16 @@
         "Access-Control-Allow-Origin": "ma-carqueiranne.mgcloud.fr",
         "Content-Length": "19",
         "Content-Type": "text/plain; charset=utf-8",
-        "Date": "Sun, 23 Jun 2024 01:27:00 GMT",
+        "Date": "Sun, 30 Jun 2024 01:35:15 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 52592230,
+      "scan_id": 52859255,
       "score": 75,
-      "start_time": "Sun, 23 Jun 2024 01:26:58 GMT",
+      "start_time": "Sun, 30 Jun 2024 01:35:13 GMT",
       "state": "FINISHED",
       "status_code": 404,
       "tests_failed": 1,
@@ -5341,104 +5341,7 @@
             "product": "HAProxy http proxy",
             "id": "80",
             "version": "1.3.1 or later",
-            "vulnerabilities": [
-              {
-                "id": "CVE-2023-0836",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2022-0711",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20103",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20102",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-14645",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-10184",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2023-26044",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2022-36032",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2019-14241",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20615",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              }
-            ]
+            "vulnerabilities": []
           }
         },
         {
@@ -5447,108 +5350,11 @@
             "product": "HAProxy http proxy",
             "id": "443",
             "version": "1.3.1 or later",
-            "vulnerabilities": [
-              {
-                "id": "CVE-2023-0836",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2022-0711",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20103",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20102",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-14645",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-10184",
-                "cvss": "7.5",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2023-26044",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2022-36032",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2019-14241",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20615",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              }
-            ]
+            "vulnerabilities": []
           }
         }
       ],
-      "grade": "F"
+      "grade": "A"
     },
     "dependabot": null,
     "codescan": null,
@@ -5900,7 +5706,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "273 >= 60 days"
+        "finding": "266 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6103,7 +5909,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "1719106065"
+        "finding": "1719711365"
       },
       {
         "id": "HSTS_time",
@@ -6694,7 +6500,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "49"
+        "finding": "54"
       }
     ],
     "thirdparties": {
@@ -6704,7 +6510,7 @@
         "access-control-allow-origin": "ma-carqueiranne.mgcloud.fr",
         "content-length": "19",
         "content-type": "text/plain; charset=utf-8",
-        "date": "Sun, 23 Jun 2024 01:27:15 GMT",
+        "date": "Sun, 30 Jun 2024 01:35:29 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "x-content-type-options": "nosniff",
@@ -6816,470 +6622,7 @@
       ]
     },
     "zap": null,
-    "nuclei": [
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "ma-carqueiranne.mgcloud.fr.",
-        "matched-at": "ma-carqueiranne.mgcloud.fr",
-        "timestamp": "2024-06-23T01:28:59.575622625Z",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/xss-deprecated-header.yaml",
-        "template-url": "https://templates.nuclei.sh/public/xss-deprecated-header",
-        "template-id": "xss-deprecated-header",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/xss-deprecated-header.yaml",
-        "info": {
-          "name": "XSS-Protection Header - Cross-Site Scripting",
-          "author": [
-            "joshlarsen"
-          ],
-          "tags": [
-            "xss",
-            "misconfig",
-            "generic"
-          ],
-          "description": "Setting the XSS-Protection header is deprecated. Setting the header to anything other than `0` can actually introduce an XSS vulnerability.",
-          "reference": [
-            "https://developer.mozilla.org/en-us/docs/web/http/headers/x-xss-protection",
-            "https://owasp.org/www-project-secure-headers/#x-xss-protection"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": null,
-            "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
-          }
-        },
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "extracted-results": [
-          "1;mode=block"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:13.171789847Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503570006Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.50362001Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503634807Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503653292Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503670364Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503685272Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:29:57.503698657Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/detect-ssl-issuer.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
-        "template-id": "ssl-issuer",
-        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
-        "info": {
-          "name": "Detect SSL Certificate Issuer",
-          "author": [
-            "lingtren"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "Sectigo Limited"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:32:15.581902998Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
-        "template-id": "ssl-dns-names",
-        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
-        "info": {
-          "name": "SSL DNS Names",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "mgcloud.fr",
-          "*.mgcloud.fr"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:32:15.582054121Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/wildcard-tls.yaml",
-        "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
-        "template-id": "wildcard-tls",
-        "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
-        "info": {
-          "name": "Wildcard TLS Certificate",
-          "author": [
-            "lucky0x0d"
-          ],
-          "tags": [
-            "ssl",
-            "tls",
-            "wildcard"
-          ],
-          "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
-          "reference": [
-            "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_security_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "CN: *.mgcloud.fr",
-          " SAN: [*.mgcloud.fr mgcloud.fr]"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:32:15.582112731Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "ma-carqueiranne.mgcloud.fr",
-        "matched-at": "ma-carqueiranne.mgcloud.fr:443",
-        "extracted-results": [
-          "tls12"
-        ],
-        "ip": "141.94.209.199",
-        "timestamp": "2024-06-23T01:32:18.143689764Z",
-        "matcher-status": true
-      }
-    ],
+    "nuclei": [],
     "lhr": [],
     "screenshot": true,
     "stats": null,
@@ -7296,7 +6639,7 @@
     "summary": {
       "404": "A+",
       "httpGrade": "B",
-      "nmapGrade": "F",
+      "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
