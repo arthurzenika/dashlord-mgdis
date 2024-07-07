@@ -2550,7 +2550,7 @@
     "http": {
       "url": "https://aideseco.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sat, 01 Jun 2024 02:15:24 GMT",
+      "end_time": "Sat, 06 Jul 2024 13:50:21 GMT",
       "grade": "B",
       "hidden": true,
       "likelihood_indicator": "MEDIUM",
@@ -2560,9 +2560,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sat, 01 Jun 2024 02:15:22 GMT",
-        "Etag": "W/\"5257-18fa5d9ee10\"",
-        "Last-Modified": "Thu, 23 May 2024 14:27:54 GMT",
+        "Date": "Sat, 06 Jul 2024 13:50:20 GMT",
+        "Etag": "W/\"5257-190554bc378\"",
+        "Last-Modified": "Wed, 26 Jun 2024 16:05:47 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -2571,12 +2571,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "0eca9925-6667-478a-aa81-d77e7b828a81",
+        "X-Request-Id": "4a17cf8a-e30d-4c0b-ac01-1db729123c37",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 51698930,
+      "scan_id": 53112732,
       "score": 70,
-      "start_time": "Sat, 01 Jun 2024 02:15:20 GMT",
+      "start_time": "Sat, 06 Jul 2024 13:50:18 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -2745,104 +2745,7 @@
             "product": "HAProxy http proxy",
             "id": "80",
             "version": "1.3.1 or later",
-            "vulnerabilities": [
-              {
-                "id": "PRION:CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2023-26044",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2022-36032",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2019-14241",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20615",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2023-0836",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2022-0711",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              }
-            ]
+            "vulnerabilities": []
           }
         },
         {
@@ -2851,108 +2754,11 @@
             "product": "HAProxy http proxy",
             "id": "443",
             "version": "1.3.1 or later",
-            "vulnerabilities": [
-              {
-                "id": "PRION:CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2012-2942",
-                "cvss": "5.1",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2023-26044",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2022-36032",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2019-14241",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20615",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "PRION:CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "prion",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2023-0836",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2022-0711",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20103",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-20102",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-14645",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              },
-              {
-                "id": "CVE-2018-10184",
-                "cvss": "5.0",
-                "type": "cve",
-                "is_exploit": "false"
-              }
-            ]
+            "vulnerabilities": []
           }
         }
       ],
-      "grade": "F"
+      "grade": "A"
     },
     "dependabot": null,
     "codescan": null,
@@ -3304,7 +3110,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "294 >= 60 days"
+        "finding": "259 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -4056,7 +3862,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "INFO",
-        "finding": "48"
+        "finding": "49"
       }
     ],
     "thirdparties": {
@@ -4071,7 +3877,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/DH3nyJMamEclyfe-nztbfV8S/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/rKbTvxTxwcw5VqzrtN-ICwWt/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -4085,9 +3891,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 02 Jun 2024 01:26:20 GMT",
-        "etag": "W/\"5257-18fa5d9ee10\"",
-        "last-modified": "Thu, 23 May 2024 14:27:54 GMT",
+        "date": "Sun, 07 Jul 2024 01:38:31 GMT",
+        "etag": "W/\"5257-190554bc378\"",
+        "last-modified": "Wed, 26 Jun 2024 16:05:47 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -4096,7 +3902,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "ad9745fb-2faf-451c-a217-0e9318969080",
+        "x-request-id": "0f420711-bf06-42f7-bc8e-22b5342c1dbf",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -4158,7 +3964,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.122.103",
+          "ip": "64.233.180.106",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4212,7 +4018,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.122.94",
+          "ip": "64.233.180.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4266,185 +4072,7 @@
         }
       ]
     },
-    "wappalyzer": {
-      "urls": {
-        "https://aideseco.mgcloud.fr/": {
-          "status": 302
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Node.js.svg",
-          "website": "https://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "kendo-ui",
-          "name": "Kendo UI",
-          "description": "Kendo UI is a HTML5 user interface framework for building interactive and high-performance websites and applications.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Kendo UI.png",
-          "website": "https://www.telerik.com/kendo-ui",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "bootstrap",
-          "name": "Bootstrap",
-          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
-          "confidence": 100,
-          "version": "3.4.1",
-          "icon": "Bootstrap.svg",
-          "website": "https://getbootstrap.com",
-          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "socket-io",
-          "name": "Socket.io",
-          "description": null,
-          "confidence": 100,
-          "version": null,
-          "icon": "Socket.io.svg",
-          "website": "https://socket.io",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "angularjs",
-          "name": "AngularJS",
-          "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
-          "confidence": 100,
-          "version": "1.8.3",
-          "icon": "AngularJS.svg",
-          "website": "https://angularjs.org",
-          "cpe": "cpe:2.3:a:angularjs:angular.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "recaptcha",
-          "name": "reCAPTCHA",
-          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
-          "confidence": 100,
-          "version": null,
-          "icon": "reCAPTCHA.svg",
-          "website": "https://www.google.com/recaptcha/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "moment-js",
-          "name": "Moment.js",
-          "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
-          "confidence": 100,
-          "version": "2.29.4",
-          "icon": "Moment.js.svg",
-          "website": "https://momentjs.com",
-          "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.17.21",
-          "icon": "Lodash.svg",
-          "website": "https://www.lodash.com",
-          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "2.2.4",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "core-js",
-          "name": "core-js",
-          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
-          "confidence": 100,
-          "version": "3.6.5",
-          "icon": "core-js.png",
-          "website": "https://github.com/zloirock/core-js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        }
-      ]
-    },
+    "wappalyzer": null,
     "zap": null,
     "nuclei": [
       {
@@ -4479,7 +4107,7 @@
         "type": "dns",
         "host": "aideseco.mgcloud.fr.",
         "matched-at": "aideseco.mgcloud.fr",
-        "timestamp": "2024-06-02T01:28:07.713247271Z",
+        "timestamp": "2024-07-07T01:40:21.546635945Z",
         "matcher-status": true
       },
       {
@@ -4490,7 +4118,8 @@
         "info": {
           "name": "Wappalyzer Technology Detection",
           "author": [
-            "hakluke"
+            "hakluke",
+            "righettod"
           ],
           "tags": [
             "tech"
@@ -4505,7 +4134,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:28:54.655850802Z",
+        "timestamp": "2024-07-07T01:41:11.341911233Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4517,7 +4146,8 @@
         "info": {
           "name": "Wappalyzer Technology Detection",
           "author": [
-            "hakluke"
+            "hakluke",
+            "righettod"
           ],
           "tags": [
             "tech"
@@ -4532,44 +4162,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:28:54.655892199Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061251919Z",
+        "timestamp": "2024-07-07T01:41:11.341964122Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4606,7 +4199,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061298065Z",
+        "timestamp": "2024-07-07T01:41:24.676757136Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4643,7 +4236,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061312121Z",
+        "timestamp": "2024-07-07T01:41:24.676798784Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4680,7 +4273,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061323983Z",
+        "timestamp": "2024-07-07T01:41:24.676810917Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4717,7 +4310,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061337518Z",
+        "timestamp": "2024-07-07T01:41:24.676819583Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4754,7 +4347,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061352256Z",
+        "timestamp": "2024-07-07T01:41:24.676832758Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4791,7 +4384,44 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:07.061368045Z",
+        "timestamp": "2024-07-07T01:41:24.676849319Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://aideseco.mgcloud.fr/",
+        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
+        "ip": "149.202.180.217",
+        "timestamp": "2024-07-07T01:41:24.676873885Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4828,7 +4458,7 @@
           "https://www.google.com/recaptcha/api.js?render=explicit"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:29:28.294199915Z",
+        "timestamp": "2024-07-07T01:41:46.816459757Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: aideseco.mgcloud.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4859,7 +4489,7 @@
           "Sectigo Limited"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:31:36.638910594Z",
+        "timestamp": "2024-07-07T01:43:57.004919982Z",
         "matcher-status": true
       },
       {
@@ -4890,7 +4520,7 @@
           "mgcloud.fr"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:31:36.639047759Z",
+        "timestamp": "2024-07-07T01:43:57.005037582Z",
         "matcher-status": true
       },
       {
@@ -4925,7 +4555,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:31:36.639094315Z",
+        "timestamp": "2024-07-07T01:43:57.005089018Z",
         "matcher-status": true
       },
       {
@@ -4956,7 +4586,7 @@
           "tls12"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-06-02T01:31:37.567423268Z",
+        "timestamp": "2024-07-07T01:43:58.413796665Z",
         "matcher-status": true
       }
     ],
@@ -4964,7 +4594,7 @@
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2024-06-02T01:25:45.752Z",
+        "fetchTime": "2024-07-07T01:37:56.575Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -4977,7 +4607,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.4
+            "score": 0.44
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5029,53 +4659,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 30015,
+            "numericValue": 27567,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 18390,
-                  "firstMeaningfulPaint": 19904,
-                  "largestContentfulPaint": 29666,
-                  "interactive": 30015,
-                  "speedIndex": 18390,
-                  "totalBlockingTime": 585,
-                  "maxPotentialFID": 397,
-                  "cumulativeLayoutShift": 0.0169137917966885,
-                  "cumulativeLayoutShiftMainFrame": 0.0169137917966885,
-                  "totalCumulativeLayoutShift": 0.0169137917966885,
+                  "firstContentfulPaint": 18256,
+                  "firstMeaningfulPaint": 18505,
+                  "largestContentfulPaint": 29919,
+                  "interactive": 27567,
+                  "speedIndex": 18256,
+                  "totalBlockingTime": 437,
+                  "maxPotentialFID": 391,
+                  "cumulativeLayoutShift": 0.01702662591301123,
+                  "cumulativeLayoutShiftMainFrame": 0.01702662591301123,
+                  "totalCumulativeLayoutShift": 0.01702662591301123,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 212037035,
+                  "observedTimeOriginTs": 314087510,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 212037035,
-                  "observedFirstPaint": 558,
-                  "observedFirstPaintTs": 212595017,
-                  "observedFirstContentfulPaint": 1506,
-                  "observedFirstContentfulPaintTs": 213543309,
-                  "observedFirstContentfulPaintAllFrames": 1506,
-                  "observedFirstContentfulPaintAllFramesTs": 213543309,
-                  "observedFirstMeaningfulPaint": 1799,
-                  "observedFirstMeaningfulPaintTs": 213835648,
-                  "observedLargestContentfulPaint": 1758,
-                  "observedLargestContentfulPaintTs": 213795482,
-                  "observedLargestContentfulPaintAllFrames": 1758,
-                  "observedLargestContentfulPaintAllFramesTs": 213795482,
-                  "observedTraceEnd": 4221,
-                  "observedTraceEndTs": 216258025,
-                  "observedLoad": 1409,
-                  "observedLoadTs": 213446022,
-                  "observedDomContentLoaded": 1284,
-                  "observedDomContentLoadedTs": 213321208,
-                  "observedCumulativeLayoutShift": 0.0169137917966885,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0169137917966885,
-                  "observedTotalCumulativeLayoutShift": 0.0169137917966885,
-                  "observedFirstVisualChange": 271,
-                  "observedFirstVisualChangeTs": 212308035,
-                  "observedLastVisualChange": 4020,
-                  "observedLastVisualChangeTs": 216057035,
-                  "observedSpeedIndex": 1263,
-                  "observedSpeedIndexTs": 213299968
+                  "observedNavigationStartTs": 314087510,
+                  "observedFirstPaint": 553,
+                  "observedFirstPaintTs": 314640548,
+                  "observedFirstContentfulPaint": 1487,
+                  "observedFirstContentfulPaintTs": 315574099,
+                  "observedFirstContentfulPaintAllFrames": 1487,
+                  "observedFirstContentfulPaintAllFramesTs": 315574099,
+                  "observedFirstMeaningfulPaint": 1604,
+                  "observedFirstMeaningfulPaintTs": 315691553,
+                  "observedLargestContentfulPaint": 1839,
+                  "observedLargestContentfulPaintTs": 315926288,
+                  "observedLargestContentfulPaintAllFrames": 1839,
+                  "observedLargestContentfulPaintAllFramesTs": 315926288,
+                  "observedTraceEnd": 4224,
+                  "observedTraceEndTs": 318311497,
+                  "observedLoad": 1376,
+                  "observedLoadTs": 315463366,
+                  "observedDomContentLoaded": 1257,
+                  "observedDomContentLoadedTs": 315344102,
+                  "observedCumulativeLayoutShift": 0.01702662591301123,
+                  "observedCumulativeLayoutShiftMainFrame": 0.01702662591301123,
+                  "observedTotalCumulativeLayoutShift": 0.01702662591301123,
+                  "observedFirstVisualChange": 283,
+                  "observedFirstVisualChangeTs": 314370510,
+                  "observedLastVisualChange": 3983,
+                  "observedLastVisualChangeTs": 318070510,
+                  "observedSpeedIndex": 1259,
+                  "observedSpeedIndexTs": 315346719
                 },
                 {
                   "lcpInvalidated": false
@@ -5097,18 +4727,18 @@
                   "numScripts": 9,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 1154,
-                  "numTasksOver10ms": 18,
-                  "numTasksOver25ms": 11,
+                  "numTasks": 1752,
+                  "numTasksOver10ms": 17,
+                  "numTasksOver25ms": 9,
                   "numTasksOver50ms": 6,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.327,
-                  "throughput": 8120640.597311794,
-                  "maxRtt": 81.872,
-                  "maxServerLatency": 22.103,
-                  "totalByteWeight": 3908489,
-                  "totalTaskTime": 1136.0989999999997,
+                  "rtt": 6.511999999999999,
+                  "throughput": 8340692.896580884,
+                  "maxRtt": 84.184,
+                  "maxServerLatency": 20.79400000000001,
+                  "totalByteWeight": 3912756,
+                  "totalTaskTime": 1039.9649999999979,
                   "mainDocumentTransferSize": 1117
                 }
               ]
@@ -5132,7 +4762,7 @@
     "summary": {
       "404": "A+",
       "httpGrade": "B",
-      "nmapGrade": "F",
+      "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
@@ -5142,7 +4772,7 @@
       "cookiesCount": 0,
       "trackersGrade": "B",
       "trackersCount": 2,
-      "lighthouse_performance": 0.4,
+      "lighthouse_performance": 0.44,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
