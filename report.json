@@ -4436,7 +4436,7 @@
     "http": {
       "url": "https://ma-carqueiranne.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sun, 08 Sep 2024 01:46:14 GMT",
+      "end_time": "Sun, 06 Oct 2024 01:51:38 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -4444,16 +4444,16 @@
         "Access-Control-Allow-Origin": "ma-carqueiranne.mgcloud.fr",
         "Content-Length": "19",
         "Content-Type": "text/plain; charset=utf-8",
-        "Date": "Sun, 08 Sep 2024 01:46:13 GMT",
+        "Date": "Sun, 06 Oct 2024 01:51:37 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 55391565,
+      "scan_id": 56504525,
       "score": 75,
-      "start_time": "Sun, 08 Sep 2024 01:46:11 GMT",
+      "start_time": "Sun, 06 Oct 2024 01:51:36 GMT",
       "state": "FINISHED",
       "status_code": 404,
       "tests_failed": 1,
@@ -4970,7 +4970,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "196 >= 60 days"
+        "finding": "168 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -5173,7 +5173,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "1725760017"
+        "finding": "1728179541"
       },
       {
         "id": "HSTS_time",
@@ -5449,7 +5449,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-android_70",
@@ -5764,7 +5764,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "48"
+        "finding": "60"
       }
     ],
     "thirdparties": {
@@ -5774,7 +5774,7 @@
         "access-control-allow-origin": "ma-carqueiranne.mgcloud.fr",
         "content-length": "19",
         "content-type": "text/plain; charset=utf-8",
-        "date": "Sun, 08 Sep 2024 01:46:28 GMT",
+        "date": "Sun, 06 Oct 2024 01:51:52 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "x-content-type-options": "nosniff",
@@ -5816,7 +5816,7 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
+              "accuracy_radius": 200,
               "latitude": 48.8582,
               "longitude": 2.3387,
               "time_zone": "Europe/Paris"
@@ -5919,7 +5919,7 @@
         "type": "dns",
         "host": "ma-carqueiranne.mgcloud.fr.",
         "matched-at": "ma-carqueiranne.mgcloud.fr",
-        "timestamp": "2024-09-08T01:48:13.397204389Z",
+        "timestamp": "2024-10-06T01:53:50.321475956Z",
         "matcher-status": true
       },
       {
@@ -5959,81 +5959,7 @@
           "1;mode=block"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:48:27.144391371Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943566007Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://ma-carqueiranne.mgcloud.fr/",
-        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-        "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943611642Z",
+        "timestamp": "2024-10-06T01:54:03.807236677Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6070,7 +5996,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943628333Z",
+        "timestamp": "2024-10-06T01:54:55.998034329Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6107,7 +6033,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943708922Z",
+        "timestamp": "2024-10-06T01:54:55.998074224Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6144,7 +6070,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943729862Z",
+        "timestamp": "2024-10-06T01:54:55.998090645Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6181,7 +6107,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943742465Z",
+        "timestamp": "2024-10-06T01:54:55.998108399Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6218,7 +6144,81 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:49:14.943758154Z",
+        "timestamp": "2024-10-06T01:54:55.998123377Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+        "ip": "141.94.209.199",
+        "timestamp": "2024-10-06T01:54:55.998135981Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://ma-carqueiranne.mgcloud.fr/",
+        "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+        "ip": "141.94.209.199",
+        "timestamp": "2024-10-06T01:54:55.998147753Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -6249,7 +6249,7 @@
           "Sectigo Limited"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:51:46.377509842Z",
+        "timestamp": "2024-10-06T01:57:29.790518753Z",
         "matcher-status": true
       },
       {
@@ -6280,7 +6280,7 @@
           "mgcloud.fr"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:51:46.377633764Z",
+        "timestamp": "2024-10-06T01:57:29.790645581Z",
         "matcher-status": true
       },
       {
@@ -6315,7 +6315,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:51:46.377678858Z",
+        "timestamp": "2024-10-06T01:57:29.790692169Z",
         "matcher-status": true
       },
       {
@@ -6346,7 +6346,7 @@
           "tls12"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-09-08T01:51:47.479575801Z",
+        "timestamp": "2024-10-06T01:57:30.949515991Z",
         "matcher-status": true
       }
     ],
