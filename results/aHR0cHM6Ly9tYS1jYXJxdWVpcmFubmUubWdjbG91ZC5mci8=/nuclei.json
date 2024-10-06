@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "ma-carqueiranne.mgcloud.fr.",
       "matched-at": "ma-carqueiranne.mgcloud.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 64106\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;ma-carqueiranne.mgcloud.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 64106\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;ma-carqueiranne.mgcloud.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmgcloud.fr.\t60\tIN\tSOA\tdns112.ovh.net. tech.ovh.net. 2024082202 86400 3600 3600000 60\n",
-      "timestamp": "2024-09-08T01:48:13.397204389Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 51842\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;ma-carqueiranne.mgcloud.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 51842\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;ma-carqueiranne.mgcloud.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmgcloud.fr.\t60\tIN\tSOA\tdns112.ovh.net. tech.ovh.net. 2024100300 86400 3600 3600000 60\n",
+      "timestamp": "2024-10-06T01:53:50.321475956Z",
       "matcher-status": true
     },
     {
@@ -74,87 +74,9 @@
         "1;mode=block"
       ],
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:48:27 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:03 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:48:27.144391371Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-embedder-policy",
-      "type": "http",
-      "host": "https://ma-carqueiranne.mgcloud.fr/",
-      "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
-      "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943566007Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://ma-carqueiranne.mgcloud.fr/",
-      "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
-      "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943611642Z",
+      "timestamp": "2024-10-06T01:54:03.807236677Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -191,9 +113,9 @@
       "host": "https://ma-carqueiranne.mgcloud.fr/",
       "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943628333Z",
+      "timestamp": "2024-10-06T01:54:55.998034329Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -230,9 +152,9 @@
       "host": "https://ma-carqueiranne.mgcloud.fr/",
       "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943708922Z",
+      "timestamp": "2024-10-06T01:54:55.998074224Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -269,9 +191,9 @@
       "host": "https://ma-carqueiranne.mgcloud.fr/",
       "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943729862Z",
+      "timestamp": "2024-10-06T01:54:55.998090645Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -308,9 +230,9 @@
       "host": "https://ma-carqueiranne.mgcloud.fr/",
       "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943742465Z",
+      "timestamp": "2024-10-06T01:54:55.998108399Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -347,9 +269,87 @@
       "host": "https://ma-carqueiranne.mgcloud.fr/",
       "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Sep 2024 01:49:14 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:49:14.943758154Z",
+      "timestamp": "2024-10-06T01:54:55.998123377Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://ma-carqueiranne.mgcloud.fr/",
+      "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "ip": "141.94.209.199",
+      "timestamp": "2024-10-06T01:54:55.998135981Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://ma-carqueiranne.mgcloud.fr/",
+      "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ma-carqueiranne.mgcloud.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 19\r\nAccess-Control-Allow-Origin: ma-carqueiranne.mgcloud.fr\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 06 Oct 2024 01:54:55 GMT\r\nReferrer-Policy: no-referrer-when-downgrade\r\nStrict-Transport-Security: max-age=63072000;\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1;mode=block\r\n\r\n404 page not found\n",
+      "ip": "141.94.209.199",
+      "timestamp": "2024-10-06T01:54:55.998147753Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
       "matcher-status": true
     },
@@ -380,7 +380,7 @@
         "Sectigo Limited"
       ],
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:51:46.377509842Z",
+      "timestamp": "2024-10-06T01:57:29.790518753Z",
       "matcher-status": true
     },
     {
@@ -411,7 +411,7 @@
         "mgcloud.fr"
       ],
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:51:46.377633764Z",
+      "timestamp": "2024-10-06T01:57:29.790645581Z",
       "matcher-status": true
     },
     {
@@ -446,7 +446,7 @@
         " SAN: [*.mgcloud.fr mgcloud.fr]"
       ],
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:51:46.377678858Z",
+      "timestamp": "2024-10-06T01:57:29.790692169Z",
       "matcher-status": true
     },
     {
@@ -477,7 +477,7 @@
         "tls12"
       ],
       "ip": "141.94.209.199",
-      "timestamp": "2024-09-08T01:51:47.479575801Z",
+      "timestamp": "2024-10-06T01:57:30.949515991Z",
       "matcher-status": true
     }
   ]
