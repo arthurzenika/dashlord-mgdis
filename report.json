@@ -2347,9 +2347,9 @@
     "http": {
       "url": "https://aideseco.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sat, 21 Sep 2024 14:44:53 GMT",
+      "end_time": "Sun, 13 Oct 2024 01:51:45 GMT",
       "grade": "B",
-      "hidden": true,
+      "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
         "Accept-Ranges": "bytes",
@@ -2357,9 +2357,9 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sat, 21 Sep 2024 14:44:52 GMT",
-        "Etag": "W/\"51f7-191e4ec2940\"",
-        "Last-Modified": "Thu, 12 Sep 2024 06:29:28 GMT",
+        "Date": "Sun, 13 Oct 2024 01:51:44 GMT",
+        "Etag": "W/\"51f7-1925128ee90\"",
+        "Last-Modified": "Thu, 03 Oct 2024 06:54:50 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
         "Strict-Transport-Security": "max-age=63072000;",
         "Transfer-Encoding": "chunked",
@@ -2368,12 +2368,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "fffed4dc-3d67-4ccf-bd67-b209e920489d",
+        "X-Request-Id": "bd8d7e4d-b224-449b-af7c-14c907b26624",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 55915918,
+      "scan_id": 56778181,
       "score": 75,
-      "start_time": "Sat, 21 Sep 2024 14:44:50 GMT",
+      "start_time": "Sun, 13 Oct 2024 01:51:42 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -2891,7 +2891,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "182 >= 60 days"
+        "finding": "161 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3643,7 +3643,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "INFO",
-        "finding": "48"
+        "finding": "49"
       }
     ],
     "thirdparties": {
@@ -3655,9 +3655,9 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 22 Sep 2024 01:51:17 GMT",
-        "etag": "W/\"51f7-191e4ec2940\"",
-        "last-modified": "Thu, 12 Sep 2024 06:29:28 GMT",
+        "date": "Sun, 13 Oct 2024 01:52:00 GMT",
+        "etag": "W/\"51f7-1925128ee90\"",
+        "last-modified": "Thu, 03 Oct 2024 06:54:50 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "transfer-encoding": "chunked",
@@ -3666,7 +3666,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "9bf4fec8-9d67-495e-b19f-2925df331b9b",
+        "x-request-id": "599516b1-c033-485e-98d4-7a9212ae7345",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -3789,7 +3789,7 @@
         "type": "dns",
         "host": "aideseco.mgcloud.fr.",
         "matched-at": "aideseco.mgcloud.fr",
-        "timestamp": "2024-09-22T01:53:04.907607044Z",
+        "timestamp": "2024-10-13T01:53:49.807788211Z",
         "matcher-status": true
       },
       {
@@ -3816,7 +3816,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:53:53.166784726Z",
+        "timestamp": "2024-10-13T01:54:42.933121216Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -3844,7 +3844,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:53:53.166833548Z",
+        "timestamp": "2024-10-13T01:54:42.933172832Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -3881,7 +3881,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780103259Z",
+        "timestamp": "2024-10-13T01:54:57.01077197Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -3918,7 +3918,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780139698Z",
+        "timestamp": "2024-10-13T01:54:57.010818406Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -3955,7 +3955,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780156229Z",
+        "timestamp": "2024-10-13T01:54:57.010838714Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -3992,7 +3992,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780171607Z",
+        "timestamp": "2024-10-13T01:54:57.010855134Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4029,7 +4029,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780184632Z",
+        "timestamp": "2024-10-13T01:54:57.010870202Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4066,7 +4066,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780196885Z",
+        "timestamp": "2024-10-13T01:54:57.010987801Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4103,7 +4103,7 @@
         "host": "https://aideseco.mgcloud.fr/",
         "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:54:05.780212164Z",
+        "timestamp": "2024-10-13T01:54:57.011008409Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -4134,7 +4134,7 @@
           "Sectigo Limited"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:56:35.079302716Z",
+        "timestamp": "2024-10-13T01:57:32.237563288Z",
         "matcher-status": true
       },
       {
@@ -4165,7 +4165,7 @@
           "mgcloud.fr"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:56:35.07943799Z",
+        "timestamp": "2024-10-13T01:57:32.237684784Z",
         "matcher-status": true
       },
       {
@@ -4200,7 +4200,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:56:35.079486782Z",
+        "timestamp": "2024-10-13T01:57:32.237735729Z",
         "matcher-status": true
       },
       {
@@ -4231,7 +4231,7 @@
           "tls12"
         ],
         "ip": "149.202.180.217",
-        "timestamp": "2024-09-22T01:56:36.035929525Z",
+        "timestamp": "2024-10-13T01:57:33.227763235Z",
         "matcher-status": true
       }
     ],
@@ -4239,7 +4239,7 @@
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2024-09-22T01:50:44.000Z",
+        "fetchTime": "2024-10-13T01:51:21.805Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -4252,7 +4252,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.44
+            "score": 0.45
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4304,53 +4304,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 24242,
+            "numericValue": 24045,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 17708,
-                  "firstMeaningfulPaint": 17919,
-                  "largestContentfulPaint": 25762,
-                  "interactive": 24242,
-                  "speedIndex": 17708,
-                  "totalBlockingTime": 435,
-                  "maxPotentialFID": 435,
-                  "cumulativeLayoutShift": 0.02984097960787208,
-                  "cumulativeLayoutShiftMainFrame": 0.02984097960787208,
-                  "totalCumulativeLayoutShift": 0.02984097960787208,
+                  "firstContentfulPaint": 17527,
+                  "firstMeaningfulPaint": 18222,
+                  "largestContentfulPaint": 24464,
+                  "interactive": 24045,
+                  "speedIndex": 17527,
+                  "totalBlockingTime": 426,
+                  "maxPotentialFID": 420,
+                  "cumulativeLayoutShift": 0.02988637320115992,
+                  "cumulativeLayoutShiftMainFrame": 0.02988637320115992,
+                  "totalCumulativeLayoutShift": 0.02988637320115992,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 427316740,
+                  "observedTimeOriginTs": 457338344,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 427316740,
-                  "observedFirstPaint": 637,
-                  "observedFirstPaintTs": 427953810,
-                  "observedFirstContentfulPaint": 1638,
-                  "observedFirstContentfulPaintTs": 428954970,
-                  "observedFirstContentfulPaintAllFrames": 1638,
-                  "observedFirstContentfulPaintAllFramesTs": 428954970,
-                  "observedFirstMeaningfulPaint": 1765,
-                  "observedFirstMeaningfulPaintTs": 429081481,
-                  "observedLargestContentfulPaint": 1902,
-                  "observedLargestContentfulPaintTs": 429218547,
-                  "observedLargestContentfulPaintAllFrames": 1902,
-                  "observedLargestContentfulPaintAllFramesTs": 429218547,
-                  "observedTraceEnd": 4463,
-                  "observedTraceEndTs": 431779424,
-                  "observedLoad": 1492,
-                  "observedLoadTs": 428808756,
+                  "observedNavigationStartTs": 457338344,
+                  "observedFirstPaint": 648,
+                  "observedFirstPaintTs": 457985915,
+                  "observedFirstContentfulPaint": 1576,
+                  "observedFirstContentfulPaintTs": 458914012,
+                  "observedFirstContentfulPaintAllFrames": 1576,
+                  "observedFirstContentfulPaintAllFramesTs": 458914012,
+                  "observedFirstMeaningfulPaint": 1864,
+                  "observedFirstMeaningfulPaintTs": 459202558,
+                  "observedLargestContentfulPaint": 1782,
+                  "observedLargestContentfulPaintTs": 459119851,
+                  "observedLargestContentfulPaintAllFrames": 1782,
+                  "observedLargestContentfulPaintAllFramesTs": 459119851,
+                  "observedTraceEnd": 4312,
+                  "observedTraceEndTs": 461650123,
+                  "observedLoad": 1454,
+                  "observedLoadTs": 458792563,
                   "observedDomContentLoaded": 7,
-                  "observedDomContentLoadedTs": 427324131,
-                  "observedCumulativeLayoutShift": 0.02984097960787208,
-                  "observedCumulativeLayoutShiftMainFrame": 0.02984097960787208,
-                  "observedTotalCumulativeLayoutShift": 0.02984097960787208,
-                  "observedFirstVisualChange": 49,
-                  "observedFirstVisualChangeTs": 427365740,
-                  "observedLastVisualChange": 2249,
-                  "observedLastVisualChangeTs": 429565740,
-                  "observedSpeedIndex": 1402,
-                  "observedSpeedIndexTs": 428718351
+                  "observedDomContentLoadedTs": 457344912,
+                  "observedCumulativeLayoutShift": 0.02988637320115992,
+                  "observedCumulativeLayoutShiftMainFrame": 0.02988637320115992,
+                  "observedTotalCumulativeLayoutShift": 0.02988637320115992,
+                  "observedFirstVisualChange": 76,
+                  "observedFirstVisualChangeTs": 457414344,
+                  "observedLastVisualChange": 4076,
+                  "observedLastVisualChangeTs": 461414344,
+                  "observedSpeedIndex": 1332,
+                  "observedSpeedIndexTs": 458670152
                 },
                 {
                   "lcpInvalidated": false
@@ -4372,19 +4372,19 @@
                   "numScripts": 7,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 1875,
-                  "numTasksOver10ms": 18,
-                  "numTasksOver25ms": 10,
+                  "numTasks": 2809,
+                  "numTasksOver10ms": 19,
+                  "numTasksOver25ms": 12,
                   "numTasksOver50ms": 6,
                   "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 76.62599999999999,
-                  "throughput": 8136231.6763685085,
-                  "maxRtt": 76.62599999999999,
-                  "maxServerLatency": 23.048000000000044,
-                  "totalByteWeight": 3875950,
-                  "totalTaskTime": 1155.0059999999976,
-                  "mainDocumentTransferSize": 1122
+                  "rtt": 86.14500000000001,
+                  "throughput": 7889501.090241074,
+                  "maxRtt": 86.14500000000001,
+                  "maxServerLatency": 21.90599999999999,
+                  "totalByteWeight": 3845861,
+                  "totalTaskTime": 1280.5389999999475,
+                  "mainDocumentTransferSize": 1123
                 }
               ]
             }
@@ -4417,7 +4417,7 @@
       "cookiesCount": 0,
       "trackersGrade": "A",
       "trackersCount": 0,
-      "lighthouse_performance": 0.44,
+      "lighthouse_performance": 0.45,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
