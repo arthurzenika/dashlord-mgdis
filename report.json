@@ -2347,7 +2347,7 @@
     "http": {
       "url": "https://aideseco.mgcloud.fr/",
       "algorithm_version": 3,
-      "end_time": "Sun, 13 Oct 2024 01:51:45 GMT",
+      "end_time": "Sun, 20 Oct 2024 01:53:36 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2357,7 +2357,7 @@
         "Cache-Control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 13 Oct 2024 01:51:44 GMT",
+        "Date": "Sun, 20 Oct 2024 01:53:35 GMT",
         "Etag": "W/\"51f7-1925128ee90\"",
         "Last-Modified": "Thu, 03 Oct 2024 06:54:50 GMT",
         "Referrer-Policy": "no-referrer-when-downgrade",
@@ -2368,12 +2368,12 @@
         "X-Dns-Prefetch-Control": "off",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Request-Id": "bd8d7e4d-b224-449b-af7c-14c907b26624",
+        "X-Request-Id": "e6b11c44-77a8-42e4-b22f-213bbb4bce4d",
         "X-XSS-Protection": "1;mode=block"
       },
-      "scan_id": 56778181,
+      "scan_id": 57047294,
       "score": 75,
-      "start_time": "Sun, 13 Oct 2024 01:51:42 GMT",
+      "start_time": "Sun, 20 Oct 2024 01:53:33 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -2891,7 +2891,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "OK",
-        "finding": "161 >= 60 days"
+        "finding": "154 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3643,7 +3643,7 @@
         "ip": "aideseco.mgcloud.fr/149.202.180.217",
         "port": "443",
         "severity": "INFO",
-        "finding": "49"
+        "finding": "54"
       }
     ],
     "thirdparties": {
@@ -3655,7 +3655,7 @@
         "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 13 Oct 2024 01:52:00 GMT",
+        "date": "Sun, 20 Oct 2024 01:53:50 GMT",
         "etag": "W/\"51f7-1925128ee90\"",
         "last-modified": "Thu, 03 Oct 2024 06:54:50 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
@@ -3666,7 +3666,7 @@
         "x-dns-prefetch-control": "off",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-request-id": "599516b1-c033-485e-98d4-7a9212ae7345",
+        "x-request-id": "1de401c0-ca1d-4897-9c03-92c3b7795bfd",
         "x-xss-protection": "1;mode=block"
       },
       "endpoints": [
@@ -3756,490 +3756,12 @@
       ]
     },
     "zap": null,
-    "nuclei": [
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "aideseco.mgcloud.fr.",
-        "matched-at": "aideseco.mgcloud.fr",
-        "timestamp": "2024-10-13T01:53:49.807788211Z",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "angularjs",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:42.933121216Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "angular",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:42.933172832Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.01077197Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.010818406Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.010838714Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.010855134Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.010870202Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.010987801Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://aideseco.mgcloud.fr/",
-        "matched-at": "https://aideseco.mgcloud.fr/aides/#/aideseco/",
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:54:57.011008409Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://aideseco.mgcloud.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/detect-ssl-issuer.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
-        "template-id": "ssl-issuer",
-        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
-        "info": {
-          "name": "Detect SSL Certificate Issuer",
-          "author": [
-            "lingtren"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "aideseco.mgcloud.fr",
-        "matched-at": "aideseco.mgcloud.fr:443",
-        "extracted-results": [
-          "Sectigo Limited"
-        ],
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:57:32.237563288Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
-        "template-id": "ssl-dns-names",
-        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
-        "info": {
-          "name": "SSL DNS Names",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "aideseco.mgcloud.fr",
-        "matched-at": "aideseco.mgcloud.fr:443",
-        "extracted-results": [
-          "*.mgcloud.fr",
-          "mgcloud.fr"
-        ],
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:57:32.237684784Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/wildcard-tls.yaml",
-        "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
-        "template-id": "wildcard-tls",
-        "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
-        "info": {
-          "name": "Wildcard TLS Certificate",
-          "author": [
-            "lucky0x0d"
-          ],
-          "tags": [
-            "ssl",
-            "tls",
-            "wildcard"
-          ],
-          "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
-          "reference": [
-            "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_security_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "aideseco.mgcloud.fr",
-        "matched-at": "aideseco.mgcloud.fr:443",
-        "extracted-results": [
-          "CN: *.mgcloud.fr",
-          " SAN: [*.mgcloud.fr mgcloud.fr]"
-        ],
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:57:32.237735729Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "aideseco.mgcloud.fr",
-        "matched-at": "aideseco.mgcloud.fr:443",
-        "extracted-results": [
-          "tls12"
-        ],
-        "ip": "149.202.180.217",
-        "timestamp": "2024-10-13T01:57:33.227763235Z",
-        "matcher-status": true
-      }
-    ],
+    "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://aideseco.mgcloud.fr/",
         "finalUrl": "https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/",
-        "fetchTime": "2024-10-13T01:51:21.805Z",
+        "fetchTime": "2024-10-20T01:53:12.164Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://aideseco.mgcloud.fr/) was redirected to https://aideseco.mgcloud.fr/account-management/aideseco-demandeurs/ux/. Try testing the second URL directly."
         ],
@@ -4252,7 +3774,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.45
+            "score": 0.4
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4304,53 +3826,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 24045,
+            "numericValue": 25553,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 17527,
-                  "firstMeaningfulPaint": 18222,
-                  "largestContentfulPaint": 24464,
-                  "interactive": 24045,
-                  "speedIndex": 17527,
-                  "totalBlockingTime": 426,
+                  "firstContentfulPaint": 17569,
+                  "firstMeaningfulPaint": 17588,
+                  "largestContentfulPaint": 25621,
+                  "interactive": 25553,
+                  "speedIndex": 17569,
+                  "totalBlockingTime": 584,
                   "maxPotentialFID": 420,
-                  "cumulativeLayoutShift": 0.02988637320115992,
-                  "cumulativeLayoutShiftMainFrame": 0.02988637320115992,
-                  "totalCumulativeLayoutShift": 0.02988637320115992,
+                  "cumulativeLayoutShift": 0.030105907158389004,
+                  "cumulativeLayoutShiftMainFrame": 0.030105907158389004,
+                  "totalCumulativeLayoutShift": 0.030105907158389004,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 457338344,
+                  "observedTimeOriginTs": 414865631,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 457338344,
-                  "observedFirstPaint": 648,
-                  "observedFirstPaintTs": 457985915,
-                  "observedFirstContentfulPaint": 1576,
-                  "observedFirstContentfulPaintTs": 458914012,
-                  "observedFirstContentfulPaintAllFrames": 1576,
-                  "observedFirstContentfulPaintAllFramesTs": 458914012,
-                  "observedFirstMeaningfulPaint": 1864,
-                  "observedFirstMeaningfulPaintTs": 459202558,
-                  "observedLargestContentfulPaint": 1782,
-                  "observedLargestContentfulPaintTs": 459119851,
-                  "observedLargestContentfulPaintAllFrames": 1782,
-                  "observedLargestContentfulPaintAllFramesTs": 459119851,
-                  "observedTraceEnd": 4312,
-                  "observedTraceEndTs": 461650123,
-                  "observedLoad": 1454,
-                  "observedLoadTs": 458792563,
+                  "observedNavigationStartTs": 414865631,
+                  "observedFirstPaint": 654,
+                  "observedFirstPaintTs": 415519278,
+                  "observedFirstContentfulPaint": 1793,
+                  "observedFirstContentfulPaintTs": 416658260,
+                  "observedFirstContentfulPaintAllFrames": 1793,
+                  "observedFirstContentfulPaintAllFramesTs": 416658260,
+                  "observedFirstMeaningfulPaint": 2038,
+                  "observedFirstMeaningfulPaintTs": 416903538,
+                  "observedLargestContentfulPaint": 2080,
+                  "observedLargestContentfulPaintTs": 416945968,
+                  "observedLargestContentfulPaintAllFrames": 2080,
+                  "observedLargestContentfulPaintAllFramesTs": 416945968,
+                  "observedTraceEnd": 4540,
+                  "observedTraceEndTs": 419405773,
+                  "observedLoad": 1664,
+                  "observedLoadTs": 416529914,
                   "observedDomContentLoaded": 7,
-                  "observedDomContentLoadedTs": 457344912,
-                  "observedCumulativeLayoutShift": 0.02988637320115992,
-                  "observedCumulativeLayoutShiftMainFrame": 0.02988637320115992,
-                  "observedTotalCumulativeLayoutShift": 0.02988637320115992,
-                  "observedFirstVisualChange": 76,
-                  "observedFirstVisualChangeTs": 457414344,
-                  "observedLastVisualChange": 4076,
-                  "observedLastVisualChangeTs": 461414344,
-                  "observedSpeedIndex": 1332,
-                  "observedSpeedIndexTs": 458670152
+                  "observedDomContentLoadedTs": 414872355,
+                  "observedCumulativeLayoutShift": 0.030105907158389004,
+                  "observedCumulativeLayoutShiftMainFrame": 0.030105907158389004,
+                  "observedTotalCumulativeLayoutShift": 0.030105907158389004,
+                  "observedFirstVisualChange": 67,
+                  "observedFirstVisualChangeTs": 414932631,
+                  "observedLastVisualChange": 4284,
+                  "observedLastVisualChangeTs": 419149631,
+                  "observedSpeedIndex": 1489,
+                  "observedSpeedIndexTs": 416354512
                 },
                 {
                   "lcpInvalidated": false
@@ -4372,19 +3894,19 @@
                   "numScripts": 7,
                   "numStylesheets": 6,
                   "numFonts": 8,
-                  "numTasks": 2809,
+                  "numTasks": 2193,
                   "numTasksOver10ms": 19,
-                  "numTasksOver25ms": 12,
-                  "numTasksOver50ms": 6,
+                  "numTasksOver25ms": 11,
+                  "numTasksOver50ms": 7,
                   "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 86.14500000000001,
-                  "throughput": 7889501.090241074,
-                  "maxRtt": 86.14500000000001,
-                  "maxServerLatency": 21.90599999999999,
-                  "totalByteWeight": 3845861,
-                  "totalTaskTime": 1280.5389999999475,
-                  "mainDocumentTransferSize": 1123
+                  "rtt": 100.498,
+                  "throughput": 6982341.088984373,
+                  "maxRtt": 100.498,
+                  "maxServerLatency": 24.939999999999998,
+                  "totalByteWeight": 3845459,
+                  "totalTaskTime": 1240.610000000006,
+                  "mainDocumentTransferSize": 1118
                 }
               ]
             }
@@ -4417,7 +3939,7 @@
       "cookiesCount": 0,
       "trackersGrade": "A",
       "trackersCount": 0,
-      "lighthouse_performance": 0.45,
+      "lighthouse_performance": 0.4,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
