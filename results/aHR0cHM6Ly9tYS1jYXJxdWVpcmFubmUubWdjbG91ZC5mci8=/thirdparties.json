@@ -5,7 +5,7 @@
     "access-control-allow-origin": "ma-carqueiranne.mgcloud.fr",
     "content-length": "19",
     "content-type": "text/plain; charset=utf-8",
-    "date": "Sun, 06 Oct 2024 01:51:52 GMT",
+    "date": "Sun, 27 Oct 2024 01:52:09 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "x-content-type-options": "nosniff",
@@ -47,7 +47,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 200,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
