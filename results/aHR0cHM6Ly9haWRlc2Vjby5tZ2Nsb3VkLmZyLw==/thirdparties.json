@@ -7,9 +7,9 @@
     "cache-control": "public, must-revalidate, proxy-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 20 Oct 2024 01:53:50 GMT",
-    "etag": "W/\"51f7-1925128ee90\"",
-    "last-modified": "Thu, 03 Oct 2024 06:54:50 GMT",
+    "date": "Sun, 10 Nov 2024 01:50:00 GMT",
+    "etag": "W/\"51f7-19299c91468\"",
+    "last-modified": "Thu, 17 Oct 2024 09:22:25 GMT",
     "referrer-policy": "no-referrer-when-downgrade",
     "strict-transport-security": "max-age=63072000;",
     "transfer-encoding": "chunked",
@@ -18,7 +18,7 @@
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
-    "x-request-id": "1de401c0-ca1d-4897-9c03-92c3b7795bfd",
+    "x-request-id": "ef184331-716e-4ecd-8a92-71c10ffb4d88",
     "x-xss-protection": "1;mode=block"
   },
   "endpoints": [
@@ -56,7 +56,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 500,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
