@@ -346,7 +346,7 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "105 >= 60 days"
+              "finding"      : "98 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1733623356"
+              "finding"      : "1734228146"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1140,6 +1140,6 @@
               "ip"           : "ma-carqueiranne.mgcloud.fr/141.94.209.199",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "51"
           }
 ]
