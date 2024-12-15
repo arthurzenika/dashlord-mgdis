@@ -4553,7 +4553,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "OK",
-        "finding": "105 >= 60 days"
+        "finding": "98 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -4756,7 +4756,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "1733623356"
+        "finding": "1734228146"
       },
       {
         "id": "HSTS_time",
@@ -5347,7 +5347,7 @@
         "ip": "ma-carqueiranne.mgcloud.fr/141.94.209.199",
         "port": "443",
         "severity": "INFO",
-        "finding": "50"
+        "finding": "51"
       }
     ],
     "thirdparties": {
@@ -5357,7 +5357,7 @@
         "access-control-allow-origin": "ma-carqueiranne.mgcloud.fr",
         "content-length": "19",
         "content-type": "text/plain; charset=utf-8",
-        "date": "Sun, 08 Dec 2024 02:02:04 GMT",
+        "date": "Sun, 15 Dec 2024 02:01:55 GMT",
         "referrer-policy": "no-referrer-when-downgrade",
         "strict-transport-security": "max-age=63072000;",
         "x-content-type-options": "nosniff",
@@ -5502,7 +5502,7 @@
         "type": "dns",
         "host": "ma-carqueiranne.mgcloud.fr.",
         "matched-at": "ma-carqueiranne.mgcloud.fr",
-        "timestamp": "2024-12-08T02:03:54.481913621Z",
+        "timestamp": "2024-12-15T02:03:45.330706393Z",
         "matcher-status": true
       },
       {
@@ -5542,7 +5542,7 @@
           "1;mode=block"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:04:07.915626103Z",
+        "timestamp": "2024-12-15T02:03:58.801095469Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5580,7 +5580,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401793398Z",
+        "timestamp": "2024-12-15T02:04:51.219604756Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5618,7 +5618,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401842279Z",
+        "timestamp": "2024-12-15T02:04:51.219645683Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5656,7 +5656,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401861344Z",
+        "timestamp": "2024-12-15T02:04:51.219657505Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5694,7 +5694,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401879087Z",
+        "timestamp": "2024-12-15T02:04:51.219667173Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5732,7 +5732,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401893805Z",
+        "timestamp": "2024-12-15T02:04:51.219680297Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5770,7 +5770,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401906779Z",
+        "timestamp": "2024-12-15T02:04:51.219695716Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5808,7 +5808,7 @@
         "host": "https://ma-carqueiranne.mgcloud.fr/",
         "matched-at": "https://ma-carqueiranne.mgcloud.fr/",
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:05:00.401920033Z",
+        "timestamp": "2024-12-15T02:04:51.219716716Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ma-carqueiranne.mgcloud.fr/'",
         "matcher-status": true
       },
@@ -5839,7 +5839,7 @@
           "Sectigo Limited"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:07:32.278196399Z",
+        "timestamp": "2024-12-15T02:07:24.259231011Z",
         "matcher-status": true
       },
       {
@@ -5870,7 +5870,7 @@
           "mgcloud.fr"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:07:32.278368352Z",
+        "timestamp": "2024-12-15T02:07:24.259366213Z",
         "matcher-status": true
       },
       {
@@ -5905,7 +5905,7 @@
           " SAN: [*.mgcloud.fr mgcloud.fr]"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:07:32.278538305Z",
+        "timestamp": "2024-12-15T02:07:24.259414013Z",
         "matcher-status": true
       },
       {
@@ -5936,7 +5936,7 @@
           "tls12"
         ],
         "ip": "141.94.209.199",
-        "timestamp": "2024-12-08T02:07:34.425912247Z",
+        "timestamp": "2024-12-15T02:07:25.319612125Z",
         "matcher-status": true
       }
     ],
