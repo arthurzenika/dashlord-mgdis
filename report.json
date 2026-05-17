@@ -8709,7 +8709,8 @@
       "lighthouse_seo": 0.91,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.33,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "declaration-a11y": "F"
     }
   },
   {
@@ -12692,7 +12693,8 @@
       "lighthouse_seo": 0.91,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.33,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "declaration-a11y": "F"
     }
   },
   {
@@ -14565,7 +14567,8 @@
       "lighthouse_seo": 0.89,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.33,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "declaration-a11y": "F"
     }
   },
   {
@@ -18734,7 +18737,8 @@
       "lighthouse_seo": 0.91,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.33,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "declaration-a11y": "F"
     }
   }
 ]
