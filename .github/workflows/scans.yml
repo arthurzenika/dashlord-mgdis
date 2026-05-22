@@ -159,7 +159,7 @@ jobs:
       - name: testssl.sh scan
         timeout-minutes: 10
         continue-on-error: true
-        uses: "mbogh/test-ssl-action@v1.1"
+        uses: "mbogh/test-ssl-action@v3.0.2"
         if: ${{ matrix.sites.tools.testssl }}
         with:
           host: ${{ steps.hostname.outputs.value }}
